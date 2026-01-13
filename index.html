@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Mamdous Laskar - Computer Science Student. Interactive terminal-style portfolio showcasing programming projects, technical skills, and contact information.">
+    <meta name="keywords" content="Mamdous Laskar, Computer Science, Software Developer, Portfolio, Terminal, Programming, Web Development, Student">
+    <meta name="author" content="Mamdous Laskar">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="EN">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Mamdous Laskar - Computer Science Student Portfolio">
+    <meta property="og:description" content="Interactive terminal-style portfolio showcasing programming projects, technical skills, and contact information.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mamdous.me">
+    <meta property="og:image" content="https://mamdous.me/og-image.png">
+    <meta property="og:site_name" content="Mamdous Laskar Portfolio">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mamdous Laskar - Computer Science Student Portfolio">
+    <meta name="twitter:description" content="Interactive terminal-style portfolio showcasing programming projects, technical skills, and contact information.">
+    <meta name="twitter:image" content="https://mamdous.me/twitter-card.png">
+    <meta name="twitter:site" content="@mamdouslaskar">
+    <meta name="twitter:creator" content="@mamdouslaskar">
+    
+    <!-- Additional SEO -->
+    <link rel="canonical" href="https://mamdous.me">
+    <meta name="theme-color" content="#282c34">
+    <meta name="application-name" content="Mamdous Laskar Portfolio">
+    
+    <!-- Performance and Cache Control -->
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Mamdous Laskar">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), autoplay=(), camera=(), cross-origin-isolated=(), display-capture=(), encrypted-media=(), fullscreen=(), geolocation=(), gyroscope=(), keyboard-map=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(), usb=(), web-share=(), xr-spatial-tracking=()">
+    
+    <title>Mamdous Laskar</title>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap"></noscript>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    
+    <!-- DNS Prefetch for external domains -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    
+    <!-- Preconnect to improve loading performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    
+    <!-- Load stylesheets with optimized font display -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
+    <!-- Terminal Icon Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHJ4PSI0IiBmaWxsPSIjMjEyNTJiIi8+CiAgPHJlY3QgeD0iMiIgeT0iMiIgd2lkdGg9IjI4IiBoZWlnaHQ9IjI4IiByeD0iMiIgZmlsbD0iIzI4MmMzNCIvPgogIDxyZWN0IHg9IjIiIHk9IjIiIHdpZHRoPSIyOCIgaGVpZ2h0PSI2IiBmaWxsPSIjMjEyNTJiIi8+CiAgPGNpcmNsZSBjeD0iNiIgY3k9IjUiIHI9IjEuNSIgZmlsbD0iI2UwNmM3NSIvPgogIDxjaXJjbGUgY3g9IjEwIiBjeT0iNSIgcj0iMS41IiBmaWxsPSIjZTVjMDdiIi8+CiAgPGNpcmNsZSBjeD0iMTQiIGN5PSI1IiByPSIxLjUiIGZpbGw9IiM5OGMzNzkiLz4KICA8dGV4dCB4PSI0IiB5PSIxNyIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSI4IiBmaWxsPSIjOThjMzc5Ij4kPC90ZXh0PgogIDx0ZXh0IHg9IjgiIHk9IjE3IiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjgiIGZpbGw9IiM2MWFmZWYiPmxzPC90ZXh0PgogIDx0ZXh0IHg9IjQiIHk9IjI1IiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjciIGZpbGw9IiNhYmIyYmYiPmhvbWUvPC90ZXh0Pgo8L3N2Zz4K">
+    <!-- Fallback PNG favicon for older browsers -->
+    <link rel="alternate icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAdgAAAHYBTnsmCAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAIoSURBVFiFtZc9axRBFMef2QQSCxsLwcLCQrGwsLBQsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLC">
+    
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mamdous Laskar",
+        "jobTitle": "Computer Science Student",
+        "description": "Computer Science student focused on technology and software development",
+        "url": "https://mamdous.me",
+        "sameAs": [
+            "https://github.com/mamdous-usual",
+            "https://linkedin.com/in/mamdouslaskar",
+            "https://x.com/mamdouslaskar"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "mamdouslaskar@protonmail.com",
+            "contactType": "professional"
+        },
+        "knowsAbout": [
+            "Computer Science",
+            "Software Development", 
+            "Web Development",
+            "Programming",
+            "JavaScript",
+            "Java",
+            "Python",
+            "C++"
+        ],
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Computer Science Program"
+        }
+    }
+    </script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap');
+
+        /* Font face fallbacks for better performance */
+        @font-face {
+            font-family: 'JetBrains Mono';
+            font-display: swap;
+            src: local('JetBrains Mono'), local('JetBrainsMono-Regular');
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Unified scrollbar styling for all browsers */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #21252b;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #3e4451;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4b5263;
+        }
+
+        /* Firefox scrollbar styling */
+        html {
+            scrollbar-width: thin;
+            scrollbar-color: #3e4451 #21252b;
+        }
+
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            background-color: #1a1d23;
+            color: #abb2bf;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .terminal-container {
+            min-height: 100vh;
+            padding: clamp(10px, 3vw, 20px);
+            background: linear-gradient(135deg, #1a1d23 0%, #282c34 50%, #1e2227 100%);
+            background-size: 200% 200%;
+            animation: gradientShift 15s ease infinite;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s ease, visibility 0s 0.5s;
+        }
+
+        .terminal-container.loaded {
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.5s ease, visibility 0s;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .terminal-window {
+            max-width: min(900px, 100%);
+            margin: 0 auto;
+            background: #282c34;
+            border-radius: clamp(6px, 2vw, 12px);
+            box-shadow: 
+                0 20px 60px rgba(0, 0, 0, 0.4),
+                0 0 0 1px rgba(97, 175, 239, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.05);
+            border: 1px solid #3e4451;
+            overflow: hidden;
+            animation: slideIn 0.8s ease-out;
+            min-height: calc(100vh - clamp(20px, 6vw, 40px));
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .terminal-window:hover {
+            transform: translateY(-2px);
+            box-shadow: 
+                0 25px 70px rgba(0, 0, 0, 0.5),
+                0 0 0 1px rgba(97, 175, 239, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .terminal-header {
+            background: rgba(33, 37, 43, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: clamp(8px, 2vw, 12px) clamp(12px, 3vw, 16px);
+            display: flex;
+            align-items: center;
+            gap: clamp(6px, 1.5vw, 8px);
+            border-bottom: 1px solid rgba(97, 175, 239, 0.2);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .window-controls {
+            display: flex;
+            gap: 6px;
+        }
+
+        .control {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .control:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 8px currentColor;
+        }
+
+        .control:active {
+            transform: scale(0.95);
+        }
+
+        .close { background: #e06c75; }
+        .minimize { background: #e5c07b; }
+        .maximize { background: #98c379; }
+
+        .terminal-title {
+            margin-left: 12px;
+            color: #61afef;
+            font-size: 13px;
+            font-weight: 500;
+            text-shadow: 0 0 10px rgba(97, 175, 239, 0.3);
+            letter-spacing: 0.5px;
+        }
+
+        .terminal-content {
+            padding: clamp(16px, 4vw, 24px);
+            min-height: calc(60vh);
+            font-size: clamp(13px, 2.8vw, 15px);
+            overflow-y: visible;
+            padding-bottom: clamp(16px, 4vw, 24px);
+            line-height: 1.7;
+        }
+
+        #output {
+            margin-bottom: 16px;
+        }
+
+        .output-line {
+            margin-bottom: 8px;
+            animation: typeIn 0.5s ease-out;
+        }
+
+        @keyframes typeIn {
+            from {
+                opacity: 0;
+                transform: translateX(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .terminal-input::after {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 16px;
+            background: #61afef;
+            margin-left: 2px;
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        .prompt {
+            background: linear-gradient(135deg, #98c379 0%, #7cb668 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 600;
+            filter: drop-shadow(0 0 8px rgba(152, 195, 121, 0.3));
+        }
+
+        .command {
+            background: linear-gradient(135deg, #61afef 0%, #56b6c2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 600;
+            filter: drop-shadow(0 0 8px rgba(97, 175, 239, 0.3));
+        }
+
+        .output {
+            color: #c5cdd6;
+            margin-left: 0;
+            white-space: pre-wrap;
+            line-height: 1.8;
+        }
+
+        .error {
+            color: #e06c75;
+        }
+
+        .success {
+            color: #98c379;
+        }
+
+        .warning {
+            color: #e5c07b;
+        }
+
+        .info {
+            color: #56b6c2;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: clamp(8px, 3vw, 16px);
+            margin: clamp(12px, 3vw, 16px) 0;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .social-icon {
+            color: #61afef;
+            font-size: clamp(16px, 4vw, 20px);
+            text-decoration: none;
+            padding: clamp(6px, 1.5vw, 8px);
+            border-radius: 6px;
+            background: rgba(97, 175, 239, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
+
+        .social-icon:hover {
+            background: rgba(97, 175, 239, 0.2);
+            border-color: #61afef;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 20px rgba(97, 175, 239, 0.4);
+        }
+
+        .social-icon:active {
+            transform: translateY(-1px) scale(1.02);
+        }
+
+        .input-line {
+            display: flex;
+            align-items: center;
+            margin-top: 16px;
+        }
+
+        .terminal-input {
+            background: transparent;
+            border: none;
+            color: #abb2bf;
+            font-family: inherit;
+            font-size: clamp(12px, 2.5vw, 14px);
+            outline: none;
+            flex: 1;
+            margin-left: 8px;
+            min-width: 0;
+        }
+
+        .autocomplete-suggestions {
+            background: #21252b;
+            border: 1px solid #3e4451;
+            border-top: none;
+            max-height: 150px;
+            overflow-y: auto;
+            position: absolute;
+            width: calc(100% - 48px);
+            left: 24px;
+            z-index: 1000;
+        }
+
+        .autocomplete-suggestion {
+            padding: 6px 12px;
+            color: #abb2bf;
+            cursor: pointer;
+            font-size: clamp(11px, 2vw, 13px);
+        }
+
+        .autocomplete-suggestion:hover,
+        .autocomplete-suggestion.selected {
+            background: #3e4451;
+            color: #61afef;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            animation: modalFadeIn 0.3s ease-out;
+        }
+
+        @keyframes modalFadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            background-color: #282c34;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #3e4451;
+            border-radius: 12px;
+            width: min(500px, 90%);
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #3e4451;
+            padding-bottom: 10px;
+        }
+
+        .modal-title {
+            color: #98c379;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .close-modal {
+            color: #e06c75;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .close-modal:hover {
+            opacity: 0.8;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-label {
+            display: block;
+            color: #61afef;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: 10px;
+            background: #21252b;
+            border: 1px solid #3e4451;
+            border-radius: 6px;
+            color: #abb2bf;
+            font-family: inherit;
+            font-size: 14px;
+            pointer-events: auto;
+            z-index: inherit;
+        }
+
+        .form-textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: #61afef;
+            box-shadow: 0 0 0 2px rgba(97, 175, 239, 0.2);
+        }
+
+        .form-button {
+            background: #61afef;
+            color: #282c34;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .form-button:hover {
+            background: #4a9eff;
+            transform: translateY(-1px);
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        .ascii-art {
+            background: linear-gradient(135deg, #56b6c2 0%, #61afef 50%, #c678dd 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            background-size: 200% 200%;
+            animation: gradientFlow 8s ease infinite;
+            font-size: clamp(10px, 1.8vw, 14px);
+            line-height: 1.2;
+            margin: clamp(8px, 3vw, 16px) 0;
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: pre;
+            font-weight: 500;
+            display: block;
+            width: fit-content;
+            max-width: 100%;
+            padding-bottom: 8px;
+        }
+
+        .ascii-art::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .ascii-art::-webkit-scrollbar-track {
+            background: #21252b;
+            border-radius: 4px;
+        }
+
+        .ascii-art::-webkit-scrollbar-thumb {
+            background: #61afef;
+            border-radius: 4px;
+        }
+
+        .ascii-art::-webkit-scrollbar-thumb:hover {
+            background: #7ec0f7;
+        }
+
+        @keyframes gradientFlow {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .file-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 8px;
+            margin: 12px 0;
+        }
+
+        .file-item {
+            color: #e5c07b;
+            padding: 4px 0;
+        }
+
+        .directory {
+            color: #61afef;
+            font-weight: 600;
+            text-shadow: 0 0 10px rgba(97, 175, 239, 0.2);
+        }
+
+        .executable {
+            color: #98c379;
+            font-weight: 600;
+            text-shadow: 0 0 10px rgba(152, 195, 121, 0.2);
+        }
+
+        .project-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: linear-gradient(135deg, rgba(97, 175, 239, 0.08) 0%, rgba(97, 175, 239, 0.03) 100%);
+            border-radius: 8px;
+            border-left: 3px solid #61afef;
+            border: 1px solid rgba(97, 175, 239, 0.2);
+            border-left: 3px solid #61afef;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .project-item:hover {
+            transform: translateX(8px);
+            background: linear-gradient(135deg, rgba(97, 175, 239, 0.12) 0%, rgba(97, 175, 239, 0.05) 100%);
+            border-color: rgba(97, 175, 239, 0.4);
+            box-shadow: 0 4px 15px rgba(97, 175, 239, 0.2);
+        }
+
+        .project-title {
+            background: linear-gradient(135deg, #61afef 0%, #56b6c2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: 0.3px;
+        }
+
+        .project-description {
+            color: #c5cdd6;
+            margin-bottom: 8px;
+            line-height: 1.7;
+        }
+
+        .project-tech {
+            color: #e5c07b;
+            font-size: 12px;
+            font-style: normal;
+            background: rgba(229, 192, 123, 0.1);
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            border: 1px solid rgba(229, 192, 123, 0.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .terminal-window {
+                border-radius: 8px;
+                min-height: calc(100vh - 20px);
+            }
+            
+            .file-list {
+                grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+                gap: 6px;
+            }
+            
+            .social-icons {
+                justify-content: center;
+                gap: 12px;
+            }
+            
+            .social-icon {
+                font-size: 16px;
+                padding: 6px 8px;
+            }
+            
+            .ascii-art {
+                font-size: 9px;
+                transform-origin: left top;
+            }
+
+            .modal-content {
+                margin: 10% auto;
+                width: 95%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .terminal-container {
+                padding: 8px;
+            }
+            
+            .terminal-window {
+                border-radius: 6px;
+                min-height: calc(100vh - 16px);
+            }
+            
+            .terminal-content {
+                padding: 12px;
+                font-size: 12px;
+            }
+            
+            .social-icon {
+                font-size: 14px;
+                padding: 4px 6px;
+                gap: 4px;
+            }
+            
+            .ascii-art {
+                font-size: 7px;
+                margin: 8px 0;
+                transform-origin: left top;
+            }
+            
+            .file-list {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 4px;
+                font-size: 11px;
+            }
+            
+            .input-line {
+                flex-wrap: wrap;
+                gap: 4px;
+            }
+            
+            .prompt {
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .ascii-art {
+                font-size: 6px;
+                transform-origin: left top;
+                margin: 6px 0;
+            }
+            
+            .social-icons {
+                gap: 8px;
+            }
+            
+            .social-icon {
+                font-size: 12px;
+                padding: 3px 5px;
+            }
+        }
+
+        .help-section {
+            margin: 16px 0;
+        }
+
+        .help-command {
+            background: linear-gradient(135deg, #e5c07b 0%, #d19a66 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        .help-description {
+            color: #c5cdd6;
+            margin-left: 16px;
+            margin-bottom: 8px;
+            padding-left: 12px;
+            border-left: 2px solid rgba(97, 175, 239, 0.2);
+        }
+
+        /* Loading Screen Styles */
+        #loadingScreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #1a1d23 0%, #282c34 50%, #1e2227 100%);
+            z-index: 10000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        #loadingContent {
+            max-width: 600px;
+            width: 100%;
+            text-align: left;
+        }
+
+        #loadingText {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: clamp(12px, 2.5vw, 14px);
+            line-height: 1.8;
+            margin-bottom: 30px;
+            min-height: 200px;
+        }
+
+        .loading-line {
+            margin-bottom: 8px;
+            opacity: 0;
+            animation: lineAppear 0.3s ease-out forwards;
+        }
+
+        @keyframes lineAppear {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .loading-system {
+            color: #61afef;
+            font-weight: 600;
+        }
+
+        .loading-ok {
+            color: #98c379;
+            font-weight: 600;
+        }
+
+        .loading-info {
+            color: #56b6c2;
+        }
+
+        .loading-warning {
+            color: #e5c07b;
+        }
+
+        .progress-container {
+            width: 100%;
+            height: 6px;
+            background: rgba(62, 68, 81, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 20px;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #61afef, #56b6c2, #98c379);
+            background-size: 200% 100%;
+            border-radius: 10px;
+            width: 0%;
+            transition: width 0.3s ease;
+            animation: progressShimmer 2s linear infinite;
+            box-shadow: 0 0 10px rgba(97, 175, 239, 0.5);
+        }
+
+        @keyframes progressShimmer {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 200% 50%; }
+        }
+
+        .loading-percentage {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+            background: linear-gradient(90deg, #61afef, #98c379);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 600;
+        }
+
+        /* About Modal Styles */
+        .about-modal .modal-content {
+            max-width: 420px;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .profile-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center top;
+            border: 3px solid #61afef;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transform: translateZ(0);
+        }
+
+        .profile-photo:hover {
+            transform: scale(1.05) translateZ(0);
+            box-shadow: 0 6px 25px rgba(97, 175, 239, 0.4);
+        }
+
+        .profile-name {
+            font-size: 24px;
+            font-weight: 600;
+            background: linear-gradient(135deg, #61afef 0%, #56b6c2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 0;
+        }
+
+        .profile-title {
+            color: #98c379;
+            font-size: 14px;
+            margin-top: -10px;
+        }
+
+        .profile-bio {
+            color: #abb2bf;
+            font-size: 13px;
+            line-height: 1.6;
+            max-width: 350px;
+        }
+
+        .profile-section {
+            width: 100%;
+            text-align: left;
+            padding: 15px;
+            background: rgba(97, 175, 239, 0.05);
+            border-radius: 8px;
+            border: 1px solid rgba(97, 175, 239, 0.1);
+        }
+
+        .profile-section-title {
+            color: #e5c07b;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .profile-section-content {
+            color: #c5cdd6;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .education-item {
+            margin-bottom: 8px;
+        }
+
+        .education-degree {
+            color: #61afef;
+            font-weight: 500;
+        }
+
+        .education-school {
+            color: #abb2bf;
+            font-size: 12px;
+        }
+
+        .profile-social-links {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .profile-social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(97, 175, 239, 0.1);
+            color: #61afef;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .profile-social-link:hover {
+            background: rgba(97, 175, 239, 0.2);
+            border-color: #61afef;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(97, 175, 239, 0.3);
+        }
+
+        .profile-social-link.github:hover { color: #fff; background: #333; }
+        .profile-social-link.linkedin:hover { color: #fff; background: #0077b5; }
+        .profile-social-link.twitter:hover { color: #fff; background: #1da1f2; }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen">
+        <div id="loadingContent">
+            <div id="loadingText"></div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="loading-percentage" id="loadingPercentage">0%</div>
+        </div>
+    </div>
+
+    <!-- About Modal -->
+    <div id="aboutModal" class="modal about-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">About Me</h2>
+                <span class="close-modal" onclick="closeAboutModal()">&times;</span>
+            </div>
+            <div class="profile-card">
+                <img src="Images/professional%20profile.png" alt="Mamdous Laskar" class="profile-photo">
+                <h1 class="profile-name">Mamdous Laskar</h1>
+                <p class="profile-title">Computer Science Student</p>
+                <p class="profile-bio">BCA student learning programming and exploring technology.</p>
+                
+                <div class="profile-section">
+                    <div class="profile-section-title">
+                        <i class="fas fa-graduation-cap"></i> Education
+                    </div>
+                    <div class="profile-section-content">
+                        <div class="education-item">
+                            <div class="education-degree">Bachelor of Computer Application (BCA)</div>
+                            <div class="education-school">Karimganj College, Assam University</div>
+                            <div class="education-school">2nd Semester • Expected 2028</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-section">
+                    <div class="profile-section-title">
+                        <i class="fas fa-link"></i> Connect With Me
+                    </div>
+                    <div class="profile-social-links">
+                        <a href="https://github.com/mamdous-usual" target="_blank" class="profile-social-link github" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/mamdouslaskar" target="_blank" class="profile-social-link linkedin" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://x.com/mamdouslaskar" target="_blank" class="profile-social-link twitter" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Send Message</h2>
+                <span class="close-modal" onclick="closeContactModal()">&times;</span>
+            </div>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="senderName" class="form-label">Your Name:</label>
+                    <input type="text" id="senderName" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="senderEmail" class="form-label">Your Email:</label>
+                    <input type="email" id="senderEmail" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="messageSubject" class="form-label">Subject:</label>
+                    <input type="text" id="messageSubject" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="messageContent" class="form-label">Message:</label>
+                    <textarea id="messageContent" class="form-textarea" required placeholder="Your message here..."></textarea>
+                </div>
+                <button type="submit" class="form-button">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="terminal-container">
+        <div class="terminal-window">
+                            <div class="terminal-header">
+                <div class="window-controls">
+                    <div class="control close"></div>
+                    <div class="control minimize"></div>
+                    <div class="control maximize"></div>
+                </div>
+                <div class="terminal-title">mamdous@localhost:~</div>
+            </div>
+            
+            <div class="terminal-content" id="terminalContent">
+                <div id="output">
+                    <div class="output-line">
+                        <div class="ascii-art">       _nnnn_                      <span class="info">mamdous</span>@<span class="success">localhost</span>
+      dGGGGMMb                     ─────────────────────────
+     @p~qp~~qMb                    <span class="info">OS:</span> Portfolio v2.0
+     M|<span class="warning">@</span>||<span class="warning">@</span>) M|                    <span class="info">Host:</span> GitHub Pages
+     <span class="warning">@</span>,----.JM|                    <span class="info">Kernel:</span> JavaScript ES6+
+    JS^\__/  qKL                   <span class="info">Uptime:</span> Since 2024
+   dZP        qKRb                 <span class="info">Packages:</span> npm, git, vscode
+  dZP          qKKb                <span class="info">Shell:</span> interactive-terminal
+ fZP            SMMb               <span class="info">Resolution:</span> responsive
+ HZM            MMMM               <span class="info">Theme:</span> One Dark Pro
+ FqM            MMMM               <span class="info">Icons:</span> Font Awesome 6
+__| ".        |\dS"qML             <span class="info">Terminal:</span> Custom Web Shell
+|    `.       | `' \Zq             <span class="info">CPU:</span> Your Browser
+_)      \.___.,|     .'             
+\____   )MMMMMP|   .'              <span class="success">▀▀▀</span> <span class="warning">▀▀▀</span> <span class="error">▀▀▀</span> <span class="info">▀▀▀</span> <span style="color:#c678dd">▀▀▀</span> <span style="color:#56b6c2">▀▀▀</span>
+     `-'       `--'                </div>
+                    </div>
+                    
+                    <div class="output-line">
+                        <span class="info">Type 'help' for commands or 'about' to know me.</span>
+                    </div>
+                    
+                    <br>
+                </div>
+                
+                <div class="input-line" style="position: relative;">
+                    <span class="prompt">visitor@localhost:~$</span>
+                    <input type="text" class="terminal-input" id="commandInput" placeholder="Enter command..." autocomplete="off">
+                    <div id="autocomplete" class="autocomplete-suggestions" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const output = document.getElementById('output');
+        const input = document.getElementById('commandInput');
+        const autocompleteDiv = document.getElementById('autocomplete');
+        
+        // Command history
+        let commandHistory = [];
+        let historyIndex = -1;
+        
+        // Focus input on page load and click (but not when modal is open)
+        window.addEventListener('load', () => input.focus());
+        document.addEventListener('click', (e) => {
+            // Don't focus terminal input if clicking inside modal
+            const modal = document.getElementById('contactModal');
+            if (modal.style.display !== 'block') {
+                input.focus();
+            }
+        });
+        
+        const projects = [
+            {
+                name: "Terminal Portfolio",
+                description: "Interactive terminal-style personal portfolio website with command-line interface and responsive design.",
+                tech: "HTML, CSS, JavaScript",
+                github: "https://github.com/mamdous-usual/mamdous-usual.github.io",
+                live: "https://mamdous-usual.github.io"
+            },
+            {
+                name: "Speedometer PWA",
+                description: "A progressive web app that uses browser Geolocation API to display real-time speed.",
+                tech: "HTML, CSS, JavaScript, PWA",
+                github: "https://github.com/mamdous-usual/speedometer",
+                live: "https://speedometerweb.vercel.app"
+            }
+        ];
+
+        const commands = {
+            help: () => `
+<div class="help-section">
+<div class="help-command">Available Commands:</div>
+<div class="help-description">whoami      - Display user information</div>
+<div class="help-description">ls          - List directory contents</div>
+<div class="help-description">cat &lt;file&gt;  - Display file contents</div>
+<div class="help-description">echo &lt;msg&gt;  - Display message</div>
+<div class="help-description">about       - About me</div>
+<div class="help-description">social      - Display social media links</div>
+<div class="help-description">contact     - Contact information</div>
+<div class="help-description">skills      - Technical skills</div>
+<div class="help-description">projects    - View my projects</div>
+<div class="help-description">resume      - View/download resume</div>
+<div class="help-description">send-message - Send me a message</div>
+<div class="help-description">history     - Show command history</div>
+<div class="help-description">clear       - Clear terminal</div>
+<div class="help-description">date        - Display current date</div>
+<div class="help-description">pwd         - Print working directory</div>
+<div class="help-description">Tab         - Auto-complete commands</div>
+<div class="help-description">↑/↓         - Navigate command history</div>
+<div class="help-description" style="margin-top: 12px; color: #c678dd;">🥚 There are easter eggs! Type 'eggs' to reveal them.</div>
+</div>`,
+            
+            whoami: () => `mamdous`,
+            
+            ls: () => `<div class="file-list">
+<div class="directory">documents/</div>
+<div class="directory">projects/</div>
+<div class="directory">skills/</div>
+<div class="file-item">about.txt</div>
+<div class="file-item">resume.pdf</div>
+<div class="file-item">contact.txt</div>
+<div class="executable">run_portfolio.sh</div>
+</div>`,
+            
+            about: () => {
+                openAboutModal();
+                return '<span class="info">Opening profile card...</span>';
+            },
+            
+            social: () => `<span class="success">Connect with me:</span>
+<div class="social-icons">
+<a href="https://github.com/mamdous-usual" target="_blank" class="social-icon" title="GitHub">
+<i class="fab fa-github"></i> GitHub
+</a>
+<a href="https://linkedin.com/in/mamdouslaskar" target="_blank" class="social-icon" title="LinkedIn">
+<i class="fab fa-linkedin"></i> LinkedIn
+</a>
+<a href="https://x.com/mamdouslaskar" target="_blank" class="social-icon" title="Twitter">
+<i class="fab fa-twitter"></i> Twitter
+</a>
+</div>`,
+            
+            contact: () => `<span class="success">Contact Information</span>
+<span class="info">📧 Email: mamdouslaskar@protonmail.com</span>
+<span class="info">📱 Feel free to reach out through any of my social media profiles</span>
+<span class="info">💬 Or use 'send-message' command for direct contact</span>
+<span class="warning">Response time: Usually within 24-48 hours</span>`,
+            
+            skills: () => `<span class="success">Technical Skills</span>
+<span class="info">Languages:</span>     C/C++, Java, JavaScript, Python
+<span class="info">Frontend:</span>      HTML, CSS, React
+<span class="info">Backend:</span>       Node.js, Express, SpringBoot
+<span class="info">Database:</span>      MySQL, PostgreSQL, MongoDB
+<span class="info">Tools:</span>         Git, Docker, Linux, VS Code
+<span class="info">Currently Learning:</span> Data Structures and Algorithms`,
+
+            projects: () => {
+                let projectsHtml = '<span class="success">My Projects</span>\n';
+                projects.forEach((project, index) => {
+                    projectsHtml += `
+<div class="project-item">
+<div class="project-title">${index + 1}. ${project.name}</div>
+<div class="project-description">${project.description}</div>
+<div class="project-tech">Technologies: ${project.tech}</div>
+<div style="margin-top: 10px; display: flex; gap: 12px;">
+${project.github ? `<a href="${project.github}" target="_blank" style="color: #61afef; text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>` : ''}
+${project.live ? `<a href="${project.live}" target="_blank" style="color: #98c379; text-decoration: none;"><i class="fas fa-external-link-alt"></i> Live</a>` : ''}
+</div>
+</div>`;
+                });
+                return projectsHtml;
+            },
+
+            resume: () => `<span class="success">Resume/CV</span>
+<span class="info">📄 Full resume available in multiple formats:</span>
+<span class="info">• PDF: <a href="#" onclick="handleResumeRequest(); return false;" style="color: #61afef; cursor: pointer;">Request via email</a></span>
+<span class="info">• LinkedIn: <a href="https://linkedin.com/in/mamdouslaskar" target="_blank" style="color: #61afef;">View detailed profile</a></span>
+<span class="info">• GitHub: <a href="https://github.com/mamdous-usual" target="_blank" style="color: #61afef;">View projects and contributions</a></span>
+
+<span class="warning">Quick Summary:</span>
+<span class="output">Education: Bachelor of Computer Application (In Progress)
+Experience: Student projects, open source contributions
+Focus Areas: Web Development, Algorithm Design, System Architecture</span>`,
+
+            'send-message': () => {
+                openContactModal();
+                return '<span class="info">Opening message form...</span>';
+            },
+
+            history: () => {
+                if (commandHistory.length === 0) {
+                    return '<span class="warning">No commands in history</span>';
+                }
+                let historyHtml = '<span class="success">Command History:</span>\n';
+                commandHistory.forEach((cmd, index) => {
+                    historyHtml += `<span class="info">${index + 1}. ${cmd}</span>\n`;
+                });
+                return historyHtml;
+            },
+            
+            date: () => new Date().toLocaleString(),
+            
+            pwd: () => '/home/mamdous/portfolio',
+            
+            clear: () => {
+                output.innerHTML = '';
+                return '';
+            }
+        };
+        
+        function handleCatCommand(args) {
+            const filename = args[0];
+            const files = {
+                'about.txt': `Mamdous - Computer Science Student
+=====================================
+Computer Science student focused on technology and software development.
+Currently pursuing Bachelor's of Computer Application.
+Interested in solving problems and learning new technologies.`,
+                
+                'contact.txt': `Contact Information
+==================
+Name: Mamdous Laskar
+Email: mamdouslaskar@protonmail.com
+LinkedIn: linkedin.com/in/mamdouslaskar
+GitHub: github.com/mamdous-usual
+Twitter: @mamdouslaskar
+
+Preferred Contact Methods:
+1. Email (Professional inquiries)
+2. LinkedIn (Networking, opportunities)
+3. GitHub (Technical discussions)
+
+Available for:
+- Collaboration on projects
+- Internship opportunities
+- Technical discussions
+- Open source contributions
+- Mentorship and learning`,
+                
+                'resume.pdf': `[PDF Document - Resume]
+========================
+This is a binary file containing my detailed resume.
+ 
+Contents include:
+• Personal Information & Contact Details
+• Educational Background
+• Technical Skills & Proficiencies
+• Projects & Achievements
+• Relevant Coursework
+• Certifications & Training
+
+To access the full resume:
+• Use 'resume' command for online viewing options
+• Contact me directly for PDF copy
+• Visit LinkedIn profile for detailed information
+
+File size: ~200KB
+Last updated: ${new Date().toLocaleDateString()}
+Format: PDF (Portable Document Format)`,
+            };
+            
+            if (!filename) {
+                return '<span class="error">cat: missing file operand</span>\n<span class="info">Usage: cat &lt;filename&gt;</span>\n<span class="info">Available files: about.txt, contact.txt, resume.pdf</span>';
+            }
+            
+            if (files[filename]) {
+                return `<pre class="output">${files[filename]}</pre>`;
+            }
+            
+            return `<span class="error">cat: ${filename}: No such file or directory</span>\n<span class="info">Use 'ls' to see available files</span>`;
+        }
+        
+        function handleEchoCommand(args) {
+            return args.length > 0 ? args.join(' ') : '';
+        }
+
+        // Auto-complete functionality
+        function getMatchingCommands(input) {
+            const allCommands = Object.keys(commands).concat(['cat', 'echo']);
+            return allCommands.filter(cmd => cmd.toLowerCase().startsWith(input.toLowerCase()));
+        }
+
+        function showAutocomplete(matches) {
+            if (matches.length === 0) {
+                autocompleteDiv.style.display = 'none';
+                return;
+            }
+
+            autocompleteDiv.innerHTML = '';
+            matches.forEach(match => {
+                const div = document.createElement('div');
+                div.className = 'autocomplete-suggestion';
+                div.textContent = match;
+                div.onclick = () => {
+                    input.value = match;
+                    autocompleteDiv.style.display = 'none';
+                    input.focus();
+                };
+                autocompleteDiv.appendChild(div);
+            });
+            autocompleteDiv.style.display = 'block';
+        }
+
+        // Contact modal functions
+        function openContactModal() {
+            const modal = document.getElementById('contactModal');
+            modal.style.display = 'block';
+            // Focus first input after modal opens
+            setTimeout(() => {
+                document.getElementById('senderName').focus();
+            }, 100);
+        }
+
+        function closeContactModal() {
+            document.getElementById('contactModal').style.display = 'none';
+            // Return focus to terminal input
+            setTimeout(() => {
+                input.focus();
+            }, 100);
+        }
+
+        // About modal functions
+        function openAboutModal() {
+            const modal = document.getElementById('aboutModal');
+            modal.style.display = 'block';
+        }
+
+        function closeAboutModal() {
+            document.getElementById('aboutModal').style.display = 'none';
+            // Return focus to terminal input
+            setTimeout(() => {
+                input.focus();
+            }, 100);
+        }
+
+        // Handle resume request
+        function handleResumeRequest() {
+            const email = 'mamdouslaskar@protonmail.com';
+            const subject = 'Resume Request';
+            const body = 'Hello Mamdous,\n\nI would like to request a copy of your resume.\n\nThank you!';
+            
+            const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            // Try to open email client
+            try {
+                window.location.href = mailtoLink;
+                // Add success message to terminal
+                addOutput('<span class="success">Opening your email client...</span>');
+                addOutput('<span class="info">If it didn\'t work, please email: mamdouslaskar@protonmail.com with subject "Resume Request"</span>');
+            } catch (error) {
+                // Fallback if mailto doesn't work
+                copyToClipboard(email);
+                addOutput('<span class="warning">Email client not available. Email address copied to clipboard!</span>');
+                addOutput('<span class="info">Please email: mamdouslaskar@protonmail.com with subject "Resume Request"</span>');
+            }
+        }
+
+        // Copy email to clipboard as fallback
+        function copyToClipboard(text) {
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(text).catch(() => {
+                    // Fallback to older method
+                    fallbackCopyToClipboard(text);
+                });
+            } else {
+                fallbackCopyToClipboard(text);
+            }
+        }
+
+        function fallbackCopyToClipboard(text) {
+            const textArea = document.createElement('textarea');
+            textArea.value = text;
+            textArea.style.position = 'fixed';
+            textArea.style.left = '-999999px';
+            textArea.style.top = '-999999px';
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            try {
+                document.execCommand('copy');
+            } catch (err) {
+                console.error('Fallback: Could not copy text');
+            }
+            document.body.removeChild(textArea);
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const contactModal = document.getElementById('contactModal');
+            const aboutModal = document.getElementById('aboutModal');
+            if (event.target === contactModal) {
+                closeContactModal();
+            }
+            if (event.target === aboutModal) {
+                closeAboutModal();
+            }
+        }
+
+        // Handle contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('senderName').value;
+            const email = document.getElementById('senderEmail').value;
+            const subject = document.getElementById('messageSubject').value;
+            const message = document.getElementById('messageContent').value;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:mamdouslaskar@protonmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
+            
+            // Try to open email client
+            const emailOpened = tryOpenEmailClient(mailtoLink);
+            
+            if (emailOpened) {
+                // Show success message in terminal
+                addOutput('<span class="success">Message form submitted! Opening your email client...</span>');
+                addOutput('<span class="info">If your email client didn\'t open automatically, check below for manual options.</span>');
+            } else {
+                // Show fallback options
+                addOutput('<span class="warning">Email client not available. Here are your options:</span>');
+                addOutput(`<span class="info">📧 Send manually to: <strong>mamdouslaskar@protonmail.com</strong></span>`);
+                addOutput(`<span class="info">📝 Subject: <strong>${subject}</strong></span>`);
+                addOutput(`<span class="info">💬 Message: <strong>From ${name} (${email}): ${message}</strong></span>`);
+            }
+            
+            // Close modal and reset form
+            closeContactModal();
+            document.getElementById('contactForm').reset();
+        });
+
+        function tryOpenEmailClient(mailtoLink) {
+            try {
+                // Create a temporary link and click it
+                const tempLink = document.createElement('a');
+                tempLink.href = mailtoLink;
+                tempLink.style.display = 'none';
+                document.body.appendChild(tempLink);
+                
+                // Try to trigger the mailto
+                tempLink.click();
+                document.body.removeChild(tempLink);
+                
+                // Return true (we can't actually detect if it worked, but we tried)
+                return true;
+            } catch (error) {
+                console.error('Email client error:', error);
+                return false;
+            }
+        }
+        
+        function processCommand(command) {
+            const trimmedCommand = command.trim();
+            const parts = trimmedCommand.split(' ');
+            const cmd = parts[0].toLowerCase();
+            const args = parts.slice(1);
+            
+            // Check for exact multi-word commands first
+            if (commands[trimmedCommand]) {
+                return commands[trimmedCommand]();
+            }
+            
+            if (cmd === 'cat') {
+                return handleCatCommand(args);
+            }
+            
+            if (cmd === 'echo') {
+                return handleEchoCommand(args);
+            }
+            
+            if (commands[cmd]) {
+                return commands[cmd]();
+            }
+            
+            return `<span class="error">Command not found: ${cmd}</span>
+<span class="info">Type 'help' for available commands.</span>`;
+        }
+        
+        function addOutput(content, isCommand = false) {
+            const div = document.createElement('div');
+            div.className = 'output-line';
+            
+            if (isCommand) {
+                div.innerHTML = `<span class="prompt">visitor@localhost:~$</span> <span class="command">${content}</span>`;
+            } else {
+                div.innerHTML = content;
+            }
+            
+            output.appendChild(div);
+            
+            // Scroll the entire terminal window to show the latest content
+            const terminalWindow = document.querySelector('.terminal-window');
+            terminalWindow.scrollIntoView({ behavior: 'smooth', block: 'end' });
+            
+            // Also ensure the input is visible
+            document.getElementById('commandInput').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+        
+        input.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                const command = input.value.trim();
+                
+                if (command) {
+                    // Add to history
+                    commandHistory.push(command);
+                    historyIndex = commandHistory.length;
+                    
+                    addOutput(command, true);
+                    const result = processCommand(command);
+                    
+                    if (result) {
+                        addOutput(result);
+                    }
+                }
+                
+                input.value = '';
+                autocompleteDiv.style.display = 'none';
+            }
+            // Command history navigation
+            else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                if (historyIndex > 0) {
+                    historyIndex--;
+                    input.value = commandHistory[historyIndex];
+                }
+            }
+            else if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                if (historyIndex < commandHistory.length - 1) {
+                    historyIndex++;
+                    input.value = commandHistory[historyIndex];
+                } else {
+                    historyIndex = commandHistory.length;
+                    input.value = '';
+                }
+            }
+            // Tab completion
+            else if (e.key === 'Tab') {
+                e.preventDefault();
+                const currentInput = input.value.trim();
+                const matches = getMatchingCommands(currentInput);
+                
+                if (matches.length === 1) {
+                    input.value = matches[0];
+                } else if (matches.length > 1) {
+                    showAutocomplete(matches);
+                }
+            }
+        });
+
+        // Hide autocomplete when clicking elsewhere
+        input.addEventListener('input', (e) => {
+            const currentInput = e.target.value.trim();
+            if (currentInput === '') {
+                autocompleteDiv.style.display = 'none';
+            }
+        });
+
+        // Hide autocomplete when input loses focus
+        input.addEventListener('blur', () => {
+            setTimeout(() => {
+                autocompleteDiv.style.display = 'none';
+            }, 200);
+        });
+        
+        // Easter eggs and additional functionality
+        const easterEggs = {
+            'sudo rm -rf /': () => '<span class="error">Nice try! But you don\'t have root access here 😉</span>',
+            'exit': () => '<span class="warning">There is no escape from the matrix...</span>',
+            'matrix': () => '<span class="success">Wake up, Neo...</span>',
+            'coffee': () => '<span class="info">☕ Coffee.exe is brewing... Please wait</span>',
+            'hello': () => '<span class="success">Hello there! Type \'help\' to get started.</span>',
+            'vim': () => '<span class="error">Vim not found. This is a web terminal, not a full Linux environment!</span>',
+            'nano': () => '<span class="info">nano: command not found. Try \'cat\' to read files.</span>',
+            'cd': () => '<span class="warning">You\'re already in the right place!</span>',
+            'sudo': () => '<span class="error">sudo: You are not in the sudoers file. This incident will be reported to... no one.</span>',
+            'eggs': () => `<span class="success">🥚 Easter Egg Commands:</span>
+<span class="info">  sudo rm -rf /</span> - Try to delete everything
+<span class="info">  sudo</span>          - Request admin access
+<span class="info">  exit</span>          - Try to leave
+<span class="info">  matrix</span>        - Enter the matrix
+<span class="info">  coffee</span>        - Brew some coffee
+<span class="info">  hello</span>         - Say hi
+<span class="info">  vim</span>           - Open vim editor
+<span class="info">  nano</span>          - Open nano editor
+<span class="info">  cd</span>            - Change directory`
+        };
+        
+        // Extend commands with easter eggs
+        Object.assign(commands, easterEggs);
+        
+        // Loading Screen Animation
+        const loadingSequence = [
+            { text: '<span class="loading-system">SYSTEM INITIALIZATION</span>', delay: 100 },
+            { text: '<span class="loading-info">Loading core modules...</span>', delay: 200 },
+            { text: '<span class="loading-info">├─ Terminal Interface .................. </span><span class="loading-ok">[OK]</span>', delay: 300 },
+            { text: '<span class="loading-info">├─ Command Parser ...................... </span><span class="loading-ok">[OK]</span>', delay: 300 },
+            { text: '<span class="loading-info">├─ File System ......................... </span><span class="loading-ok">[OK]</span>', delay: 300 },
+            { text: '<span class="loading-info">└─ Network Stack ....................... </span><span class="loading-ok">[OK]</span>', delay: 300 },
+            { text: '', delay: 200 },
+            { text: '<span class="loading-system">Initializing portfolio data...</span>', delay: 300 },
+            { text: '<span class="loading-info">├─ Projects metadata ................... </span><span class="loading-ok">[OK]</span>', delay: 250 },
+            { text: '<span class="loading-info">├─ Skills database ..................... </span><span class="loading-ok">[OK]</span>', delay: 250 },
+            { text: '<span class="loading-info">└─ Contact information ................. </span><span class="loading-ok">[OK]</span>', delay: 250 },
+            { text: '', delay: 200 },
+            { text: '<span class="loading-warning">Establishing secure connection...</span>', delay: 300 },
+            { text: '<span class="loading-info">└─ WebSocket ready ..................... </span><span class="loading-ok">[OK]</span>', delay: 400 },
+            { text: '', delay: 200 },
+            { text: '<span class="loading-ok">✓ All systems operational</span>', delay: 300 },
+            { text: '<span class="loading-system">Starting terminal session...</span>', delay: 500 }
+        ];
+
+        function startLoadingSequence() {
+            const loadingText = document.getElementById('loadingText');
+            const progressBar = document.getElementById('progressBar');
+            const loadingPercentage = document.getElementById('loadingPercentage');
+            const loadingScreen = document.getElementById('loadingScreen');
+            
+            let currentLine = 0;
+            const totalLines = loadingSequence.length;
+            
+            function showNextLine() {
+                if (currentLine >= totalLines) {
+                    // Loading complete
+                    setTimeout(() => {
+                        loadingScreen.style.transition = 'opacity 0.8s ease';
+                        loadingScreen.style.opacity = '0';
+                        
+                        // Show terminal container
+                        const terminalContainer = document.querySelector('.terminal-container');
+                        terminalContainer.classList.add('loaded');
+                        
+                        setTimeout(() => {
+                            loadingScreen.style.display = 'none';
+                            // Focus the input field
+                            setTimeout(() => {
+                                input.focus();
+                            }, 300);
+                        }, 800);
+                    }, 500);
+                    return;
+                }
+                
+                const line = loadingSequence[currentLine];
+                const lineDiv = document.createElement('div');
+                lineDiv.className = 'loading-line';
+                lineDiv.innerHTML = line.text;
+                loadingText.appendChild(lineDiv);
+                
+                // Update progress
+                const progress = ((currentLine + 1) / totalLines) * 100;
+                progressBar.style.width = progress + '%';
+                loadingPercentage.textContent = Math.round(progress) + '%';
+                
+                currentLine++;
+                setTimeout(showNextLine, line.delay);
+            }
+            
+            showNextLine();
+        }
+
+        // Start loading sequence on page load
+        window.addEventListener('load', () => {
+            setTimeout(startLoadingSequence, 500);
+        });
+        
+        // Initial welcome message (removed, now in loading sequence)
+        // setTimeout(() => {
+        //     addOutput('<span class="info">Welcome! I\'m Mamdous, a Computer Science Student.</span>');
+        //     addOutput('<span class="info">Try typing \'help\' to explore or start with \'about\' to learn more about me.</span>');
+        // }, 1000);
+    </script>
+</body>
+</html>
