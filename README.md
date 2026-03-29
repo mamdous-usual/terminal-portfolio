@@ -8,7 +8,7 @@ A unique terminal-style personal portfolio website that simulates a Linux comman
 
 ## 📋 About
 
-This is my interactive terminal-themed portfolio website that showcases my profile as a Computer Science student. The site mimics a Linux terminal environment with a fully functional command-line interface, complete with ASCII art, terminal window styling, and interactive commands.
+This is my interactive terminal-themed portfolio website that showcases my profile as a Computer Science student. The site mimics a Linux terminal environment with a fully functional command-line interface, complete with ASCII art of TUX, terminal window styling, and interactive commands.
 
 ## 🛠️ Built With
 
