@@ -98,7 +98,7 @@ Inspired by Linux terminal Alacritty with One Dark Pro theme.
 **Mamdous Laskar**
 
 - 📧 Email: [mamdouslaskar@protonmail.com](mailto:mamdouslaskar@protonmail.com)
-- 💼 LinkedIn: [linkedin.com/in/mamdouslaskar](https://linkedin.com/in/mamdousahmedlaskar)
+- 💼 LinkedIn: [linkedin.com/in/mamdousahmedlaskar](https://linkedin.com/in/mamdousahmedlaskar)
 - 🐙 GitHub: [github.com/mamdous-usual](https://github.com/mamdous-usual)
 - 🐦 Twitter: [@mamdouslaskar](https://twitter.com/mamdouslaskar)
 
