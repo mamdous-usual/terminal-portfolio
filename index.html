@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Mamdous Ahmed Laskar – BCA Student & Aspiring Developer. Portfolio showcasing projects, skills, and contact information.">
+<meta name="description" content="Mamdous Ahmed Laskar – BCA Student & Developer. Portfolio showcasing projects, skills, and contact information.">
 <meta name="author" content="Mamdous Ahmed Laskar">
 <meta property="og:title" content="Mamdous Ahmed Laskar – Developer Portfolio">
 <meta property="og:description" content="BCA Student building things for the web. Projects, skills, and contact.">
@@ -78,47 +78,8 @@ body {
 }
 
 /* ── Loading Screen ── */
-#loading-screen {
-  position: fixed; inset: 0; z-index: 9999;
-  background: var(--bg);
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center;
-  padding: 2rem;
-  transition: opacity 0.5s ease;
-}
-#loading-screen.fade-out { opacity: 0; pointer-events: none; }
-
-.loader-code {
-  font-family: var(--mono);
-  font-size: clamp(11px, 2vw, 13px);
-  line-height: 1.9;
-  max-width: 480px; width: 100%;
-  margin-bottom: 2rem;
-}
-.lc-dim    { color: var(--muted); }
-.lc-key    { color: var(--accent); }
-.lc-val    { color: var(--green); }
-.lc-str    { color: var(--amber); }
-.lc-ok     { color: var(--green); font-weight: 700; }
-.lc-line   { opacity: 0; display: block; animation: fadeSlide 0.25s forwards; }
-@keyframes fadeSlide {
-  from { opacity: 0; transform: translateX(-12px); }
-  to   { opacity: 1; transform: translateX(0); }
-}
-
-.loader-bar-wrap {
-  max-width: 480px; width: 100%; height: 3px;
-  background: var(--border); border-radius: 2px; overflow: hidden;
-}
-.loader-bar {
-  height: 100%; width: 0; border-radius: 2px;
-  background: linear-gradient(90deg, var(--accent), var(--cyan));
-  transition: width 0.3s ease;
-}
-
 /* ── Page Layout ── */
-.page { opacity: 0; visibility: hidden; transition: opacity 0.5s ease; }
-.page.visible { opacity: 1; visibility: visible; }
+.page { opacity: 1; visibility: visible; }
 
 /* ── TOP NAV ── */
 nav {
@@ -679,12 +640,6 @@ footer {
 </head>
 <body>
 
-<!-- ── LOADING SCREEN ── -->
-<div id="loading-screen">
-  <div class="loader-code" id="loader-code"></div>
-  <div class="loader-bar-wrap"><div class="loader-bar" id="loader-bar"></div></div>
-</div>
-
 <!-- ── PAGE ── -->
 <div class="page" id="page">
 
@@ -725,7 +680,7 @@ footer {
     <h1 class="hero-name">
       Mamdous<br><span>Ahmed Laskar</span>
     </h1>
-    <p class="hero-title">BCA Student &amp; Aspiring Developer</p>
+    <p class="hero-title">BCA Student & Developer</p>
     <p class="hero-desc">
       Building for the web. Currently pursuing a Bachelor of Computer Applications at Karimganj College while creating real projects — from productivity tools to progressive web apps.
     </p>
@@ -762,9 +717,9 @@ footer {
   <div class="about-grid">
     <div class="about-card">
       <div class="about-card-title"><i class="fas fa-user" aria-hidden="true"></i> Who I am</div>
-      <p>I'm a <strong>second-semester BCA student</strong> from Assam, India with a genuine passion for building software. I learn by doing — most of what I know comes from building real projects and reading documentation.</p>
+      <p>I'm a <strong>second-semester BCA student</strong> from Assam, India who builds software by learning through real projects and documentation. I focus on web development, UI design, and solving practical problems with code.</p>
       <br>
-      <p>I'm interested in <strong>web development</strong>, clean UI design, and solving practical problems with code. I'm actively looking for internships and collaborative projects.</p>
+      <p>I actively solve <strong>Data Structures & Algorithms problems</strong> on platforms like <strong>GeeksforGeeks</strong>, <strong>LeetCode</strong>, and other coding platforms to strengthen my problem-solving skills.</p>
     </div>
     <div class="about-card">
       <div class="about-card-title"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Education</div>
@@ -819,8 +774,8 @@ footer {
     <div class="skill-group">
       <div class="skill-group-name">Currently learning</div>
       <div class="skill-pills">
-        <span class="skill-pill learning">Data Structures &amp; Algorithms</span>
-        <span class="skill-pill learning">System Design basics</span>
+        <span class="skill-pill learning">Advanced DSA</span>
+        <span class="skill-pill learning">Web development</span>
       </div>
     </div>
   </div>
@@ -999,43 +954,10 @@ document.addEventListener('click', e => {
 });
 
 /* ══════════════════════════════════════════
-   LOADING SCREEN
+   INITIALIZATION
 ══════════════════════════════════════════ */
-const loaderLines = [
-  { html: '<span style="color:#61afef;font-weight:700;">mamdous.me</span> — initializing...', delay: 60 },
-  { html: '  <span style="color:#7a7d8f;">loading</span> <span style="color:#e5c07b;">"about"</span>        <span style="color:#98c379;">✓</span>', delay: 120 },
-  { html: '  <span style="color:#7a7d8f;">loading</span> <span style="color:#e5c07b;">"projects"</span>     <span style="color:#98c379;">✓</span>', delay: 120 },
-  { html: '  <span style="color:#7a7d8f;">loading</span> <span style="color:#e5c07b;">"skills"</span>       <span style="color:#98c379;">✓</span>', delay: 120 },
-  { html: '  <span style="color:#7a7d8f;">loading</span> <span style="color:#e5c07b;">"contact"</span>      <span style="color:#98c379;">✓</span>', delay: 120 },
-  { html: '', delay: 80 },
-  { html: '<span style="color:#98c379;">ready. welcome.</span>', delay: 100 },
-];
-const loaderCode = document.getElementById('loader-code');
-const loaderBar  = document.getElementById('loader-bar');
-let li = 0;
-function showLoaderLine() {
-  if (li >= loaderLines.length) {
-    setTimeout(hideLoader, 280);
-    return;
-  }
-  const span = document.createElement('span');
-  span.className = 'lc-line';
-  span.style.animationDelay = '0ms';
-  span.innerHTML = loaderLines[li].html;
-  loaderCode.appendChild(span);
-  loaderBar.style.width = (((li + 1) / loaderLines.length) * 100) + '%';
-  li++;
-  setTimeout(showLoaderLine, loaderLines[li - 1].delay);
-}
-function hideLoader() {
-  const ls = document.getElementById('loading-screen');
-  ls.classList.add('fade-out');
-  document.getElementById('page').classList.add('visible');
-  setTimeout(() => ls.style.display = 'none', 500);
-  setupIntersectionObserver();
-  document.getElementById('term-input').focus();
-}
-setTimeout(showLoaderLine, 200);
+window.scrollTo(0, 0);
+setupIntersectionObserver();
 
 /* ══════════════════════════════════════════
    SCROLL ANIMATIONS
