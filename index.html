@@ -1,1437 +1,1271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Mamdous Ahmed Laskar - Computer Science Student. Interactive terminal-style portfolio showcasing programming projects, technical skills, and contact information.">
-    <meta name="keywords" content="Mamdous Ahmed Laskar, Computer Science, Software Developer, Portfolio, Terminal, Programming, Web Development, Student">
-    <meta name="author" content="Mamdous Ahmed Laskar">
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="EN">
-    <meta name="revisit-after" content="7 days">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Mamdous Ahmed Laskar - Computer Science Student Portfolio">
-    <meta property="og:description" content="Interactive terminal-style portfolio showcasing programming projects, technical skills, and contact information.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mamdous.me">
-    <meta property="og:image" content="https://mamdous.me/og-image.jpg">
-    <meta property="og:site_name" content="Mamdous Ahmed Laskar Portfolio">
-    <meta property="og:locale" content="en_US">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Mamdous Ahmed Laskar - Computer Science Student Portfolio">
-    <meta name="twitter:description" content="Interactive terminal-style portfolio showcasing programming projects, technical skills, and contact information.">
-    <meta name="twitter:image" content="https://mamdous.me/twitter-card.png">
-    <meta name="twitter:site" content="@mamdouslaskar">
-    <meta name="twitter:creator" content="@mamdouslaskar">
-    
-    <!-- Additional SEO -->
-    <link rel="canonical" href="https://mamdous.me">
-    <meta name="theme-color" content="#282c34">
-    <meta name="application-name" content="Mamdous Ahmed Laskar Portfolio">
-    
-    <!-- Performance and Cache Control -->
-    <meta http-equiv="Cache-Control" content="public, max-age=31536000">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Mamdous Ahmed Laskar">
-    
-    <!-- Security Headers -->
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="DENY">
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
-    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Permissions-Policy" content="accelerometer=(), autoplay=(), camera=(), cross-origin-isolated=(), display-capture=(), encrypted-media=(), fullscreen=(), geolocation=(), gyroscope=(), keyboard-map=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(), usb=(), web-share=(), xr-spatial-tracking=()">
-    
-    <title>Mamdous Ahmed Laskar</title>
-    
-    <!-- Preload critical fonts -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap"></noscript>
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
-    
-    <!-- DNS Prefetch for external domains -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-    
-    <!-- Preconnect to improve loading performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    
-    <!-- Load stylesheets with optimized font display -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
-    <!-- Terminal Icon Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHJ4PSI0IiBmaWxsPSIjMjEyNTJiIi8+CiAgPHJlY3QgeD0iMiIgeT0iMiIgd2lkdGg9IjI4IiBoZWlnaHQ9IjI4IiByeD0iMiIgZmlsbD0iIzI4MmMzNCIvPgogIDxyZWN0IHg9IjIiIHk9IjIiIHdpZHRoPSIyOCIgaGVpZ2h0PSI2IiBmaWxsPSIjMjEyNTJiIi8+CiAgPGNpcmNsZSBjeD0iNiIgY3k9IjUiIHI9IjEuNSIgZmlsbD0iI2UwNmM3NSIvPgogIDxjaXJjbGUgY3g9IjEwIiBjeT0iNSIgcj0iMS41IiBmaWxsPSIjZTVjMDdiIi8+CiAgPGNpcmNsZSBjeD0iMTQiIGN5PSI1IiByPSIxLjUiIGZpbGw9IiM5OGMzNzkiLz4KICA8dGV4dCB4PSI0IiB5PSIxNyIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSI4IiBmaWxsPSIjOThjMzc5Ij4kPC90ZXh0PgogIDx0ZXh0IHg9IjgiIHk9IjE3IiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjgiIGZpbGw9IiM2MWFmZWYiPmxzPC90ZXh0PgogIDx0ZXh0IHg9IjQiIHk9IjI1IiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjciIGZpbGw9IiNhYmIyYmYiPmhvbWUvPC90ZXh0Pgo8L3N2Zz4K">
-    <!-- Fallback PNG favicon for older browsers -->
-    <link rel="alternate icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAdgAAAHYBTnsmCAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAIoSURBVFiFtZc9axRBFMef2QQSCxsLwcLCQrGwsLBQsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLCwsLGwsLC">
-    
-    <!-- JSON-LD Structured Data for SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Mamdous Ahmed Laskar",
-        "jobTitle": "Computer Science Student",
-        "description": "Computer Science student focused on technology and software development",
-        "url": "https://mamdous.me",
-        "sameAs": [
-            "https://github.com/mamdous-usual",
-            "https://linkedin.com/in/mamdousahmedlaskar",
-            "https://x.com/mamdouslaskar"
-        ],
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "email": "mamdouslaskar@protonmail.com",
-            "contactType": "professional"
-        },
-        "knowsAbout": [
-            "Computer Science", "Software Development", "Web Development",
-            "Programming", "JavaScript", "Java", "Python", "C++"
-        ],
-        "alumniOf": {
-            "@type": "EducationalOrganization",
-            "name": "Computer Science Program"
-        }
-    }
-    </script>
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap');
-
-        @font-face {
-            font-family: 'JetBrains Mono';
-            font-display: swap;
-            src: local('JetBrains Mono'), local('JetBrainsMono-Regular');
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        html { scroll-behavior: smooth; }
-
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #21252b; }
-        ::-webkit-scrollbar-thumb { background: #3e4451; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #4b5263; }
-
-        html {
-            scrollbar-width: thin;
-            scrollbar-color: #3e4451 #21252b;
-        }
-
-        body {
-            font-family: 'JetBrains Mono', monospace;
-            background-color: #1a1d23;
-            color: #abb2bf;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        .terminal-container {
-            min-height: 100vh;
-            padding: clamp(10px, 3vw, 20px);
-            background: linear-gradient(135deg, #1a1d23 0%, #282c34 50%, #1e2227 100%);
-            background-size: 200% 200%;
-            animation: gradientShift 15s ease infinite;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.5s ease, visibility 0s 0.5s;
-        }
-
-        .terminal-container.loaded {
-            opacity: 1;
-            visibility: visible;
-            transition: opacity 0.5s ease, visibility 0s;
-        }
-
-        @keyframes gradientShift {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-        }
-
-        .terminal-window {
-            max-width: min(900px, 100%);
-            margin: 0 auto;
-            background: #282c34;
-            border-radius: clamp(6px, 2vw, 12px);
-            box-shadow: 
-                0 20px 60px rgba(0, 0, 0, 0.4),
-                0 0 0 1px rgba(97, 175, 239, 0.1),
-                inset 0 1px 0 rgba(255, 255, 255, 0.05);
-            border: 1px solid #3e4451;
-            overflow: hidden;
-            animation: slideIn 0.8s ease-out;
-            min-height: calc(100vh - clamp(20px, 6vw, 40px));
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .terminal-window:hover {
-            transform: translateY(-2px);
-            box-shadow: 
-                0 25px 70px rgba(0, 0, 0, 0.5),
-                0 0 0 1px rgba(97, 175, 239, 0.2),
-                inset 0 1px 0 rgba(255, 255, 255, 0.05);
-        }
-
-        @keyframes slideIn {
-            from { opacity: 0; transform: translateY(30px); }
-            to   { opacity: 1; transform: translateY(0); }
-        }
-
-        .terminal-header {
-            background: rgba(33, 37, 43, 0.95);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            padding: clamp(8px, 2vw, 12px) clamp(12px, 3vw, 16px);
-            display: flex;
-            align-items: center;
-            gap: clamp(6px, 1.5vw, 8px);
-            border-bottom: 1px solid rgba(97, 175, 239, 0.2);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .window-controls { display: flex; gap: 6px; }
-
-        .control {
-            width: 12px; height: 12px;
-            border-radius: 50%;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            position: relative;
-        }
-        .control:hover { transform: scale(1.1); box-shadow: 0 0 8px currentColor; }
-        .control:active { transform: scale(0.95); }
-        .close    { background: #e06c75; }
-        .minimize { background: #e5c07b; }
-        .maximize { background: #98c379; }
-
-        .terminal-title {
-            margin-left: 12px;
-            color: #61afef;
-            font-size: 13px;
-            font-weight: 500;
-            text-shadow: 0 0 10px rgba(97, 175, 239, 0.3);
-            letter-spacing: 0.5px;
-        }
-
-        /* ── Quick-access button bar (only addition) ── */
-        .quick-bar {
-            background: rgba(33, 37, 43, 0.6);
-            border-bottom: 1px solid rgba(97, 175, 239, 0.1);
-            padding: 7px clamp(12px, 3vw, 16px);
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            flex-wrap: wrap;
-            overflow-x: auto;
-        }
-
-        .quick-bar-label {
-            font-size: 10px;
-            color: #636d83;
-            margin-right: 4px;
-            white-space: nowrap;
-            flex-shrink: 0;
-            font-style: italic;
-        }
-
-        .qbtn {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 11px;
-            color: #636d83;
-            background: none;
-            border: 1px solid #3e4451;
-            border-radius: 3px;
-            padding: 3px 10px;
-            cursor: pointer;
-            transition: all 0.15s ease;
-            white-space: nowrap;
-            flex-shrink: 0;
-        }
-
-        .qbtn:hover {
-            border-color: #61afef;
-            color: #61afef;
-            background: rgba(97, 175, 239, 0.06);
-        }
-
-        .qbtn:active {
-            transform: scale(0.97);
-        }
-        /* ── end quick bar ── */
-
-        .terminal-content {
-            padding: clamp(16px, 4vw, 24px);
-            min-height: calc(60vh);
-            font-size: clamp(13px, 2.8vw, 15px);
-            overflow-y: visible;
-            padding-bottom: clamp(16px, 4vw, 24px);
-            line-height: 1.7;
-        }
-
-        #output { margin-bottom: 16px; }
-
-        .output-line {
-            margin-bottom: 8px;
-            animation: typeIn 0.5s ease-out;
-        }
-
-        @keyframes typeIn {
-            from { opacity: 0; transform: translateX(-10px); }
-            to   { opacity: 1; transform: translateX(0); }
-        }
-
-        .terminal-input::after {
-            content: '';
-            display: inline-block;
-            width: 8px; height: 16px;
-            background: #61afef;
-            margin-left: 2px;
-            animation: blink 1s step-end infinite;
-        }
-
-        @keyframes blink {
-            0%, 50% { opacity: 1; }
-            51%, 100% { opacity: 0; }
-        }
-
-        .prompt {
-            background: linear-gradient(135deg, #98c379 0%, #7cb668 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            font-weight: 600;
-            filter: drop-shadow(0 0 8px rgba(152, 195, 121, 0.3));
-        }
-
-        .command {
-            background: linear-gradient(135deg, #61afef 0%, #56b6c2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            font-weight: 600;
-            filter: drop-shadow(0 0 8px rgba(97, 175, 239, 0.3));
-        }
-
-        .output   { color: #c5cdd6; margin-left: 0; white-space: pre-wrap; line-height: 1.8; }
-        .error    { color: #e06c75; }
-        .success  { color: #98c379; }
-        .warning  { color: #e5c07b; }
-        .info     { color: #56b6c2; }
-
-        .social-icons {
-            display: flex;
-            gap: clamp(8px, 3vw, 16px);
-            margin: clamp(12px, 3vw, 16px) 0;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-        }
-
-        .social-icon {
-            color: #61afef;
-            font-size: clamp(16px, 4vw, 20px);
-            text-decoration: none;
-            padding: clamp(6px, 1.5vw, 8px);
-            border-radius: 6px;
-            background: rgba(97, 175, 239, 0.1);
-            transition: all 0.3s ease;
-            border: 1px solid transparent;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            white-space: nowrap;
-        }
-
-        .social-icon:hover {
-            background: rgba(97, 175, 239, 0.2);
-            border-color: #61afef;
-            transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 6px 20px rgba(97, 175, 239, 0.4);
-        }
-
-        .social-icon:active { transform: translateY(-1px) scale(1.02); }
-
-        .input-line {
-            display: flex;
-            align-items: center;
-            margin-top: 16px;
-        }
-
-        .terminal-input {
-            background: transparent;
-            border: none;
-            color: #abb2bf;
-            font-family: inherit;
-            font-size: clamp(12px, 2.5vw, 14px);
-            outline: none;
-            flex: 1;
-            margin-left: 8px;
-            min-width: 0;
-        }
-
-        .autocomplete-suggestions {
-            background: #21252b;
-            border: 1px solid #3e4451;
-            border-top: none;
-            max-height: 150px;
-            overflow-y: auto;
-            position: absolute;
-            width: calc(100% - 48px);
-            left: 24px;
-            z-index: 1000;
-        }
-
-        .autocomplete-suggestion {
-            padding: 6px 12px;
-            color: #abb2bf;
-            cursor: pointer;
-            font-size: clamp(11px, 2vw, 13px);
-        }
-
-        .autocomplete-suggestion:hover,
-        .autocomplete-suggestion.selected {
-            background: #3e4451;
-            color: #61afef;
-        }
-
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0; top: 0;
-            width: 100%; height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            animation: modalFadeIn 0.3s ease-out;
-        }
-
-        @keyframes modalFadeIn {
-            from { opacity: 0; }
-            to   { opacity: 1; }
-        }
-
-        .modal-content {
-            background-color: #282c34;
-            margin: 5% auto;
-            padding: 20px;
-            border: 1px solid #3e4451;
-            border-radius: 12px;
-            width: min(500px, 90%);
-            max-height: 80vh;
-            overflow-y: auto;
-        }
-
-        .modal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            border-bottom: 1px solid #3e4451;
-            padding-bottom: 10px;
-        }
-
-        .modal-title { color: #98c379; font-size: 18px; font-weight: 500; }
-
-        .close-modal {
-            color: #e06c75;
-            font-size: 24px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: opacity 0.2s;
-        }
-        .close-modal:hover { opacity: 0.8; }
-
-        .form-group { margin-bottom: 15px; }
-
-        .form-label { display: block; color: #61afef; margin-bottom: 5px; font-size: 14px; }
-
-        .form-input,
-        .form-textarea {
-            width: 100%;
-            padding: 10px;
-            background: #21252b;
-            border: 1px solid #3e4451;
-            border-radius: 6px;
-            color: #abb2bf;
-            font-family: inherit;
-            font-size: 14px;
-            pointer-events: auto;
-            z-index: inherit;
-        }
-
-        .form-textarea { min-height: 100px; resize: vertical; }
-
-        .form-input:focus,
-        .form-textarea:focus {
-            outline: none;
-            border-color: #61afef;
-            box-shadow: 0 0 0 2px rgba(97, 175, 239, 0.2);
-        }
-
-        .form-button {
-            background: #61afef;
-            color: #282c34;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 6px;
-            font-family: inherit;
-            font-size: 14px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        .form-button:hover { background: #4a9eff; transform: translateY(-1px); }
-
-        .ascii-art {
-            background: linear-gradient(135deg, #56b6c2 0%, #61afef 50%, #c678dd 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            background-size: 200% 200%;
-            animation: gradientFlow 8s ease infinite;
-            font-size: clamp(10px, 1.8vw, 14px);
-            line-height: 1.2;
-            margin: clamp(8px, 3vw, 16px) 0;
-            overflow-x: auto;
-            overflow-y: hidden;
-            white-space: pre;
-            font-weight: 500;
-            display: block;
-            width: fit-content;
-            max-width: 100%;
-            padding-bottom: 8px;
-        }
-
-        .ascii-art::-webkit-scrollbar { height: 8px; }
-        .ascii-art::-webkit-scrollbar-track { background: #21252b; border-radius: 4px; }
-        .ascii-art::-webkit-scrollbar-thumb { background: #61afef; border-radius: 4px; }
-        .ascii-art::-webkit-scrollbar-thumb:hover { background: #7ec0f7; }
-
-        @keyframes gradientFlow {
-            0%, 100% { background-position: 0% 50%; }
-            50%       { background-position: 100% 50%; }
-        }
-
-        .file-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 8px;
-            margin: 12px 0;
-        }
-
-        .file-item  { color: #e5c07b; padding: 4px 0; }
-        .directory  { color: #61afef; font-weight: 600; text-shadow: 0 0 10px rgba(97, 175, 239, 0.2); }
-        .executable { color: #98c379; font-weight: 600; text-shadow: 0 0 10px rgba(152, 195, 121, 0.2); }
-
-        .project-item {
-            margin-bottom: 20px;
-            padding: 15px;
-            background: linear-gradient(135deg, rgba(97, 175, 239, 0.08) 0%, rgba(97, 175, 239, 0.03) 100%);
-            border-radius: 8px;
-            border: 1px solid rgba(97, 175, 239, 0.2);
-            border-left: 3px solid #61afef;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(5px);
-        }
-
-        .project-item:hover {
-            transform: translateX(8px);
-            background: linear-gradient(135deg, rgba(97, 175, 239, 0.12) 0%, rgba(97, 175, 239, 0.05) 100%);
-            border-color: rgba(97, 175, 239, 0.4);
-            box-shadow: 0 4px 15px rgba(97, 175, 239, 0.2);
-        }
-
-        .project-title {
-            background: linear-gradient(135deg, #61afef 0%, #56b6c2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 8px;
-            letter-spacing: 0.3px;
-        }
-
-        .project-description { color: #c5cdd6; margin-bottom: 8px; line-height: 1.7; }
-
-        .project-tech {
-            color: #e5c07b;
-            font-size: 12px;
-            background: rgba(229, 192, 123, 0.1);
-            padding: 4px 8px;
-            border-radius: 4px;
-            display: inline-block;
-            border: 1px solid rgba(229, 192, 123, 0.2);
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .terminal-window { border-radius: 8px; min-height: calc(100vh - 20px); }
-            .file-list { grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); gap: 6px; }
-            .social-icons { justify-content: center; gap: 12px; }
-            .social-icon { font-size: 16px; padding: 6px 8px; }
-            .ascii-art { font-size: 9px; transform-origin: left top; }
-            .modal-content { margin: 10% auto; width: 95%; }
-            .quick-bar { padding: 6px 12px; }
-        }
-
-        @media (max-width: 480px) {
-            .terminal-container { padding: 8px; }
-            .terminal-window { border-radius: 6px; min-height: calc(100vh - 16px); }
-            .terminal-content { padding: 12px; font-size: 12px; }
-            .social-icon { font-size: 14px; padding: 4px 6px; gap: 4px; }
-            .ascii-art { font-size: 7px; margin: 8px 0; transform-origin: left top; }
-            .file-list { grid-template-columns: repeat(2, 1fr); gap: 4px; font-size: 11px; }
-            .input-line { flex-wrap: wrap; gap: 4px; }
-            .prompt { font-size: 11px; }
-            .qbtn { font-size: 10px; padding: 2px 7px; }
-        }
-
-        @media (max-width: 320px) {
-            .ascii-art { font-size: 6px; transform-origin: left top; margin: 6px 0; }
-            .social-icons { gap: 8px; }
-            .social-icon { font-size: 12px; padding: 3px 5px; }
-        }
-
-        .help-section { margin: 16px 0; }
-
-        .help-command {
-            background: linear-gradient(135deg, #e5c07b 0%, #d19a66 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            font-weight: 600;
-            letter-spacing: 0.3px;
-        }
-
-        .help-description {
-            color: #c5cdd6;
-            margin-left: 16px;
-            margin-bottom: 8px;
-            padding-left: 12px;
-            border-left: 2px solid rgba(97, 175, 239, 0.2);
-        }
-
-        /* Loading Screen */
-        #loadingScreen {
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: linear-gradient(135deg, #1a1d23 0%, #282c34 50%, #1e2227 100%);
-            z-index: 10000;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            animation: fadeIn 0.5s ease-out;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to   { opacity: 1; }
-        }
-
-        #loadingContent { max-width: 600px; width: 100%; text-align: left; }
-
-        #loadingText {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: clamp(12px, 2.5vw, 14px);
-            line-height: 1.8;
-            margin-bottom: 30px;
-            min-height: 200px;
-        }
-
-        .loading-line {
-            margin-bottom: 8px;
-            opacity: 0;
-            animation: lineAppear 0.3s ease-out forwards;
-        }
-
-        @keyframes lineAppear {
-            from { opacity: 0; transform: translateX(-20px); }
-            to   { opacity: 1; transform: translateX(0); }
-        }
-
-        .loading-system  { color: #61afef; font-weight: 600; }
-        .loading-ok      { color: #98c379; font-weight: 600; }
-        .loading-info    { color: #56b6c2; }
-        .loading-warning { color: #e5c07b; }
-
-        .progress-container {
-            width: 100%; height: 6px;
-            background: rgba(62, 68, 81, 0.5);
-            border-radius: 10px;
-            overflow: hidden;
-            margin-top: 20px;
-            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .progress-bar {
-            height: 100%;
-            background: linear-gradient(90deg, #61afef, #56b6c2, #98c379);
-            background-size: 200% 100%;
-            border-radius: 10px;
-            width: 0%;
-            transition: width 0.3s ease;
-            animation: progressShimmer 2s linear infinite;
-            box-shadow: 0 0 10px rgba(97, 175, 239, 0.5);
-        }
-
-        @keyframes progressShimmer {
-            0%   { background-position: 0% 50%; }
-            100% { background-position: 200% 50%; }
-        }
-
-        .loading-percentage {
-            text-align: center;
-            margin-top: 10px;
-            font-size: 14px;
-            background: linear-gradient(90deg, #61afef, #98c379);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            font-weight: 600;
-        }
-
-        /* About Modal */
-        .about-modal .modal-content { max-width: 420px; text-align: center; padding: 30px; }
-
-        .profile-card { display: flex; flex-direction: column; align-items: center; gap: 20px; }
-
-        .profile-photo {
-            width: 150px; height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            object-position: center top;
-            border: 3px solid #61afef;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            image-rendering: -webkit-optimize-contrast;
-            image-rendering: crisp-edges;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-            transform: translateZ(0);
-        }
-
-        .profile-photo:hover { transform: scale(1.05) translateZ(0); box-shadow: 0 6px 25px rgba(97, 175, 239, 0.4); }
-
-        .profile-name {
-            font-size: 24px; font-weight: 600;
-            background: linear-gradient(135deg, #61afef 0%, #56b6c2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin: 0;
-        }
-
-        .profile-title { color: #98c379; font-size: 14px; margin-top: -10px; }
-        .profile-bio   { color: #abb2bf; font-size: 13px; line-height: 1.6; max-width: 350px; }
-
-        .profile-section {
-            width: 100%; text-align: left;
-            padding: 15px;
-            background: rgba(97, 175, 239, 0.05);
-            border-radius: 8px;
-            border: 1px solid rgba(97, 175, 239, 0.1);
-        }
-
-        .profile-section-title {
-            color: #e5c07b; font-size: 12px;
-            text-transform: uppercase; letter-spacing: 1px;
-            margin-bottom: 10px;
-            display: flex; align-items: center; gap: 8px;
-        }
-
-        .profile-section-content { color: #c5cdd6; font-size: 13px; line-height: 1.6; }
-        .education-item { margin-bottom: 8px; }
-        .education-degree { color: #61afef; font-weight: 500; }
-        .education-school { color: #abb2bf; font-size: 12px; }
-
-        .profile-social-links {
-            display: flex; justify-content: center;
-            gap: 12px; flex-wrap: wrap; margin-top: 10px;
-        }
-
-        .profile-social-link {
-            display: flex; align-items: center; justify-content: center;
-            width: 40px; height: 40px;
-            border-radius: 50%;
-            background: rgba(97, 175, 239, 0.1);
-            color: #61afef;
-            text-decoration: none; font-size: 18px;
-            transition: all 0.3s ease;
-            border: 1px solid transparent;
-        }
-
-        .profile-social-link:hover {
-            background: rgba(97, 175, 239, 0.2);
-            border-color: #61afef;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(97, 175, 239, 0.3);
-        }
-
-        .profile-social-link.github:hover  { color: #fff; background: #333; }
-        .profile-social-link.linkedin:hover{ color: #fff; background: #0077b5; }
-        .profile-social-link.twitter:hover { color: #fff; background: #1da1f2; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mamdous Ahmed Laskar – BCA Student & Aspiring Developer. Portfolio showcasing projects, skills, and contact information.">
+<meta name="author" content="Mamdous Ahmed Laskar">
+<meta property="og:title" content="Mamdous Ahmed Laskar – Developer Portfolio">
+<meta property="og:description" content="BCA Student building things for the web. Projects, skills, and contact.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mamdous.me">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://mamdous.me">
+<meta name="theme-color" content="#0f1117">
+<title>Mamdous Ahmed Laskar</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHJ4PSI0IiBmaWxsPSIjMjEyNTJiIi8+CiAgPHJlY3QgeD0iMiIgeT0iMiIgd2lkdGg9IjI4IiBoZWlnaHQ9IjI4IiByeD0iMiIgZmlsbD0iIzI4MmMzNCIvPgogIDxyZWN0IHg9IjIiIHk9IjIiIHdpZHRoPSIyOCIgaGVpZ2h0PSI2IiBmaWxsPSIjMjEyNTJiIi8+CiAgPGNpcmNsZSBjeD0iNiIgY3k9IjUiIHI9IjEuNSIgZmlsbD0iI2UwNmM3NSIvPgogIDxjaXJjbGUgY3g9IjEwIiBjeT0iNSIgcj0iMS41IiBmaWxsPSIjZTVjMDdiIi8+CiAgPGNpcmNsZSBjeD0iMTQiIGN5PSI1IiByPSIxLjUiIGZpbGw9IiM5OGMzNzkiLz4KICA8dGV4dCB4PSI0IiB5PSIxNyIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSI4IiBmaWxsPSIjOThjMzc5Ij4kPC90ZXh0PgogIDx0ZXh0IHg9IjgiIHk9IjE3IiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjgiIGZpbGw9IiM2MWFmZWYiPmxzPC90ZXh0PgogIDx0ZXh0IHg9IjQiIHk9IjI1IiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjciIGZpbGw9IiNhYmIyYmYiPmhvbWUvPC90ZXh0Pgo8L3N2Zz4K">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mamdous Ahmed Laskar",
+  "jobTitle": "Computer Science Student",
+  "url": "https://mamdous.me",
+  "sameAs": [
+    "https://github.com/mamdous-usual",
+    "https://linkedin.com/in/mamdousahmedlaskar",
+    "https://x.com/mamdouslaskar"
+  ],
+  "contactPoint": { "@type": "ContactPoint", "email": "mamdouslaskar@protonmail.com" }
+}
+</script>
+
+<style>
+/* ── Reset & Base ── */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0f1117; }
+::-webkit-scrollbar-thumb { background: #2a2d3a; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #3a3d4a; }
+
+/* ── Tokens ── */
+:root {
+  --bg:       #0f1117;
+  --surface:  #161820;
+  --surface2: #1d1f2b;
+  --border:   #2a2d3a;
+  --border2:  #3a3d4a;
+  --text:     #e2e4ed;
+  --muted:    #7a7d8f;
+  --accent:   #61afef;
+  --green:    #98c379;
+  --amber:    #e5c07b;
+  --red:      #e06c75;
+  --purple:   #c678dd;
+  --cyan:     #56b6c2;
+  --mono: 'JetBrains Mono', monospace;
+  --sans: 'Inter', sans-serif;
+  --radius: 10px;
+  --radius-sm: 6px;
+}
+
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* ── Loading Screen ── */
+#loading-screen {
+  position: fixed; inset: 0; z-index: 9999;
+  background: var(--bg);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 2rem;
+  transition: opacity 0.5s ease;
+}
+#loading-screen.fade-out { opacity: 0; pointer-events: none; }
+
+.loader-code {
+  font-family: var(--mono);
+  font-size: clamp(11px, 2vw, 13px);
+  line-height: 1.9;
+  max-width: 480px; width: 100%;
+  margin-bottom: 2rem;
+}
+.lc-dim    { color: var(--muted); }
+.lc-key    { color: var(--accent); }
+.lc-val    { color: var(--green); }
+.lc-str    { color: var(--amber); }
+.lc-ok     { color: var(--green); font-weight: 700; }
+.lc-line   { opacity: 0; display: block; animation: fadeSlide 0.25s forwards; }
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateX(-12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.loader-bar-wrap {
+  max-width: 480px; width: 100%; height: 3px;
+  background: var(--border); border-radius: 2px; overflow: hidden;
+}
+.loader-bar {
+  height: 100%; width: 0; border-radius: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--cyan));
+  transition: width 0.3s ease;
+}
+
+/* ── Page Layout ── */
+.page { opacity: 0; visibility: hidden; transition: opacity 0.5s ease; }
+.page.visible { opacity: 1; visibility: visible; }
+
+/* ── TOP NAV ── */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(15, 17, 23, 0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 max(1.5rem, calc((100% - 860px) / 2));
+  display: flex; align-items: center; justify-content: space-between;
+  height: 56px;
+}
+.nav-logo {
+  font-family: var(--mono);
+  font-size: 14px; font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+  display: flex; align-items: center; gap: 6px;
+}
+.nav-logo .prompt-char { color: var(--green); }
+
+.nav-links {
+  display: flex; gap: 4px; align-items: center;
+  list-style: none;
+}
+.nav-links a {
+  font-family: var(--mono);
+  font-size: 12px; color: var(--muted);
+  text-decoration: none; padding: 5px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  transition: all 0.15s;
+}
+.nav-links a:hover {
+  color: var(--accent);
+  border-color: var(--border2);
+  background: var(--surface);
+}
+.nav-cta {
+  font-family: var(--mono);
+  font-size: 12px; font-weight: 700;
+  color: var(--bg) !important;
+  background: var(--accent) !important;
+  border: none !important; padding: 6px 14px !important;
+  border-radius: var(--radius-sm) !important;
+}
+.nav-cta:hover { opacity: 0.88 !important; background: var(--accent) !important; }
+
+/* ── Main Container ── */
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 max(1.5rem, 16px);
+}
+
+/* ── Section ── */
+section { padding: 4rem 0; border-bottom: 1px solid var(--border); }
+section:last-of-type { border-bottom: none; }
+
+.section-label {
+  font-family: var(--mono);
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 1.75rem;
+  display: flex; align-items: center; gap: 10px;
+}
+.section-label::after {
+  content: '';
+  flex: 1; height: 1px; background: var(--border);
+  display: block;
+}
+
+/* ── HERO ── */
+#hero {
+  padding: 5rem 0 4rem;
+  display: grid;
+  grid-template-columns: 1fr 160px;
+  gap: 2rem; align-items: start;
+  border-bottom: 1px solid var(--border);
+}
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--mono); font-size: 11px;
+  color: var(--green); background: rgba(152,195,121,0.1);
+  border: 1px solid rgba(152,195,121,0.25);
+  padding: 4px 10px; border-radius: 20px;
+  margin-bottom: 1.25rem;
+}
+.hero-badge-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--green);
+  animation: pulse 2s ease infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.8); }
+}
+
+.hero-name {
+  font-family: var(--mono);
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 700; line-height: 1.1;
+  color: var(--text); margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+}
+.hero-name span { color: var(--accent); }
+
+.hero-title {
+  font-size: 1.1rem; color: var(--muted);
+  font-weight: 400; margin-bottom: 1.25rem;
+}
+
+.hero-desc {
+  font-size: 0.95rem; color: var(--muted);
+  max-width: 460px; line-height: 1.75;
+  margin-bottom: 2rem;
+}
+
+.hero-actions {
+  display: flex; gap: 10px; flex-wrap: wrap;
+}
+.btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-family: var(--mono); font-size: 13px; font-weight: 700;
+  padding: 9px 20px; border-radius: var(--radius-sm);
+  text-decoration: none; cursor: pointer;
+  transition: all 0.15s ease; border: 1px solid;
+  white-space: nowrap;
+}
+.btn-primary {
+  background: var(--accent); color: var(--bg);
+  border-color: var(--accent);
+}
+.btn-primary:hover { opacity: 0.88; transform: translateY(-1px); }
+.btn-outline {
+  background: transparent; color: var(--accent);
+  border-color: var(--border2);
+}
+.btn-outline:hover { border-color: var(--accent); background: rgba(97,175,239,0.06); transform: translateY(-1px); }
+
+.hero-avatar-wrap {
+  display: flex; flex-direction: column; align-items: center; gap: 1rem;
+}
+.hero-avatar {
+  width: 140px; height: 140px; border-radius: 50%;
+  border: 2px solid var(--accent);
+  object-fit: cover; object-position: center top;
+  box-shadow: 0 0 0 4px rgba(97,175,239,0.12);
+  display: block;
+}
+.hero-avatar-placeholder {
+  width: 140px; height: 140px; border-radius: 50%;
+  border: 2px solid var(--accent);
+  background: var(--surface2);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 0 0 4px rgba(97,175,239,0.12);
+}
+.hero-avatar-placeholder i { font-size: 48px; color: var(--muted); }
+
+.hero-social {
+  display: flex; gap: 8px;
+}
+.hero-social a {
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; color: var(--muted);
+  border: 1px solid var(--border);
+  text-decoration: none;
+  transition: all 0.15s;
+}
+.hero-social a:hover { color: var(--accent); border-color: var(--accent); background: rgba(97,175,239,0.08); }
+
+/* ── INFO STRIPS ── */
+.info-strips {
+  display: flex; gap: 12px; flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+.info-strip {
+  display: flex; align-items: center; gap: 7px;
+  font-size: 12px; color: var(--muted);
+  font-family: var(--mono);
+}
+.info-strip i { color: var(--accent); font-size: 13px; }
+
+/* ── ABOUT ── */
+.about-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.about-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+}
+.about-card-title {
+  font-family: var(--mono); font-size: 11px;
+  color: var(--accent); font-weight: 700;
+  letter-spacing: 1px; text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  display: flex; align-items: center; gap: 8px;
+}
+.about-card-title i { font-size: 14px; }
+.about-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.75; }
+.about-card strong { color: var(--text); font-weight: 500; }
+
+.edu-item { margin-bottom: 0.75rem; }
+.edu-degree { font-size: 0.9rem; color: var(--text); font-weight: 500; }
+.edu-school { font-size: 0.82rem; color: var(--muted); margin-top: 2px; }
+.edu-year {
+  display: inline-block; margin-top: 4px;
+  font-family: var(--mono); font-size: 10px;
+  color: var(--amber); background: rgba(229,192,123,0.1);
+  border: 1px solid rgba(229,192,123,0.2);
+  padding: 2px 8px; border-radius: 20px;
+}
+
+/* ── SKILLS ── */
+.skills-layout { display: flex; flex-direction: column; gap: 1.5rem; }
+.skill-group { }
+.skill-group-name {
+  font-family: var(--mono); font-size: 11px; font-weight: 700;
+  color: var(--muted); letter-spacing: 1.2px; text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+.skill-pills { display: flex; flex-wrap: wrap; gap: 7px; }
+.skill-pill {
+  font-family: var(--mono); font-size: 12px;
+  padding: 5px 12px; border-radius: 20px;
+  border: 1px solid var(--border2);
+  color: var(--text); background: var(--surface);
+  transition: all 0.15s;
+}
+.skill-pill:hover { border-color: var(--accent); color: var(--accent); background: rgba(97,175,239,0.06); }
+.skill-pill.learning {
+  color: var(--amber); border-color: rgba(229,192,123,0.3);
+  background: rgba(229,192,123,0.06);
+}
+
+/* ── PROJECTS ── */
+.projects-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+  position: relative; overflow: hidden;
+  display: flex; flex-direction: column;
+}
+.project-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--cyan));
+  transform: scaleX(0); transform-origin: left;
+  transition: transform 0.25s ease;
+}
+.project-card:hover {
+  border-color: var(--border2);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+}
+.project-card:hover::before { transform: scaleX(1); }
+
+.project-number {
+  font-family: var(--mono); font-size: 10px;
+  color: var(--muted); margin-bottom: 0.75rem;
+}
+.project-name {
+  font-weight: 600; font-size: 1rem;
+  color: var(--text); margin-bottom: 0.6rem;
+}
+.project-desc {
+  font-size: 0.875rem; color: var(--muted);
+  line-height: 1.7; flex: 1; margin-bottom: 1rem;
+}
+.project-tech {
+  display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 1.25rem;
+}
+.tech-tag {
+  font-family: var(--mono); font-size: 10px;
+  color: var(--amber); background: rgba(229,192,123,0.08);
+  border: 1px solid rgba(229,192,123,0.2);
+  padding: 2px 8px; border-radius: 4px;
+}
+.project-links { display: flex; gap: 10px; }
+.project-link {
+  font-family: var(--mono); font-size: 11px;
+  color: var(--muted); text-decoration: none;
+  display: flex; align-items: center; gap: 5px;
+  transition: color 0.15s;
+}
+.project-link:hover { color: var(--accent); }
+.project-link i { font-size: 12px; }
+
+/* ── CONTACT ── */
+.contact-layout {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 2rem; align-items: start;
+}
+
+.contact-info { display: flex; flex-direction: column; gap: 1rem; }
+.contact-item {
+  display: flex; align-items: center; gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: all 0.15s;
+}
+.contact-item:hover { border-color: var(--accent); background: rgba(97,175,239,0.04); }
+.contact-icon {
+  width: 38px; height: 38px; border-radius: 8px;
+  background: rgba(97,175,239,0.1);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; color: var(--accent); flex-shrink: 0;
+}
+.contact-label { font-size: 11px; color: var(--muted); margin-bottom: 2px; }
+.contact-value { font-family: var(--mono); font-size: 13px; color: var(--text); }
+
+/* Contact form */
+.contact-form { display: flex; flex-direction: column; gap: 12px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.field { display: flex; flex-direction: column; gap: 5px; }
+.field label {
+  font-family: var(--mono); font-size: 11px;
+  color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px;
+}
+.field input, .field textarea {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 9px 12px;
+  color: var(--text);
+  font-family: var(--sans); font-size: 14px;
+  outline: none; transition: border-color 0.15s;
+  resize: vertical;
+}
+.field input:focus, .field textarea:focus { border-color: var(--accent); }
+.field input::placeholder, .field textarea::placeholder { color: var(--border2); }
+.field textarea { min-height: 100px; }
+
+/* ── TERMINAL SECTION ── */
+.terminal-wrapper {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.terminal-topbar {
+  background: #1a1d25;
+  padding: 10px 16px;
+  display: flex; align-items: center; gap: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.dot { width: 11px; height: 11px; border-radius: 50%; }
+.dot-red    { background: #e06c75; }
+.dot-amber  { background: #e5c07b; }
+.dot-green  { background: #98c379; }
+.terminal-bar-title {
+  font-family: var(--mono); font-size: 12px;
+  color: var(--muted); margin-left: 8px;
+}
+.terminal-hint {
+  font-family: var(--mono); font-size: 11px;
+  color: var(--muted); margin-left: auto;
+  background: var(--surface2); border: 1px solid var(--border);
+  padding: 2px 8px; border-radius: 4px;
+}
+
+.terminal-body { padding: 1.25rem 1.5rem; min-height: 200px; }
+#term-output { margin-bottom: 1rem; }
+.term-line { font-family: var(--mono); font-size: 13px; line-height: 1.8; margin-bottom: 2px; }
+.term-prompt-char { color: var(--green); font-weight: 700; }
+.term-cmd-text { color: var(--accent); }
+.term-out { color: var(--muted); white-space: pre-wrap; }
+.term-out a { color: var(--accent); text-decoration: none; }
+.term-out a:hover { text-decoration: underline; }
+.term-error { color: var(--red); }
+.term-success { color: var(--green); }
+.term-info { color: var(--cyan); }
+.term-warn { color: var(--amber); }
+
+.terminal-input-row {
+  display: flex; align-items: center; gap: 8px;
+  border-top: 1px solid var(--border); padding-top: 12px;
+}
+.terminal-prompt { font-family: var(--mono); font-size: 13px; color: var(--green); font-weight: 700; white-space: nowrap; }
+#term-input {
+  background: transparent; border: none; outline: none;
+  font-family: var(--mono); font-size: 13px;
+  color: var(--text); flex: 1; caret-color: var(--accent);
+}
+.cursor-blink {
+  display: inline-block; width: 7px; height: 14px;
+  background: var(--accent); animation: blink 1s step-end infinite;
+  vertical-align: -2px;
+}
+@keyframes blink { 0%,50%{opacity:1} 51%,100%{opacity:0} }
+
+/* ── FOOTER ── */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem max(1.5rem, calc((100% - 860px) / 2));
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 1rem;
+}
+.footer-mono { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.footer-mono span { color: var(--accent); }
+.footer-links { display: flex; gap: 16px; }
+.footer-links a { font-size: 13px; color: var(--muted); text-decoration: none; transition: color 0.15s; }
+.footer-links a:hover { color: var(--accent); }
+
+/* ── Autocomplete ── */
+.autocomplete-box {
+  position: absolute; bottom: 100%; left: 0; right: 0;
+  background: var(--surface2); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); margin-bottom: 4px;
+  overflow: hidden; display: none;
+  z-index: 10;
+}
+.autocomplete-box.open { display: block; }
+.ac-item {
+  font-family: var(--mono); font-size: 12px;
+  padding: 7px 12px; color: var(--muted); cursor: pointer;
+  transition: all 0.1s;
+}
+.ac-item:hover, .ac-item.active { background: var(--surface); color: var(--accent); }
+.terminal-input-wrap { position: relative; flex: 1; display: flex; align-items: center; }
+
+/* ── Responsive ── */
+/* ── Hamburger button (hidden on desktop) ── */
+.nav-hamburger {
+  display: none;
+  background: none; border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--muted); cursor: pointer;
+  width: 36px; height: 36px;
+  align-items: center; justify-content: center;
+  font-size: 18px; transition: all 0.15s;
+}
+.nav-hamburger:hover { color: var(--accent); border-color: var(--accent); }
+
+/* ── Mobile nav drawer ── */
+.mobile-nav {
+  display: none;
+  position: fixed; top: 56px; left: 0; right: 0;
+  background: rgba(15,17,23,0.98);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem;
+  z-index: 99;
+  flex-direction: column; gap: 4px;
+}
+.mobile-nav.open { display: flex; }
+.mobile-nav a {
+  font-family: var(--mono); font-size: 14px;
+  color: var(--muted); text-decoration: none;
+  padding: 10px 14px; border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  transition: all 0.15s;
+}
+.mobile-nav a:hover { color: var(--accent); border-color: var(--border); background: var(--surface); }
+.mobile-nav .nav-cta {
+  color: var(--bg) !important; background: var(--accent) !important;
+  border-color: var(--accent) !important; text-align: center; margin-top: 4px;
+}
+
+/* ── Tablet (900px) ── */
+@media (max-width: 900px) {
+  main { padding: 0 1.25rem; }
+  nav { padding: 0 1.25rem; }
+}
+
+/* ── Tablet (768px) ── */
+@media (max-width: 768px) {
+  main { padding: 0 1rem; }
+  nav { padding: 0 1rem; }
+
+  #hero {
+    grid-template-columns: 1fr;
+    padding: 3rem 0;
+    gap: 1.5rem;
+  }
+  .hero-avatar-wrap {
+    flex-direction: row;
+    justify-content: flex-start;
+    order: -1;
+    gap: 1rem;
+  }
+  .hero-avatar, .hero-avatar-placeholder { width: 90px; height: 90px; }
+  .hero-avatar-placeholder i { font-size: 32px; }
+  .hero-social { flex-direction: row; }
+
+  .hero-name { font-size: clamp(1.75rem, 6vw, 2.5rem); }
+  .about-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .projects-grid { grid-template-columns: 1fr 1fr; }
+  .contact-layout { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr 1fr; }
+  section { padding: 3rem 0; }
+}
+
+/* ── Mobile (600px) ── */
+@media (max-width: 600px) {
+  .nav-links { display: none; }
+  .nav-hamburger { display: flex; }
+
+  #hero {
+    grid-template-columns: 1fr;
+    padding: 2rem 0 2.5rem;
+    gap: 1rem;
+  }
+  .hero-avatar, .hero-avatar-placeholder { width: 76px; height: 76px; }
+  .hero-avatar-placeholder i { font-size: 26px; }
+  .hero-social a { width: 28px; height: 28px; font-size: 12px; }
+  .hero-name { font-size: clamp(1.5rem, 7vw, 2rem); }
+  .hero-desc { font-size: 0.88rem; }
+  .hero-actions { gap: 8px; }
+  .btn { font-size: 12px; padding: 8px 14px; }
+  .info-strips { gap: 8px; }
+  .info-strip { font-size: 11px; }
+
+  .projects-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .contact-layout { grid-template-columns: 1fr; }
+  section { padding: 2.5rem 0; }
+  .section-label { font-size: 10px; }
+  .terminal-body { padding: 1rem; }
+  .terminal-prompt { font-size: 11px; }
+  #term-input { font-size: 12px; }
+}
+
+/* ── Small phones (400px) ── */
+@media (max-width: 400px) {
+  main { padding: 0 0.75rem; }
+  .hero-name { font-size: 1.4rem; }
+  .hero-actions { flex-direction: column; }
+  .btn { width: 100%; justify-content: center; font-size: 12px; }
+  .hero-badge { font-size: 10px; }
+  .skill-pill { font-size: 11px; padding: 4px 10px; }
+  .contact-value { font-size: 11px; }
+  footer { flex-direction: column; gap: 0.75rem; }
+  .footer-links { gap: 12px; }
+  .about-card { padding: 1rem; }
+  .project-card { padding: 1rem; }
+}
+
+/* ── Entrance animations ── */
+.fade-in {
+  opacity: 0; transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fade-in.visible { opacity: 1; transform: none; }
+</style>
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div id="loadingScreen">
-        <div id="loadingContent">
-            <div id="loadingText"></div>
-            <div class="progress-container">
-                <div class="progress-bar" id="progressBar"></div>
-            </div>
-            <div class="loading-percentage" id="loadingPercentage">0%</div>
-        </div>
-    </div>
 
-    <!-- About Modal -->
-    <div id="aboutModal" class="modal about-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title">About Me</h2>
-                <span class="close-modal" onclick="closeAboutModal()">&times;</span>
-            </div>
-            <div class="profile-card">
-                <img src="Images/professional%20profile.jpg" alt="Mamdous Ahmed Laskar" class="profile-photo">
-                <h1 class="profile-name">Mamdous Ahmed Laskar</h1>
-                <p class="profile-title">Computer Science Student</p>
-                <p class="profile-bio">BCA student learning programming and exploring technology.</p>
-                
-                <div class="profile-section">
-                    <div class="profile-section-title">
-                        <i class="fas fa-graduation-cap"></i> Education
-                    </div>
-                    <div class="profile-section-content">
-                        <div class="education-item">
-                            <div class="education-degree">Bachelor of Computer Application (BCA)</div>
-                            <div class="education-school">Karimganj College, Assam University</div>
-                            <div class="education-school">2nd Semester • Expected 2028</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="profile-section">
-                    <div class="profile-section-title">
-                        <i class="fas fa-link"></i> Connect With Me
-                    </div>
-                    <div class="profile-social-links">
-                        <a href="https://github.com/mamdous-usual" target="_blank" class="profile-social-link github" title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://linkedin.com/in/mamdousahmedlaskar" target="_blank" class="profile-social-link linkedin" title="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://x.com/mamdouslaskar" target="_blank" class="profile-social-link twitter" title="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Modal -->
-    <div id="contactModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title">Send Message</h2>
-                <span class="close-modal" onclick="closeContactModal()">&times;</span>
-            </div>
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="senderName" class="form-label">Your Name:</label>
-                    <input type="text" id="senderName" class="form-input" required>
-                </div>
-                <div class="form-group">
-                    <label for="senderEmail" class="form-label">Your Email:</label>
-                    <input type="email" id="senderEmail" class="form-input" required>
-                </div>
-                <div class="form-group">
-                    <label for="messageSubject" class="form-label">Subject:</label>
-                    <input type="text" id="messageSubject" class="form-input" required>
-                </div>
-                <div class="form-group">
-                    <label for="messageContent" class="form-label">Message:</label>
-                    <textarea id="messageContent" class="form-textarea" required placeholder="Your message here..."></textarea>
-                </div>
-                <button type="submit" class="form-button">Send Message</button>
-            </form>
-        </div>
-    </div>
-
-    <div class="terminal-container">
-        <div class="terminal-window">
-            <div class="terminal-header">
-                <div class="window-controls">
-                    <div class="control close"></div>
-                    <div class="control minimize"></div>
-                    <div class="control maximize"></div>
-                </div>
-                <div class="terminal-title">mamdous@localhost:~</div>
-            </div>
-
-            <!-- Quick-access bar -->
-            <div class="quick-bar">
-                <span class="quick-bar-label">quick access →</span>
-                <button class="qbtn" onclick="quickRun('about')">about</button>
-                <button class="qbtn" onclick="quickRun('projects')">projects</button>
-                <button class="qbtn" onclick="quickRun('skills')">skills</button>
-                <button class="qbtn" onclick="quickRun('contact')">contact</button>
-                <button class="qbtn" onclick="quickRun('social')">social</button>
-                <button class="qbtn" onclick="quickRun('resume')">resume</button>
-                <button class="qbtn" onclick="quickRun('help')">help</button>
-            </div>
-            
-            <div class="terminal-content" id="terminalContent">
-                <div id="output">
-                    <div class="output-line">
-                        <div class="ascii-art">       _nnnn_                      <span class="info">mamdous</span>@<span class="success">localhost</span>
-      dGGGGMMb                     ─────────────────────────
-     @p~qp~~qMb                    <span class="info">OS:</span> Portfolio v2.0
-     M|<span class="warning">@</span>||<span class="warning">@</span>) M|                    <span class="info">Host:</span> Vercel
-     <span class="warning">@</span>,----.JM|                    <span class="info">Kernel:</span> JavaScript ES6+
-    JS^\__/  qKL                   <span class="info">Uptime:</span> Since 2024
-   dZP        qKRb                 <span class="info">Packages:</span> npm, git, vscode
-  dZP          qKKb                <span class="info">Shell:</span> interactive-terminal
- fZP            SMMb               <span class="info">Resolution:</span> responsive
- HZM            MMMM               <span class="info">Theme:</span> One Dark Pro
- FqM            MMMM               <span class="info">Icons:</span> Font Awesome 6
-__| ".        |\dS"qML             <span class="info">Terminal:</span> Custom Web Shell
-|    `.       | `' \Zq             <span class="info">CPU:</span> Your Browser
-_)      \.___.,|     .'             
-\____   )MMMMMP|   .'              <span class="success">▀▀▀</span> <span class="warning">▀▀▀</span> <span class="error">▀▀▀</span> <span class="info">▀▀▀</span> <span style="color:#c678dd">▀▀▀</span> <span style="color:#56b6c2">▀▀▀</span>
-     `-'       `--'                </div>
-                    </div>
-                    
-                    <div class="output-line">
-                        <span class="info">Type 'help' for commands or click the buttons above.</span>
-                    </div>
-                    
-                    <br>
-                </div>
-                
-                <div class="input-line" style="position: relative;">
-                    <span class="prompt">visitor@localhost:~$</span>
-                    <input type="text" class="terminal-input" id="commandInput" placeholder="Enter command..." autocomplete="off">
-                    <div id="autocomplete" class="autocomplete-suggestions" style="display: none;"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        const output = document.getElementById('output');
-        const input = document.getElementById('commandInput');
-        const autocompleteDiv = document.getElementById('autocomplete');
-        
-        let commandHistory = [];
-        let historyIndex = -1;
-        
-        window.addEventListener('load', () => input.focus());
-        document.addEventListener('click', (e) => {
-            const modal = document.getElementById('contactModal');
-            if (modal.style.display !== 'block') {
-                input.focus();
-            }
-        });
-        
-        const projects = [
-            {
-                name: "Terminal Portfolio",
-                description: "Interactive terminal-style personal portfolio website with command-line interface and responsive design.",
-                tech: "HTML, CSS, JavaScript",
-                github: "https://github.com/mamdous-usual/portfolio",
-                live: "https://mamdous.vercel.app"
-            },
-            {
-                name: "Speedometer PWA",
-                description: "A progressive web app that uses browser Geolocation API to display real-time speed.",
-                tech: "HTML, CSS, JavaScript, PWA",
-                github: "https://github.com/mamdous-usual/speedometer",
-                live: "https://speedometerweb.vercel.app"
-            },
-            {
-                name: "Productivity Core",
-                description: "A modern productivity web app featuring time, tasks, and focus tools in one place.",
-                tech: "HTML, CSS, Javascript",
-                github: "https://github.com/mamdous-usual/productivity-core",
-                live: "https://productivitycore.vercel.app"
-            }
-        ];
-
-        const commands = {
-            help: () => `
-<div class="help-section">
-<div class="help-command">Available Commands:</div>
-<div class="help-description">whoami      - Display user information</div>
-<div class="help-description">ls          - List directory contents</div>
-<div class="help-description">cat &lt;file&gt;  - Display file contents</div>
-<div class="help-description">echo &lt;msg&gt;  - Display message</div>
-<div class="help-description">about       - About me</div>
-<div class="help-description">social      - Display social media links</div>
-<div class="help-description">contact     - Contact information</div>
-<div class="help-description">skills      - Technical skills</div>
-<div class="help-description">projects    - View my projects</div>
-<div class="help-description">resume      - View/download resume</div>
-<div class="help-description">send-message - Send me a message</div>
-<div class="help-description">history     - Show command history</div>
-<div class="help-description">clear       - Clear terminal</div>
-<div class="help-description">date        - Display current date</div>
-<div class="help-description">pwd         - Print working directory</div>
-<div class="help-description">Tab         - Auto-complete commands</div>
-<div class="help-description">↑/↓         - Navigate command history</div>
-<div class="help-description" style="margin-top: 12px; color: #c678dd;">🥚 There are easter eggs! Type 'eggs' to reveal them.</div>
-</div>`,
-            
-            whoami: () => `mamdous`,
-            
-            ls: () => `<div class="file-list">
-<div class="directory">documents/</div>
-<div class="directory">projects/</div>
-<div class="directory">skills/</div>
-<div class="file-item">about.txt</div>
-<div class="file-item">resume.pdf</div>
-<div class="file-item">contact.txt</div>
-<div class="executable">run_portfolio.sh</div>
-</div>`,
-            
-            about: () => {
-                openAboutModal();
-                return '<span class="info">Opening profile card...</span>';
-            },
-            
-            social: () => `<span class="success">Connect with me:</span>
-<div class="social-icons">
-<a href="https://github.com/mamdous-usual" target="_blank" class="social-icon" title="GitHub">
-<i class="fab fa-github"></i> GitHub
-</a>
-<a href="https://linkedin.com/in/mamdousahmedlaskar" target="_blank" class="social-icon" title="LinkedIn">
-<i class="fab fa-linkedin"></i> LinkedIn
-</a>
-<a href="https://x.com/mamdouslaskar" target="_blank" class="social-icon" title="Twitter">
-<i class="fab fa-twitter"></i> Twitter
-</a>
-</div>`,
-            
-            contact: () => `<span class="success">Contact Information</span>
-<span class="info">📧 Email: mamdouslaskar@protonmail.com</span>
-<span class="info">📱 Feel free to reach out through any of my social media profiles</span>
-<span class="info">💬 Or use 'send-message' command for direct contact</span>
-<span class="warning">Response time: Usually within 24-48 hours</span>`,
-            
-            skills: () => `<span class="success">Technical Skills</span>
-<span class="info">Languages:</span>     C/C++, Java, JavaScript, Python
-<span class="info">Frontend:</span>      HTML, CSS, React
-<span class="info">Backend:</span>       Node.js, Express, SpringBoot
-<span class="info">Database:</span>      MySQL, PostgreSQL, MongoDB
-<span class="info">Tools:</span>         Git, Docker, Linux, VS Code
-<span class="info">Currently Learning:</span> Data Structures and Algorithms`,
-
-            projects: () => {
-                let projectsHtml = '<span class="success">My Projects</span>\n';
-                projects.forEach((project, index) => {
-                    projectsHtml += `
-<div class="project-item">
-<div class="project-title">${index + 1}. ${project.name}</div>
-<div class="project-description">${project.description}</div>
-<div class="project-tech">Technologies: ${project.tech}</div>
-<div style="margin-top: 10px; display: flex; gap: 12px;">
-${project.github ? `<a href="${project.github}" target="_blank" style="color: #61afef; text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>` : ''}
-${project.live ? `<a href="${project.live}" target="_blank" style="color: #98c379; text-decoration: none;"><i class="fas fa-external-link-alt"></i> Live</a>` : ''}
+<!-- ── LOADING SCREEN ── -->
+<div id="loading-screen">
+  <div class="loader-code" id="loader-code"></div>
+  <div class="loader-bar-wrap"><div class="loader-bar" id="loader-bar"></div></div>
 </div>
-</div>`;
-                });
-                return projectsHtml;
-            },
 
-            resume: () => `<span class="success">Resume/CV</span>
-<span class="info">📄 Full resume available in multiple formats:</span>
-<span class="info">• PDF: <a href="#" onclick="handleResumeRequest(); return false;" style="color: #61afef; cursor: pointer;">Request via email</a></span>
-<span class="info">• LinkedIn: <a href="https://linkedin.com/in/mamdousahmedlaskar" target="_blank" style="color: #61afef;">View detailed profile</a></span>
-<span class="info">• GitHub: <a href="https://github.com/mamdous-usual" target="_blank" style="color: #61afef;">View projects and contributions</a></span>
+<!-- ── PAGE ── -->
+<div class="page" id="page">
 
-<span class="warning">Quick Summary:</span>
-<span class="output">Education: Bachelor of Computer Application (In Progress)
-Experience: Student projects, open source contributions
-Focus Areas: Web Development, Algorithm Design, System Architecture</span>`,
+<!-- NAV -->
+<nav role="navigation" aria-label="Main navigation">
+  <a href="#" class="nav-logo">
+    <span class="prompt-char">~</span>mamdous
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#terminal">Terminal</a></li>
+    <li><a href="#contact" class="nav-cta">Contact me</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <i class="fas fa-bars" aria-hidden="true"></i>
+  </button>
+</nav>
 
-            'send-message': () => {
-                openContactModal();
-                return '<span class="info">Opening message form...</span>';
-            },
+<div class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Mobile navigation">
+  <a href="#about"    onclick="closeMobileNav()">About</a>
+  <a href="#skills"   onclick="closeMobileNav()">Skills</a>
+  <a href="#projects" onclick="closeMobileNav()">Projects</a>
+  <a href="#terminal" onclick="closeMobileNav()">Terminal</a>
+  <a href="#contact"  onclick="closeMobileNav()" class="nav-cta">Contact me</a>
+</div>
 
-            history: () => {
-                if (commandHistory.length === 0) {
-                    return '<span class="warning">No commands in history</span>';
-                }
-                let historyHtml = '<span class="success">Command History:</span>\n';
-                commandHistory.forEach((cmd, index) => {
-                    historyHtml += `<span class="info">${index + 1}. ${cmd}</span>\n`;
-                });
-                return historyHtml;
-            },
-            
-            date: () => new Date().toLocaleString(),
-            pwd:  () => '/home/mamdous/portfolio',
-            clear: () => {
-                output.innerHTML = '';
-                return '';
-            }
-        };
-        
-        function handleCatCommand(args) {
-            const filename = args[0];
-            const files = {
-                'about.txt': `Mamdous - Computer Science Student
-=====================================
-Computer Science student focused on technology and software development.
-Currently pursuing Bachelor's of Computer Application.
-Interested in solving problems and learning new technologies.`,
-                
-                'contact.txt': `Contact Information
-==================
-Name: Mamdous Laskar
-Email: mamdouslaskar@protonmail.com
-LinkedIn: linkedin.com/in/mamdouslaskar
-GitHub: github.com/mamdous-usual
-Twitter: @mamdouslaskar
+<main>
 
-Preferred Contact Methods:
-1. Email (Professional inquiries)
-2. LinkedIn (Networking, opportunities)
-3. GitHub (Technical discussions)
+<!-- ── HERO ── -->
+<section id="hero" aria-label="Introduction">
+  <div>
+    <div class="hero-badge" role="status">
+      <span class="hero-badge-dot" aria-hidden="true"></span>
+      Open to opportunities
+    </div>
+    <h1 class="hero-name">
+      Mamdous<br><span>Ahmed Laskar</span>
+    </h1>
+    <p class="hero-title">BCA Student &amp; Aspiring Developer</p>
+    <p class="hero-desc">
+      Building for the web. Currently pursuing a Bachelor of Computer Applications at Karimganj College while creating real projects — from productivity tools to progressive web apps.
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary">
+        <i class="fas fa-envelope" aria-hidden="true"></i> Get in touch
+      </a>
+      <a href="#projects" class="btn btn-outline">
+        <i class="fas fa-code" aria-hidden="true"></i> View projects
+      </a>
+      <a href="https://linkedin.com/in/mamdousahmedlaskar" target="_blank" rel="noopener" class="btn btn-outline">
+        <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+      </a>
+    </div>
+    <div class="info-strips">
+      <span class="info-strip"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Assam, India</span>
+      <span class="info-strip"><i class="fas fa-graduation-cap" aria-hidden="true"></i> BCA · Expected 2028</span>
+      <span class="info-strip"><i class="fas fa-clock" aria-hidden="true"></i> Replies within 48 hrs</span>
+    </div>
+  </div>
+  <div class="hero-avatar-wrap">
+    <img src="Images/professional%20profile.jpg" alt="Mamdous Ahmed Laskar" class="hero-avatar">
+    <div class="hero-social" role="list" aria-label="Social media links">
+      <a href="https://github.com/mamdous-usual" target="_blank" rel="noopener" title="GitHub" role="listitem"><i class="fab fa-github" aria-label="GitHub"></i></a>
+      <a href="https://linkedin.com/in/mamdousahmedlaskar" target="_blank" rel="noopener" title="LinkedIn" role="listitem"><i class="fab fa-linkedin-in" aria-label="LinkedIn"></i></a>
+      <a href="https://x.com/mamdouslaskar" target="_blank" rel="noopener" title="Twitter/X" role="listitem"><i class="fab fa-twitter" aria-label="Twitter"></i></a>
+    </div>
+  </div>
+</section>
 
-Available for:
-- Collaboration on projects
-- Internship opportunities
-- Technical discussions
-- Open source contributions
-- Mentorship and learning`,
-                
-                'resume.pdf': `[PDF Document - Resume]
-========================
-This is a binary file containing my detailed resume.
- 
-Contents include:
-• Personal Information & Contact Details
-• Educational Background
-• Technical Skills & Proficiencies
-• Projects & Achievements
-• Relevant Coursework
-• Certifications & Training
+<!-- ── ABOUT ── -->
+<section id="about" class="fade-in" aria-labelledby="about-heading">
+  <p class="section-label" id="about-heading"><i class="fas fa-terminal" aria-hidden="true"></i> About</p>
+  <div class="about-grid">
+    <div class="about-card">
+      <div class="about-card-title"><i class="fas fa-user" aria-hidden="true"></i> Who I am</div>
+      <p>I'm a <strong>second-semester BCA student</strong> from Assam, India with a genuine passion for building software. I learn by doing — most of what I know comes from building real projects and reading documentation.</p>
+      <br>
+      <p>I'm interested in <strong>web development</strong>, clean UI design, and solving practical problems with code. I'm actively looking for internships and collaborative projects.</p>
+    </div>
+    <div class="about-card">
+      <div class="about-card-title"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Education</div>
+      <div class="edu-item">
+        <div class="edu-degree">Bachelor of Computer Application (BCA)</div>
+        <div class="edu-school">Karimganj College, Assam University</div>
+        <span class="edu-year">2nd Semester · Expected 2028</span>
+      </div>
+      <br>
+      <div class="about-card-title" style="margin-top:0.5rem;"><i class="fas fa-rocket" aria-hidden="true"></i> What I'm after</div>
+      <p>Internships, open-source contributions, and any chance to work with experienced developers and build meaningful things.</p>
+    </div>
+  </div>
+</section>
 
-To access the full resume:
-• Use 'resume' command for online viewing options
-• Contact me directly for PDF copy
-• Visit LinkedIn profile for detailed information
+<!-- ── SKILLS ── -->
+<section id="skills" class="fade-in" aria-labelledby="skills-heading">
+  <p class="section-label" id="skills-heading"><i class="fas fa-tools" aria-hidden="true"></i> Skills</p>
+  <div class="skills-layout">
+    <div class="skill-group">
+      <div class="skill-group-name">Languages</div>
+      <div class="skill-pills">
+        <span class="skill-pill">JavaScript</span>
+        <span class="skill-pill">Java</span>
+        <span class="skill-pill">Python</span>
+        <span class="skill-pill">C / C++</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-name">Web &amp; Frameworks</div>
+      <div class="skill-pills">
+        <span class="skill-pill">HTML</span>
+        <span class="skill-pill">CSS</span>
+        <span class="skill-pill">React</span>
+        <span class="skill-pill">Node.js</span>
+        <span class="skill-pill">Express</span>
+        <span class="skill-pill">Spring Boot</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-name">Databases &amp; Tools</div>
+      <div class="skill-pills">
+        <span class="skill-pill">MySQL</span>
+        <span class="skill-pill">MongoDB</span>
+        <span class="skill-pill">PostgreSQL</span>
+        <span class="skill-pill">Git</span>
+        <span class="skill-pill">Docker</span>
+        <span class="skill-pill">Linux</span>
+        <span class="skill-pill">VS Code</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-name">Currently learning</div>
+      <div class="skill-pills">
+        <span class="skill-pill learning">Data Structures &amp; Algorithms</span>
+        <span class="skill-pill learning">System Design basics</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-File size: ~200KB
-Last updated: ${new Date().toLocaleDateString()}
-Format: PDF (Portable Document Format)`,
-            };
-            
-            if (!filename) {
-                return '<span class="error">cat: missing file operand</span>\n<span class="info">Usage: cat &lt;filename&gt;</span>\n<span class="info">Available files: about.txt, contact.txt, resume.pdf</span>';
-            }
-            if (files[filename]) {
-                return `<pre class="output">${files[filename]}</pre>`;
-            }
-            return `<span class="error">cat: ${filename}: No such file or directory</span>\n<span class="info">Use 'ls' to see available files</span>`;
-        }
-        
-        function handleEchoCommand(args) {
-            return args.length > 0 ? args.join(' ') : '';
-        }
+<!-- ── PROJECTS ── -->
+<section id="projects" class="fade-in" aria-labelledby="projects-heading">
+  <p class="section-label" id="projects-heading"><i class="fas fa-folder-open" aria-hidden="true"></i> Projects</p>
+  <div class="projects-grid">
 
-        function getMatchingCommands(input) {
-            const allCommands = Object.keys(commands).concat(['cat', 'echo']);
-            return allCommands.filter(cmd => cmd.toLowerCase().startsWith(input.toLowerCase()));
-        }
+    <article class="project-card">
+      <div class="project-number">01 / Portfolio</div>
+      <h3 class="project-name">Terminal Portfolio</h3>
+      <p class="project-desc">This very site — an interactive, command-line-styled portfolio. Fully responsive, with a loading sequence, autocomplete, and easter eggs built in plain HTML/CSS/JS.</p>
+      <div class="project-tech">
+        <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/mamdous-usual/portfolio" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+        <a href="https://mamdous.vercel.app" target="_blank" rel="noopener" class="project-link"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live site</a>
+      </div>
+    </article>
 
-        function showAutocomplete(matches) {
-            if (matches.length === 0) { autocompleteDiv.style.display = 'none'; return; }
-            autocompleteDiv.innerHTML = '';
-            matches.forEach(match => {
-                const div = document.createElement('div');
-                div.className = 'autocomplete-suggestion';
-                div.textContent = match;
-                div.onclick = () => {
-                    input.value = match;
-                    autocompleteDiv.style.display = 'none';
-                    input.focus();
-                };
-                autocompleteDiv.appendChild(div);
-            });
-            autocompleteDiv.style.display = 'block';
-        }
+    <article class="project-card">
+      <div class="project-number">02 / Utility</div>
+      <h3 class="project-name">Speedometer PWA</h3>
+      <p class="project-desc">A progressive web app that reads your device's GPS to display real-time speed — works offline, installable on Android/iOS. A practical tool for everyday use.</p>
+      <div class="project-tech">
+        <span class="tech-tag">JavaScript</span><span class="tech-tag">PWA</span><span class="tech-tag">Geolocation API</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/mamdous-usual/speedometer" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+        <a href="https://speedometerweb.vercel.app" target="_blank" rel="noopener" class="project-link"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live site</a>
+      </div>
+    </article>
 
-        function openContactModal() {
-            const modal = document.getElementById('contactModal');
-            modal.style.display = 'block';
-            setTimeout(() => document.getElementById('senderName').focus(), 100);
-        }
+    <article class="project-card">
+      <div class="project-number">03 / Productivity</div>
+      <h3 class="project-name">Productivity Core</h3>
+      <p class="project-desc">An all-in-one productivity web app combining a task manager, Pomodoro timer, and focus tools in a single clean interface. No login required.</p>
+      <div class="project-tech">
+        <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/mamdous-usual/productivity-core" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+        <a href="https://productivitycore.vercel.app" target="_blank" rel="noopener" class="project-link"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live site</a>
+      </div>
+    </article>
 
-        function closeContactModal() {
-            document.getElementById('contactModal').style.display = 'none';
-            setTimeout(() => input.focus(), 100);
-        }
+  </div>
+</section>
 
-        function openAboutModal() {
-            document.getElementById('aboutModal').style.display = 'block';
-        }
+<!-- ── TERMINAL (for devs) ── -->
+<section id="terminal" class="fade-in" aria-labelledby="terminal-heading">
+  <p class="section-label" id="terminal-heading"><i class="fas fa-terminal" aria-hidden="true"></i> Interactive terminal <span style="font-size:10px;color:var(--muted);margin-left:8px;text-transform:none;letter-spacing:0;font-weight:400;">— for the curious</span></p>
+  <div class="terminal-wrapper" role="region" aria-label="Interactive terminal emulator">
+    <div class="terminal-topbar" aria-hidden="true">
+      <div class="dot dot-red"></div>
+      <div class="dot dot-amber"></div>
+      <div class="dot dot-green"></div>
+      <span class="terminal-bar-title">mamdous@localhost:~</span>
+      <span class="terminal-hint">type 'help'</span>
+    </div>
+    <div class="terminal-body">
+      <div id="term-output" aria-live="polite" aria-label="Terminal output"></div>
+      <div class="terminal-input-row">
+        <span class="terminal-prompt" aria-hidden="true">visitor@localhost:~$</span>
+        <div class="terminal-input-wrap">
+          <div class="autocomplete-box" id="ac-box" role="listbox"></div>
+          <input type="text" id="term-input" aria-label="Terminal command input" placeholder="type a command..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+        </div>
+        <span class="cursor-blink" aria-hidden="true"></span>
+      </div>
+    </div>
+  </div>
+</section>
 
-        function closeAboutModal() {
-            document.getElementById('aboutModal').style.display = 'none';
-            setTimeout(() => input.focus(), 100);
-        }
+<!-- ── CONTACT ── -->
+<section id="contact" class="fade-in" aria-labelledby="contact-heading">
+  <p class="section-label" id="contact-heading"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</p>
+  <div class="contact-layout">
+    <div class="contact-info" aria-label="Contact methods">
+      <a href="mailto:mamdouslaskar@protonmail.com" class="contact-item">
+        <div class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">mamdouslaskar@protonmail.com</div>
+        </div>
+      </a>
+      <a href="https://linkedin.com/in/mamdousahmedlaskar" target="_blank" rel="noopener" class="contact-item">
+        <div class="contact-icon" style="background:rgba(10,102,194,0.1);color:#0a66c2;"><i class="fab fa-linkedin" aria-hidden="true"></i></div>
+        <div>
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-value">mamdousahmedlaskar</div>
+        </div>
+      </a>
+      <a href="https://github.com/mamdous-usual" target="_blank" rel="noopener" class="contact-item">
+        <div class="contact-icon" style="background:rgba(255,255,255,0.06);color:#e2e4ed;"><i class="fab fa-github" aria-hidden="true"></i></div>
+        <div>
+          <div class="contact-label">GitHub</div>
+          <div class="contact-value">mamdous-usual</div>
+        </div>
+      </a>
+      <a href="https://x.com/mamdouslaskar" target="_blank" rel="noopener" class="contact-item">
+        <div class="contact-icon" style="background:rgba(29,161,242,0.1);color:#1da1f2;"><i class="fab fa-twitter" aria-hidden="true"></i></div>
+        <div>
+          <div class="contact-label">Twitter / X</div>
+          <div class="contact-value">@mamdouslaskar</div>
+        </div>
+      </a>
+    </div>
 
-        function handleResumeRequest() {
-            const email   = 'mamdouslaskar@protonmail.com';
-            const subject = 'Resume Request';
-            const body    = 'Hello Mamdous,\n\nI would like to request a copy of your resume.\n\nThank you!';
-            const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-            try {
-                window.location.href = mailtoLink;
-                addOutput('<span class="success">Opening your email client...</span>');
-                addOutput('<span class="info">If it didn\'t work, please email: mamdouslaskar@protonmail.com with subject "Resume Request"</span>');
-            } catch (error) {
-                copyToClipboard(email);
-                addOutput('<span class="warning">Email client not available. Email address copied to clipboard!</span>');
-                addOutput('<span class="info">Please email: mamdouslaskar@protonmail.com with subject "Resume Request"</span>');
-            }
-        }
+    <form class="contact-form" id="contact-form" aria-label="Send a message">
+      <div class="form-row">
+        <div class="field">
+          <label for="cf-name">Your name</label>
+          <input type="text" id="cf-name" placeholder="Jane Smith" required>
+        </div>
+        <div class="field">
+          <label for="cf-email">Your email</label>
+          <input type="email" id="cf-email" placeholder="jane@company.com" required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="cf-subject">Subject</label>
+        <input type="text" id="cf-subject" placeholder="Internship inquiry / Project idea / etc." required>
+      </div>
+      <div class="field">
+        <label for="cf-msg">Message</label>
+        <textarea id="cf-msg" placeholder="Hi Mamdous, I'd like to..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="align-self:flex-start;">
+        <i class="fas fa-paper-plane" aria-hidden="true"></i> Send message
+      </button>
+      <div id="form-status" role="status" aria-live="polite" style="font-family:var(--mono);font-size:12px;color:var(--green);display:none;margin-top:4px;"></div>
+    </form>
+  </div>
+</section>
 
-        function copyToClipboard(text) {
-            if (navigator.clipboard && window.isSecureContext) {
-                navigator.clipboard.writeText(text).catch(() => fallbackCopyToClipboard(text));
-            } else {
-                fallbackCopyToClipboard(text);
-            }
-        }
+</main>
 
-        function fallbackCopyToClipboard(text) {
-            const textArea = document.createElement('textarea');
-            textArea.value = text;
-            textArea.style.position = 'fixed';
-            textArea.style.left = '-999999px';
-            textArea.style.top  = '-999999px';
-            document.body.appendChild(textArea);
-            textArea.focus(); textArea.select();
-            try { document.execCommand('copy'); } catch (err) {}
-            document.body.removeChild(textArea);
-        }
+<!-- ── FOOTER ── */
+<footer role="contentinfo">
+  <p class="footer-mono">
+    &lt;<span>Mamdous Ahmed Laskar</span> /&gt; · Built with HTML, CSS &amp; JS
+  </p>
+  <div class="footer-links">
+    <a href="https://github.com/mamdous-usual" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://linkedin.com/in/mamdousahmedlaskar" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:mamdouslaskar@protonmail.com">Email</a>
+  </div>
+</footer>
 
-        window.onclick = function(event) {
-            const contactModal = document.getElementById('contactModal');
-            const aboutModal   = document.getElementById('aboutModal');
-            if (event.target === contactModal) closeContactModal();
-            if (event.target === aboutModal)   closeAboutModal();
-        };
+</div><!-- /page -->
 
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const name    = document.getElementById('senderName').value;
-            const email   = document.getElementById('senderEmail').value;
-            const subject = document.getElementById('messageSubject').value;
-            const message = document.getElementById('messageContent').value;
-            const mailtoLink = `mailto:mamdouslaskar@protonmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
-            const emailOpened = tryOpenEmailClient(mailtoLink);
-            if (emailOpened) {
-                addOutput('<span class="success">Message form submitted! Opening your email client...</span>');
-                addOutput('<span class="info">If your email client didn\'t open automatically, check below for manual options.</span>');
-            } else {
-                addOutput('<span class="warning">Email client not available. Here are your options:</span>');
-                addOutput(`<span class="info">📧 Send manually to: <strong>mamdouslaskar@protonmail.com</strong></span>`);
-                addOutput(`<span class="info">📝 Subject: <strong>${subject}</strong></span>`);
-                addOutput(`<span class="info">💬 Message: <strong>From ${name} (${email}): ${message}</strong></span>`);
-            }
-            closeContactModal();
-            document.getElementById('contactForm').reset();
-        });
+<script>
+/* ══════════════════════════════════════════
+   MOBILE NAV
+══════════════════════════════════════════ */
+const hamburger  = document.getElementById('hamburger');
+const mobileNav  = document.getElementById('mobile-nav');
+hamburger.addEventListener('click', () => {
+  const open = mobileNav.classList.toggle('open');
+  hamburger.setAttribute('aria-expanded', open);
+  hamburger.querySelector('i').className = open ? 'fas fa-times' : 'fas fa-bars';
+});
+function closeMobileNav() {
+  mobileNav.classList.remove('open');
+  hamburger.setAttribute('aria-expanded', false);
+  hamburger.querySelector('i').className = 'fas fa-bars';
+}
+document.addEventListener('click', e => {
+  if (!mobileNav.contains(e.target) && e.target !== hamburger && !hamburger.contains(e.target)) {
+    closeMobileNav();
+  }
+});
 
-        function tryOpenEmailClient(mailtoLink) {
-            try {
-                const tempLink = document.createElement('a');
-                tempLink.href = mailtoLink;
-                tempLink.style.display = 'none';
-                document.body.appendChild(tempLink);
-                tempLink.click();
-                document.body.removeChild(tempLink);
-                return true;
-            } catch (error) { return false; }
-        }
-        
-        function processCommand(command) {
-            const trimmedCommand = command.trim();
-            const parts = trimmedCommand.split(' ');
-            const cmd   = parts[0].toLowerCase();
-            const args  = parts.slice(1);
-            if (commands[trimmedCommand]) return commands[trimmedCommand]();
-            if (cmd === 'cat')  return handleCatCommand(args);
-            if (cmd === 'echo') return handleEchoCommand(args);
-            if (commands[cmd])  return commands[cmd]();
-            return `<span class="error">Command not found: ${cmd}</span>
-<span class="info">Type 'help' for available commands.</span>`;
-        }
-        
-        function addOutput(content, isCommand = false) {
-            const div = document.createElement('div');
-            div.className = 'output-line';
-            if (isCommand) {
-                div.innerHTML = `<span class="prompt">visitor@localhost:~$</span> <span class="command">${content}</span>`;
-            } else {
-                div.innerHTML = content;
-            }
-            output.appendChild(div);
-            const terminalWindow = document.querySelector('.terminal-window');
-            terminalWindow.scrollIntoView({ behavior: 'smooth', block: 'end' });
-            document.getElementById('commandInput').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }
+/* ══════════════════════════════════════════
+   LOADING SCREEN
+══════════════════════════════════════════ */
+const loaderLines = [
+  { html: '<span style="color:#61afef;font-weight:700;">mamdous.me</span> — initializing...', delay: 60 },
+  { html: '  <span style="color:#7a7d8f;">loading</span> <span style="color:#e5c07b;">"about"</span>        <span style="color:#98c379;">✓</span>', delay: 120 },
+  { html: '  <span style="color:#7a7d8f;">loading</span> <span style="color:#e5c07b;">"projects"</span>     <span style="color:#98c379;">✓</span>', delay: 120 },
+  { html: '  <span style="color:#7a7d8f;">loading</span> <span style="color:#e5c07b;">"skills"</span>       <span style="color:#98c379;">✓</span>', delay: 120 },
+  { html: '  <span style="color:#7a7d8f;">loading</span> <span style="color:#e5c07b;">"contact"</span>      <span style="color:#98c379;">✓</span>', delay: 120 },
+  { html: '', delay: 80 },
+  { html: '<span style="color:#98c379;">ready. welcome.</span>', delay: 100 },
+];
+const loaderCode = document.getElementById('loader-code');
+const loaderBar  = document.getElementById('loader-bar');
+let li = 0;
+function showLoaderLine() {
+  if (li >= loaderLines.length) {
+    setTimeout(hideLoader, 280);
+    return;
+  }
+  const span = document.createElement('span');
+  span.className = 'lc-line';
+  span.style.animationDelay = '0ms';
+  span.innerHTML = loaderLines[li].html;
+  loaderCode.appendChild(span);
+  loaderBar.style.width = (((li + 1) / loaderLines.length) * 100) + '%';
+  li++;
+  setTimeout(showLoaderLine, loaderLines[li - 1].delay);
+}
+function hideLoader() {
+  const ls = document.getElementById('loading-screen');
+  ls.classList.add('fade-out');
+  document.getElementById('page').classList.add('visible');
+  setTimeout(() => ls.style.display = 'none', 500);
+  setupIntersectionObserver();
+  document.getElementById('term-input').focus();
+}
+setTimeout(showLoaderLine, 200);
 
-        /* Quick-access button handler */
-        function quickRun(cmd) {
-            addOutput(cmd, true);
-            const result = processCommand(cmd);
-            if (result) addOutput(result);
-            input.focus();
-        }
-        
-        input.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter') {
-                const command = input.value.trim();
-                if (command) {
-                    commandHistory.push(command);
-                    historyIndex = commandHistory.length;
-                    addOutput(command, true);
-                    const result = processCommand(command);
-                    if (result) addOutput(result);
-                }
-                input.value = '';
-                autocompleteDiv.style.display = 'none';
-            }
-            else if (e.key === 'ArrowUp') {
-                e.preventDefault();
-                if (historyIndex > 0) { historyIndex--; input.value = commandHistory[historyIndex]; }
-            }
-            else if (e.key === 'ArrowDown') {
-                e.preventDefault();
-                if (historyIndex < commandHistory.length - 1) { historyIndex++; input.value = commandHistory[historyIndex]; }
-                else { historyIndex = commandHistory.length; input.value = ''; }
-            }
-            else if (e.key === 'Tab') {
-                e.preventDefault();
-                const currentInput = input.value.trim();
-                const matches = getMatchingCommands(currentInput);
-                if (matches.length === 1) { input.value = matches[0]; }
-                else if (matches.length > 1) { showAutocomplete(matches); }
-            }
-        });
+/* ══════════════════════════════════════════
+   SCROLL ANIMATIONS
+══════════════════════════════════════════ */
+function setupIntersectionObserver() {
+  const els = document.querySelectorAll('.fade-in');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  els.forEach(el => obs.observe(el));
+}
 
-        input.addEventListener('input', (e) => {
-            if (e.target.value.trim() === '') autocompleteDiv.style.display = 'none';
-        });
+/* ══════════════════════════════════════════
+   TERMINAL LOGIC
+══════════════════════════════════════════ */
+const termOutput = document.getElementById('term-output');
+const termInput  = document.getElementById('term-input');
+const acBox      = document.getElementById('ac-box');
+let cmdHistory = [], histIdx = -1, acSelected = -1;
 
-        input.addEventListener('blur', () => {
-            setTimeout(() => autocompleteDiv.style.display = 'none', 200);
-        });
-        
-        const easterEggs = {
-            'sudo rm -rf /': () => '<span class="error">Nice try! But you don\'t have root access here 😉</span>',
-            'exit':   () => '<span class="warning">There is no escape from the matrix...</span>',
-            'matrix': () => '<span class="success">Wake up, Neo...</span>',
-            'coffee': () => '<span class="info">☕ Coffee.exe is brewing... Please wait</span>',
-            'hello':  () => '<span class="success">Hello there! Type \'help\' to get started.</span>',
-            'vim':    () => '<span class="error">Vim not found. This is a web terminal, not a full Linux environment!</span>',
-            'nano':   () => '<span class="info">nano: command not found. Try \'cat\' to read files.</span>',
-            'cd':     () => '<span class="warning">You\'re already in the right place!</span>',
-            'sudo':   () => '<span class="error">sudo: You are not in the sudoers file. This incident will be reported to... no one.</span>',
-            'eggs':   () => `<span class="success">🥚 Easter Egg Commands:</span>
-<span class="info">  sudo rm -rf /</span> - Try to delete everything
-<span class="info">  sudo</span>          - Request admin access
-<span class="info">  exit</span>          - Try to leave
-<span class="info">  matrix</span>        - Enter the matrix
-<span class="info">  coffee</span>        - Brew some coffee
-<span class="info">  hello</span>         - Say hi
-<span class="info">  vim</span>           - Open vim editor
-<span class="info">  nano</span>          - Open nano editor
-<span class="info">  cd</span>            - Change directory`
-        };
-        
-        Object.assign(commands, easterEggs);
-        
-        // ─────────────────────────────────────────────────────────────────
-        // Loading Screen  ← ALL DELAYS HALVED from the original
-        // ─────────────────────────────────────────────────────────────────
-        const loadingSequence = [
-            { text: '<span class="loading-system">SYSTEM INITIALIZATION</span>',                                                                    delay: 50  },
-            { text: '<span class="loading-info">Loading core modules...</span>',                                                                     delay: 100 },
-            { text: '<span class="loading-info">├─ Terminal Interface .................. </span><span class="loading-ok">[OK]</span>',               delay: 150 },
-            { text: '<span class="loading-info">├─ Command Parser ...................... </span><span class="loading-ok">[OK]</span>',               delay: 150 },
-            { text: '<span class="loading-info">├─ File System ......................... </span><span class="loading-ok">[OK]</span>',               delay: 150 },
-            { text: '<span class="loading-info">└─ Network Stack ....................... </span><span class="loading-ok">[OK]</span>',               delay: 150 },
-            { text: '',                                                                                                                               delay: 100 },
-            { text: '<span class="loading-system">Initializing portfolio data...</span>',                                                            delay: 150 },
-            { text: '<span class="loading-info">├─ Projects metadata ................... </span><span class="loading-ok">[OK]</span>',               delay: 125 },
-            { text: '<span class="loading-info">├─ Skills database ..................... </span><span class="loading-ok">[OK]</span>',               delay: 125 },
-            { text: '<span class="loading-info">└─ Contact information ................. </span><span class="loading-ok">[OK]</span>',               delay: 125 },
-            { text: '',                                                                                                                               delay: 100 },
-            { text: '<span class="loading-warning">Establishing secure connection...</span>',                                                        delay: 150 },
-            { text: '<span class="loading-info">└─ WebSocket ready ..................... </span><span class="loading-ok">[OK]</span>',               delay: 200 },
-            { text: '',                                                                                                                               delay: 100 },
-            { text: '<span class="loading-ok">✓ All systems operational</span>',                                                                     delay: 150 },
-            { text: '<span class="loading-system">Starting terminal session...</span>',                                                              delay: 250 }
-        ];
+const COMMANDS = {
+  help: {
+    desc: 'Show available commands',
+    run: () => `<span class="term-success">Available commands:</span>
+<span class="term-info">  about</span>     — who I am
+<span class="term-info">  skills</span>    — tech stack
+<span class="term-info">  projects</span>  — what I've built
+<span class="term-info">  contact</span>   — how to reach me
+<span class="term-info">  resume</span>    — get my CV
+<span class="term-info">  social</span>    — social links
+<span class="term-info">  clear</span>     — clear terminal
+<span class="term-info">  date</span>      — current date/time
+<span class="term-warn">  (There are easter eggs hidden in here too)</span>`
+  },
+  about: {
+    desc: 'Who I am',
+    run: () => `<span class="term-success">Mamdous Ahmed Laskar</span>
+BCA Student · Karimganj College, Assam University
+2nd Semester · Expected graduation: 2028
 
-        function startLoadingSequence() {
-            const loadingText       = document.getElementById('loadingText');
-            const progressBar       = document.getElementById('progressBar');
-            const loadingPercentage = document.getElementById('loadingPercentage');
-            const loadingScreen     = document.getElementById('loadingScreen');
-            let currentLine = 0;
-            const totalLines = loadingSequence.length;
-            
-            function showNextLine() {
-                if (currentLine >= totalLines) {
-                    setTimeout(() => {
-                        loadingScreen.style.transition = 'opacity 0.4s ease'; // halved from 0.8s
-                        loadingScreen.style.opacity = '0';
-                        const terminalContainer = document.querySelector('.terminal-container');
-                        terminalContainer.classList.add('loaded');
-                        setTimeout(() => {
-                            loadingScreen.style.display = 'none';
-                            setTimeout(() => input.focus(), 150); // halved from 300
-                        }, 400); // halved from 800
-                    }, 250); // halved from 500
-                    return;
-                }
-                const line    = loadingSequence[currentLine];
-                const lineDiv = document.createElement('div');
-                lineDiv.className = 'loading-line';
-                lineDiv.innerHTML = line.text;
-                loadingText.appendChild(lineDiv);
-                const progress = ((currentLine + 1) / totalLines) * 100;
-                progressBar.style.width = progress + '%';
-                loadingPercentage.textContent = Math.round(progress) + '%';
-                currentLine++;
-                setTimeout(showNextLine, line.delay);
-            }
-            showNextLine();
-        }
+I'm learning by building. Most of what I know comes from
+creating real projects, reading docs, and breaking things.
+Interested in web dev, clean UI, and practical software.
 
-        window.addEventListener('load', () => {
-            setTimeout(startLoadingSequence, 250); // halved from 500
-        });
-    </script>
+<span class="term-info">Open to:</span> internships, projects, collaborations`
+  },
+  skills: {
+    desc: 'Tech skills',
+    run: () => `<span class="term-success">Tech skills</span>
+<span class="term-info">Languages:</span>  JavaScript · Java · Python · C/C++
+<span class="term-info">Frontend:</span>   HTML · CSS · React
+<span class="term-info">Backend:</span>    Node.js · Express · Spring Boot
+<span class="term-info">Databases:</span>  MySQL · MongoDB · PostgreSQL
+<span class="term-info">Tools:</span>      Git · Docker · Linux · VS Code
+<span class="term-warn">Learning:</span>   DSA · System Design`
+  },
+  projects: {
+    desc: 'My projects',
+    run: () => `<span class="term-success">Projects (3)</span>
+
+<span class="term-info">01. Terminal Portfolio</span>
+    This site. HTML/CSS/JS — fully responsive.
+    <a href="https://mamdous.vercel.app" target="_blank">↗ mamdous.vercel.app</a>
+
+<span class="term-info">02. Speedometer PWA</span>
+    GPS-based speed app. Works offline, installable.
+    <a href="https://speedometerweb.vercel.app" target="_blank">↗ speedometerweb.vercel.app</a>
+
+<span class="term-info">03. Productivity Core</span>
+    Tasks + Pomodoro + focus tools. No login needed.
+    <a href="https://productivitycore.vercel.app" target="_blank">↗ productivitycore.vercel.app</a>`
+  },
+  contact: {
+    desc: 'Contact details',
+    run: () => `<span class="term-success">Contact</span>
+<span class="term-info">Email:</span>    <a href="mailto:mamdouslaskar@protonmail.com">mamdouslaskar@protonmail.com</a>
+<span class="term-info">LinkedIn:</span> <a href="https://linkedin.com/in/mamdousahmedlaskar" target="_blank">linkedin.com/in/mamdousahmedlaskar</a>
+<span class="term-info">GitHub:</span>   <a href="https://github.com/mamdous-usual" target="_blank">github.com/mamdous-usual</a>
+<span class="term-warn">Response time:</span> within 24–48 hours`
+  },
+  resume: {
+    desc: 'Get my CV',
+    run: () => {
+      window.location.href = 'mailto:mamdouslaskar@protonmail.com?subject=Resume%20Request&body=Hi%20Mamdous%2C%0A%0AI%27d%20like%20a%20copy%20of%20your%20resume.%0A%0AThanks!';
+      return `<span class="term-success">Opening your email client...</span>
+If it didn't open, email me at:
+<a href="mailto:mamdouslaskar@protonmail.com">mamdouslaskar@protonmail.com</a>
+Subject: Resume Request`;
+    }
+  },
+  social: {
+    desc: 'Social profiles',
+    run: () => `<span class="term-success">Social</span>
+<a href="https://github.com/mamdous-usual" target="_blank">    GitHub   →  github.com/mamdous-usual</a>
+<a href="https://linkedin.com/in/mamdousahmedlaskar" target="_blank">    LinkedIn →  linkedin.com/in/mamdousahmedlaskar</a>
+<a href="https://x.com/mamdouslaskar" target="_blank">    Twitter  →  x.com/mamdouslaskar</a>`
+  },
+  date: {
+    desc: 'Current date/time',
+    run: () => new Date().toLocaleString('en-IN', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' })
+  },
+  clear: {
+    desc: 'Clear terminal',
+    run: () => { termOutput.innerHTML = ''; return ''; }
+  },
+  /* Easter eggs */
+  'sudo rm -rf /': { desc: '', run: () => '<span class="term-error">Nice try. No root access here.</span>' },
+  exit:   { desc: '', run: () => '<span class="term-warn">No escape from the matrix.</span>' },
+  matrix: { desc: '', run: () => '<span class="term-success">Wake up, Neo…</span>' },
+  coffee: { desc: '', run: () => '<span class="term-info">☕  Brewing… please wait.</span>' },
+  vim:    { desc: '', run: () => '<span class="term-error">vim: not found. This is a web terminal.</span>' },
+  sudo:   { desc: '', run: () => '<span class="term-error">You are not in the sudoers file. This incident will be reported.</span>' },
+  hello:  { desc: '', run: () => '<span class="term-success">Hello there! Type \'help\' to get started.</span>' },
+  whoami: { desc: '', run: () => 'visitor' },
+  pwd:    { desc: '', run: () => '/home/mamdous/portfolio' },
+  ls:     { desc: '', run: () => '<span style="color:#61afef;">about.txt</span>  <span style="color:#98c379;">projects/</span>  <span style="color:#e5c07b;">resume.pdf</span>  <span style="color:#56b6c2;">skills.txt</span>  <span style="color:#c678dd;">contact.txt</span>' }
+};
+
+const PUBLIC_CMDS = Object.keys(COMMANDS).filter(k => COMMANDS[k].desc);
+
+function termPrint(html, isCmd = false, cmd = '') {
+  const div = document.createElement('div');
+  div.className = 'term-line';
+  if (isCmd) {
+    div.innerHTML = `<span class="term-prompt-char">visitor@localhost:~$</span> <span class="term-cmd-text">${escHtml(cmd)}</span>`;
+  } else if (html) {
+    const out = document.createElement('pre');
+    out.className = 'term-out term-line';
+    out.innerHTML = html;
+    termOutput.appendChild(out);
+    return;
+  }
+  if (html !== '') termOutput.appendChild(div);
+}
+
+function escHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function runCmd(raw) {
+  const cmd = raw.trim();
+  if (!cmd) return;
+  cmdHistory.push(cmd);
+  histIdx = cmdHistory.length;
+  termPrint('', true, cmd);
+  const key = cmd.toLowerCase();
+  const entry = COMMANDS[key];
+  if (entry) {
+    const result = entry.run();
+    if (result) termPrint(result);
+  } else {
+    termPrint(`<span class="term-error">command not found: ${escHtml(cmd)}</span>\n<span class="term-info">type 'help' to see available commands.</span>`);
+  }
+  // scroll
+  termOutput.parentElement.parentElement.scrollTop = 99999;
+}
+
+function showAC(matches) {
+  acSelected = -1;
+  if (!matches.length) { acBox.classList.remove('open'); return; }
+  acBox.innerHTML = matches.map(m => `<div class="ac-item" role="option">${m}</div>`).join('');
+  acBox.classList.add('open');
+  acBox.querySelectorAll('.ac-item').forEach(el => {
+    el.onclick = () => { termInput.value = el.textContent; acBox.classList.remove('open'); termInput.focus(); };
+  });
+}
+
+termInput.addEventListener('keydown', e => {
+  const items = acBox.querySelectorAll('.ac-item');
+  if (e.key === 'Enter') {
+    acBox.classList.remove('open');
+    runCmd(termInput.value);
+    termInput.value = '';
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    if (acBox.classList.contains('open') && items.length) {
+      acSelected = Math.max(0, acSelected - 1);
+      items.forEach((el,i) => el.classList.toggle('active', i === acSelected));
+      termInput.value = items[acSelected].textContent;
+    } else if (histIdx > 0) { histIdx--; termInput.value = cmdHistory[histIdx]; }
+  } else if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    if (acBox.classList.contains('open') && items.length) {
+      acSelected = Math.min(items.length - 1, acSelected + 1);
+      items.forEach((el,i) => el.classList.toggle('active', i === acSelected));
+      termInput.value = items[acSelected].textContent;
+    } else {
+      histIdx = Math.min(cmdHistory.length, histIdx + 1);
+      termInput.value = histIdx < cmdHistory.length ? cmdHistory[histIdx] : '';
+    }
+  } else if (e.key === 'Tab') {
+    e.preventDefault();
+    const v = termInput.value.trim().toLowerCase();
+    const m = PUBLIC_CMDS.filter(c => c.startsWith(v));
+    if (m.length === 1) { termInput.value = m[0]; acBox.classList.remove('open'); }
+    else showAC(m);
+  } else if (e.key === 'Escape') { acBox.classList.remove('open'); }
+});
+
+termInput.addEventListener('input', () => {
+  const v = termInput.value.trim().toLowerCase();
+  if (v) showAC(PUBLIC_CMDS.filter(c => c.startsWith(v)));
+  else acBox.classList.remove('open');
+});
+
+document.addEventListener('click', e => {
+  if (!acBox.contains(e.target) && e.target !== termInput) acBox.classList.remove('open');
+});
+
+// welcome message
+setTimeout(() => termPrint('<span class="term-info">Welcome! Type \'help\' to explore, or just scroll the page above.</span>'), 800);
+
+/* ══════════════════════════════════════════
+   CONTACT FORM
+══════════════════════════════════════════ */
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name    = document.getElementById('cf-name').value;
+  const email   = document.getElementById('cf-email').value;
+  const subject = document.getElementById('cf-subject').value;
+  const msg     = document.getElementById('cf-msg').value;
+  const link = `mailto:mamdouslaskar@protonmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('From: ' + name + ' (' + email + ')\n\n' + msg)}`;
+  const a = document.createElement('a'); a.href = link; a.style.display = 'none';
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  const status = document.getElementById('form-status');
+  status.style.display = 'block';
+  status.textContent = '✓ Opening your email client…';
+  this.reset();
+  setTimeout(() => status.style.display = 'none', 4000);
+});
+</script>
 </body>
 </html>
