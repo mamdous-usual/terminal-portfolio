@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Mamdous  Laskar – BCA Student & Developer. Portfolio showcasing projects, skills, and contact information.">
-<meta name="author" content="Mamdous  Laskar">
-<meta property="og:title" content="Mamdous  Laskar – Developer Portfolio">
+<meta name="description" content="Mamdous Laskar – BCA Student & Developer. Portfolio showcasing projects, skills, and contact information.">
+<meta name="author" content="Mamdous Laskar">
+<meta property="og:title" content="Mamdous Laskar – Developer Portfolio">
 <meta property="og:description" content="BCA Student building things for the web. Projects, skills, and contact.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://mamdous.me">
@@ -184,7 +184,14 @@ section:last-of-type { border-bottom: none; }
   color: var(--text); margin-bottom: 0.5rem;
   letter-spacing: -0.5px;
 }
-.hero-name span { color: var(--accent); }
+.hero-name-full {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.32em;
+  white-space: nowrap;
+}
+.hero-name-first { color: var(--text); }
+.hero-name-last { color: var(--accent); }
 
 .hero-title {
   font-size: 1.1rem; color: var(--muted);
@@ -677,11 +684,14 @@ footer {
       Open to opportunities
     </div>
     <h1 class="hero-name">
-      Mamdous<br><span> Laskar</span>
+      <span class="hero-name-full">
+        <span class="hero-name-first">Mamdous</span>
+        <span class="hero-name-last">Laskar</span>
+      </span>
     </h1>
-    <p class="hero-title">BCA Student & Developer</p>
+    <p class="hero-title">CS Student</p>
     <p class="hero-desc">
-      Building for the web. Currently pursuing a Bachelor of Computer Applications at Karimganj College while creating real projects — from productivity tools to progressive web apps.
+      I’m solving Algorithmic problems, learning CS fundamentals, learning development, and building projects.
     </p>
     <div class="hero-actions">
       <a href="#contact" class="btn btn-primary">
@@ -701,7 +711,7 @@ footer {
     </div>
   </div>
   <div class="hero-avatar-wrap">
-    <img src="Images/professional%20profile.jpg" alt="Mamdous  Laskar" class="hero-avatar">
+    <img src="Images/professional%20profile.jpg" alt="Mamdous Laskar" class="hero-avatar">
     <div class="hero-social" role="list" aria-label="Social media links">
       <a href="https://github.com/mamdous-usual" target="_blank" rel="noopener" title="GitHub" role="listitem"><i class="fab fa-github" aria-label="GitHub"></i></a>
       <a href="https://linkedin.com/in/mamdousahmedlaskar" target="_blank" rel="noopener" title="LinkedIn" role="listitem"><i class="fab fa-linkedin-in" aria-label="LinkedIn"></i></a>
@@ -919,7 +929,7 @@ footer {
 <!-- ── FOOTER ── */
 <footer role="contentinfo">
   <p class="footer-mono">
-    &lt;<span>Mamdous  Laskar</span> /&gt; · Built with HTML, CSS &amp; JS
+    &lt;<span>Mamdous Laskar</span> /&gt; · Built with HTML, CSS &amp; JS
   </p>
   <div class="footer-links">
     <a href="https://github.com/mamdous-usual" target="_blank" rel="noopener">GitHub</a>
@@ -993,7 +1003,7 @@ const COMMANDS = {
   },
   about: {
     desc: 'Who I am',
-    run: () => `<span class="term-success">Mamdous  Laskar</span>
+    run: () => `<span class="term-success">Mamdous Laskar</span>
 BCA Student · Karimganj College, Assam University
 2nd year · Expected graduation: 2028
 
