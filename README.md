@@ -1,4 +1,4 @@
-# Portfolio Website
+# Termina Portfolio
 
 Portfolio website with a hero section, about section, skills, contact links, and a terminal section kept at the bottom for the interactive experience.
 
