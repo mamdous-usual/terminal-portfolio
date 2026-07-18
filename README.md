@@ -1,47 +1,45 @@
 # Terminal Portfolio
 
-Portfolio website with a hero section, about section, skills, contact links, and a terminal section kept at the bottom for the interactive experience.
+A personal portfolio website featuring a modern, responsive design with sections for introduction, about, skills, and contact. For visitors who enjoy exploring, the site also includes an interactive terminal experience that can be used to navigate information through commands.
 
-## Live Site
+## Live Demo
 
-[View the portfolio](https://mamdous.me)
+**Website:** https://mamdous.me
 
-## What's On The Site
+## Features
 
-- Hero section with a short intro, profile image, and quick links to contact
-- About section with background, education, and a learning focus on web development and DSA
-- Skills section covering languages, web frameworks, databases, and tools
-- Contact section with email, LinkedIn, GitHub, and X/Twitter links plus a contact form
-- Terminal section at the bottom for the interactive command-line experience
+* Responsive hero section with a brief introduction, profile image, and quick access to social links
+* About section highlighting my background, education, and current learning journey
+* Skills section covering programming languages, web technologies, databases, and development tools
+* Contact section with social profiles, email, and a contact form
+* Interactive terminal for visitors who enjoy a command-line experience
 
 ## Tech Stack
 
-- HTML5 for structure and semantics
-- CSS3 for layout, styling, and responsive design
-- Vanilla JavaScript for interactivity, terminal commands, and form behavior
-- Font Awesome for icons
-- Google Fonts for JetBrains Mono and Inter
+* HTML5
+* CSS3
+* Vanilla JavaScript
+* Font Awesome
+* Google Fonts (JetBrains Mono & Inter)
 
-## Terminal Section
+## Interactive Terminal
 
-The terminal is still part of the website, but it is now one section inside a broader portfolio. It includes built-in commands such as:
+For visitors who enjoy exploring beyond the traditional portfolio layout, the website includes a built-in terminal. It provides information through a collection of commands and also contains a few hidden commands and easter eggs for curious users to discover.
 
-- `help`
-- `whoami`
-- `about`
-- `skills`
-- `contact`
-- `clear`
+### Available Commands
 
-The terminal also includes extra commands and easter eggs for the curious, while the rest of the site presents a more traditional layout.
+* `help`
+* `whoami`
+* `about`
+* `skills`
+* `contact`
+* `clear`
+
+In addition to these commands, the terminal includes several extra commands and hidden easter eggs waiting to be found.
 
 ## Contact
 
-- Email: [mamdouslaskar@protonmail.com](mailto:mamdouslaskar@protonmail.com)
-- LinkedIn: [linkedin.com/in/mamdousahmedlaskar](https://linkedin.com/in/mamdousahmedlaskar)
-- GitHub: [github.com/mamdous-usual](https://github.com/mamdous-usual)
-- X / Twitter: [@mamdouslaskar](https://twitter.com/mamdouslaskar)
-
-## Notes
-
-The current design is centered around the portfolio experience first, with the terminal kept as a secondary interactive feature at the bottom of the page.
+* **Email:** [mamdouslaskar@protonmail.com](mailto:mamdouslaskar@protonmail.com)
+* **LinkedIn:** https://linkedin.com/in/mamdousahmedlaskar
+* **GitHub:** https://github.com/mamdous-usual
+* **X (Twitter):** https://twitter.com/mamdouslaskar
