@@ -8,19 +8,19 @@ A personal portfolio website featuring a modern, responsive design with sections
 
 ## Features
 
-* Responsive hero section with a brief introduction, profile image, and quick access to social links
-* About section highlighting my background, education, and current learning journey
-* Skills section covering programming languages, web technologies, databases, and development tools
-* Contact section with social profiles, email, and a contact form
-* Interactive terminal for visitors who enjoy a command-line experience
+- Responsive hero section with a brief introduction, profile image, and quick access to social links
+- About section highlighting my background, education, and current learning journey
+- Skills section covering programming languages, web technologies, databases, and development tools
+- Contact section with social profiles, email, and a contact form
+- Interactive terminal for visitors who enjoy a command-line experience
 
 ## Tech Stack
 
-* HTML5
-* CSS3
-* Vanilla JavaScript
-* Font Awesome
-* Google Fonts (JetBrains Mono & Inter)
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Font Awesome
+- Google Fonts (JetBrains Mono & Inter)
 
 ## Interactive Terminal
 
@@ -28,18 +28,18 @@ For visitors who enjoy exploring beyond the traditional portfolio layout, the we
 
 ### Available Commands
 
-* `help`
-* `whoami`
-* `about`
-* `skills`
-* `contact`
-* `clear`
+- `help`
+- `whoami`
+- `about`
+- `skills`
+- `contact`
+- `clear`
 
 In addition to these commands, the terminal includes several extra commands and hidden easter eggs waiting to be found.
 
 ## Contact
 
-* **Email:** [mamdouslaskar@protonmail.com](mailto:mamdouslaskar@protonmail.com)
-* **LinkedIn:** https://linkedin.com/in/mamdousahmedlaskar
-* **GitHub:** https://github.com/mamdous-usual
-* **X (Twitter):** https://twitter.com/mamdouslaskar
+- **Email:** [mamdouslaskar@protonmail.com](mailto:mamdouslaskar@protonmail.com)
+- **LinkedIn:** https://linkedin.com/in/mamdousahmedlaskar
+- **GitHub:** https://github.com/mamdous-usual
+- **X (Twitter):** https://x.com/mamdouslaskar
