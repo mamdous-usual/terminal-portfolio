@@ -1,41 +1,23 @@
 # Terminal Portfolio
 
-A personal portfolio website featuring a modern, responsive design with sections for introduction, about, skills, and contact. For visitors who enjoy exploring, the site also includes an interactive terminal experience that can be used to navigate information through commands.
+A personal portfolio website with an interactive terminal as the hero, followed by about, skills, projects, and contact sections.
 
-## Live Demo
+**Website:** https://mamdous.vercel.app
 
-**Website:** [https://mamdous.me](https://mamdous.vercel.app)
+## Structure
 
-## Features
-
-- Responsive hero section with a brief introduction, profile image, and quick access to social links
-- About section highlighting my background, education, and current learning journey
-- Skills section covering programming languages, web technologies, databases, and development tools
-- Contact section with social profiles, email, and a contact form
-- Interactive terminal for visitors who enjoy a command-line experience
+- `index.html` — page content
+- `css/style.css` — styles (colors are tokens at the top)
+- `js/terminal.js` — the terminal; add a command by adding an entry to `commands`
+- `js/main.js` — mobile menu, scroll effects, contact form
 
 ## Tech Stack
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- Font Awesome
-- Google Fonts (JetBrains Mono & Inter)
+HTML5, CSS3, vanilla JavaScript, Font Awesome, Google Fonts (JetBrains Mono & Inter)
 
 ## Interactive Terminal
 
-For visitors who enjoy exploring beyond the traditional portfolio layout, the website includes a built-in terminal. It provides information through a collection of commands and also contains a few hidden commands and easter eggs for curious users to discover.
-
-### Available Commands
-
-- `help`
-- `whoami`
-- `about`
-- `skills`
-- `contact`
-- `clear`
-
-In addition to these commands, the terminal includes several extra commands and hidden easter eggs waiting to be found.
+Type `help` for the commands. There are a few hidden ones too.
 
 ## Contact
 

@@ -3,23 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mamdous Laskar</title>
 <meta name="description" content="Interested in computers, software, and understanding how things work.">
 <meta name="author" content="Mamdous Laskar">
+<meta name="theme-color" content="#0f1117">
 <meta property="og:title" content="Mamdous Laskar">
 <meta property="og:description" content="A curious mind with a thing for computers.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://mamdous.vercel.app/">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://mamdous.vercel.app/">
-<meta name="theme-color" content="#0f1117">
-<title>Mamdous Laskar</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHJ4PSI0IiBmaWxsPSIjMjEyNTJiIi8+CiAgPHJlY3QgeD0iMiIgeT0iMiIgd2lkdGg9IjI4IiBoZWlnaHQ9IjI4IiByeD0iMiIgZmlsbD0iIzI4MmMzNCIvPgogIDxyZWN0IHg9IjIiIHk9IjIiIHdpZHRoPSIyOCIgaGVpZ2h0PSI2IiBmaWxsPSIjMjEyNTJiIi8+CiAgPGNpcmNsZSBjeD0iNiIgY3k9IjUiIHI9IjEuNSIgZmlsbD0iI2UwNmM3NSIvPgogIDxjaXJjbGUgY3g9IjEwIiBjeT0iNSIgcj0iMS41IiBmaWxsPSIjZTVjMDdiIi8+CiAgPGNpcmNsZSBjeD0iMTQiIGN5PSI1IiByPSIxLjUiIGZpbGw9IiM5OGMzNzkiLz4KICA8dGV4dCB4PSI0IiB5PSIxNyIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSI4IiBmaWxsPSIjOThjMzc5Ij4kPC90ZXh0PgogIDx0ZXh0IHg9IjgiIHk9IjE3IiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjgiIGZpbGw9IiM2MWFmZWYiPmxzPC90ZXh0PgogIDx0ZXh0IHg9IjQiIHk9IjI1IiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjciIGZpbGw9IiNhYmIyYmYiPmhvbWUvPC90ZXh0Pgo8L3N2Zz4K">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<noscript><style>.fade-in { opacity: 1; transform: none; }</style></noscript>
 
 <script type="application/ld+json">
 {
@@ -36,888 +37,228 @@
   "contactPoint": { "@type": "ContactPoint", "email": "mamdouslaskar@protonmail.com" }
 }
 </script>
-
-<style>
-/* ── Reset & Base ── */
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; font-size: 16px; }
-
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #0f1117; }
-::-webkit-scrollbar-thumb { background: #2a2d3a; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #3a3d4a; }
-
-/* ── Tokens ── */
-:root {
-  --bg:       #0f1117;
-  --surface:  #161820;
-  --surface2: #1d1f2b;
-  --border:   #2a2d3a;
-  --border2:  #3a3d4a;
-  --text:     #e2e4ed;
-  --muted:    #7a7d8f;
-  --accent:   #61afef;
-  --green:    #98c379;
-  --amber:    #e5c07b;
-  --red:      #e06c75;
-  --purple:   #c678dd;
-  --cyan:     #56b6c2;
-  --mono: 'JetBrains Mono', monospace;
-  --sans: 'Inter', sans-serif;
-  --radius: 10px;
-  --radius-sm: 6px;
-}
-
-body {
-  font-family: var(--sans);
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.65;
-  overflow-x: hidden;
-  min-height: 100vh;
-}
-
-/* ── Loading Screen ── */
-/* ── Page Layout ── */
-.page { opacity: 1; visibility: visible; }
-
-/* ── TOP NAV ── */
-nav {
-  position: sticky; top: 0; z-index: 100;
-  background: rgba(15, 17, 23, 0.9);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
-  padding: 0 max(1.5rem, calc((100% - 860px) / 2));
-  display: flex; align-items: center; justify-content: space-between;
-  height: 56px;
-}
-.nav-logo {
-  font-family: var(--mono);
-  font-size: 14px; font-weight: 700;
-  color: var(--accent);
-  text-decoration: none;
-  display: flex; align-items: center; gap: 6px;
-}
-.nav-logo .prompt-char { color: var(--green); }
-
-.nav-links {
-  display: flex; gap: 4px; align-items: center;
-  list-style: none;
-}
-.nav-links a {
-  font-family: var(--mono);
-  font-size: 12px; color: var(--muted);
-  text-decoration: none; padding: 5px 10px;
-  border-radius: var(--radius-sm);
-  border: 1px solid transparent;
-  transition: all 0.15s;
-}
-.nav-links a:hover {
-  color: var(--accent);
-  border-color: var(--border2);
-  background: var(--surface);
-}
-.nav-cta {
-  font-family: var(--mono);
-  font-size: 12px; font-weight: 700;
-  color: var(--bg) !important;
-  background: var(--accent) !important;
-  border: none !important; padding: 6px 14px !important;
-  border-radius: var(--radius-sm) !important;
-}
-.nav-cta:hover { opacity: 0.88 !important; background: var(--accent) !important; }
-
-/* ── Main Container ── */
-main {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 0 max(1.5rem, 16px);
-}
-
-/* ── Section ── */
-section { padding: 4rem 0; border-bottom: 1px solid var(--border); }
-section:last-of-type { border-bottom: none; }
-
-.section-label {
-  font-family: var(--mono);
-  font-size: 11px; font-weight: 700;
-  letter-spacing: 1.5px; text-transform: uppercase;
-  color: var(--accent); margin-bottom: 1.75rem;
-  display: flex; align-items: center; gap: 10px;
-}
-.section-label::after {
-  content: '';
-  flex: 1; height: 1px; background: var(--border);
-  display: block;
-}
-
-/* ── HERO ── */
-#hero {
-  padding: 5rem 0 4rem;
-  display: grid;
-  grid-template-columns: 1fr 160px;
-  gap: 2rem; align-items: start;
-  border-bottom: 1px solid var(--border);
-}
-.hero-badge {
-  display: inline-flex; align-items: center; gap: 6px;
-  font-family: var(--mono); font-size: 11px;
-  color: var(--green); background: rgba(152,195,121,0.1);
-  border: 1px solid rgba(152,195,121,0.25);
-  padding: 4px 10px; border-radius: 20px;
-  margin-bottom: 1.25rem;
-}
-.hero-badge-dot {
-  width: 6px; height: 6px; border-radius: 50%;
-  background: var(--green);
-  animation: pulse 2s ease infinite;
-}
-@keyframes pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: 0.5; transform: scale(0.8); }
-}
-
-.hero-name {
-  font-family: var(--mono);
-  font-size: clamp(2rem, 5vw, 3.25rem);
-  font-weight: 700; line-height: 1.1;
-  color: var(--text); margin-bottom: 0.5rem;
-  letter-spacing: -0.5px;
-}
-.hero-name-full {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 0.32em;
-  white-space: nowrap;
-}
-.hero-name-first { color: var(--text); }
-.hero-name-last { color: var(--accent); }
-
-.hero-title {
-  font-size: 1.1rem; color: var(--muted);
-  font-weight: 400; margin-bottom: 1.25rem;
-}
-
-.hero-desc {
-  font-size: 0.95rem; color: var(--muted);
-  max-width: 460px; line-height: 1.75;
-  margin-bottom: 2rem;
-}
-
-.hero-actions {
-  display: flex; gap: 10px; flex-wrap: wrap;
-}
-.btn {
-  display: inline-flex; align-items: center; gap: 7px;
-  font-family: var(--mono); font-size: 13px; font-weight: 700;
-  padding: 9px 20px; border-radius: var(--radius-sm);
-  text-decoration: none; cursor: pointer;
-  transition: all 0.15s ease; border: 1px solid;
-  white-space: nowrap;
-}
-.btn-primary {
-  background: var(--accent); color: var(--bg);
-  border-color: var(--accent);
-}
-.btn-primary:hover { opacity: 0.88; transform: translateY(-1px); }
-.btn-outline {
-  background: transparent; color: var(--accent);
-  border-color: var(--border2);
-}
-.btn-outline:hover { border-color: var(--accent); background: rgba(97,175,239,0.06); transform: translateY(-1px); }
-
-.hero-avatar-wrap {
-  display: flex; flex-direction: column; align-items: center; gap: 1rem;
-}
-.hero-avatar {
-  width: 140px; height: 140px; border-radius: 50%;
-  border: 2px solid var(--accent);
-  object-fit: cover; object-position: center top;
-  box-shadow: 0 0 0 4px rgba(97,175,239,0.12);
-  display: block;
-}
-.hero-avatar-placeholder {
-  width: 140px; height: 140px; border-radius: 50%;
-  border: 2px solid var(--accent);
-  background: var(--surface2);
-  display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 0 0 4px rgba(97,175,239,0.12);
-}
-.hero-avatar-placeholder i { font-size: 48px; color: var(--muted); }
-
-.hero-social {
-  display: flex; gap: 8px;
-}
-.hero-social a {
-  width: 32px; height: 32px; border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 14px; color: var(--muted);
-  border: 1px solid var(--border);
-  text-decoration: none;
-  transition: all 0.15s;
-}
-.hero-social a:hover { color: var(--accent); border-color: var(--accent); background: rgba(97,175,239,0.08); }
-
-/* ── INFO STRIPS ── */
-.info-strips {
-  display: flex; gap: 12px; flex-wrap: wrap;
-  margin-top: 1.5rem;
-}
-.info-strip {
-  display: flex; align-items: center; gap: 7px;
-  font-size: 12px; color: var(--muted);
-  font-family: var(--mono);
-}
-.info-strip i { color: var(--accent); font-size: 13px; }
-
-/* ── ABOUT ── */
-.about-grid {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-}
-.about-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.25rem 1.5rem;
-}
-.about-card-title {
-  font-family: var(--mono); font-size: 11px;
-  color: var(--accent); font-weight: 700;
-  letter-spacing: 1px; text-transform: uppercase;
-  margin-bottom: 0.75rem;
-  display: flex; align-items: center; gap: 8px;
-}
-.about-card-title i { font-size: 14px; }
-.about-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.75; }
-.about-card strong { color: var(--text); font-weight: 500; }
-
-.edu-item { margin-bottom: 0.75rem; }
-.edu-degree { font-size: 0.9rem; color: var(--text); font-weight: 500; }
-.edu-school { font-size: 0.82rem; color: var(--muted); margin-top: 2px; }
-.edu-year {
-  display: inline-block; margin-top: 4px;
-  font-family: var(--mono); font-size: 10px;
-  color: var(--amber); background: rgba(229,192,123,0.1);
-  border: 1px solid rgba(229,192,123,0.2);
-  padding: 2px 8px; border-radius: 20px;
-}
-
-/* ── SKILLS ── */
-.skills-layout { display: flex; flex-direction: column; gap: 1.5rem; }
-.skill-group-name {
-  font-family: var(--mono); font-size: 11px; font-weight: 700;
-  color: var(--muted); letter-spacing: 1.2px; text-transform: uppercase;
-  margin-bottom: 0.6rem;
-}
-.skill-pills { display: flex; flex-wrap: wrap; gap: 7px; }
-.skill-pill {
-  font-family: var(--mono); font-size: 12px;
-  padding: 5px 12px; border-radius: 20px;
-  border: 1px solid var(--border2);
-  color: var(--text); background: var(--surface);
-  transition: all 0.15s;
-}
-.skill-pill:hover { border-color: var(--accent); color: var(--accent); background: rgba(97,175,239,0.06); }
-.skill-pill.learning {
-  color: var(--amber); border-color: rgba(229,192,123,0.3);
-  background: rgba(229,192,123,0.06);
-}
-
-/* ── PROJECTS ── */
-.projects-grid {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.25rem;
-}
-.project-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.5rem;
-  transition: all 0.2s ease;
-  position: relative; overflow: hidden;
-  display: flex; flex-direction: column;
-}
-.project-card::before {
-  content: '';
-  position: absolute; top: 0; left: 0; right: 0; height: 2px;
-  background: linear-gradient(90deg, var(--accent), var(--cyan));
-  transform: scaleX(0); transform-origin: left;
-  transition: transform 0.25s ease;
-}
-.project-card:hover {
-  border-color: var(--border2);
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
-}
-.project-card:hover::before { transform: scaleX(1); }
-
-.project-number {
-  font-family: var(--mono); font-size: 10px;
-  color: var(--muted); margin-bottom: 0.75rem;
-}
-.project-name {
-  font-weight: 600; font-size: 1rem;
-  color: var(--text); margin-bottom: 0.6rem;
-}
-.project-desc {
-  font-size: 0.875rem; color: var(--muted);
-  line-height: 1.7; flex: 1; margin-bottom: 1rem;
-}
-.project-tech {
-  display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 1.25rem;
-}
-.tech-tag {
-  font-family: var(--mono); font-size: 10px;
-  color: var(--amber); background: rgba(229,192,123,0.08);
-  border: 1px solid rgba(229,192,123,0.2);
-  padding: 2px 8px; border-radius: 4px;
-}
-.project-links { display: flex; gap: 10px; }
-.project-link {
-  font-family: var(--mono); font-size: 11px;
-  color: var(--muted); text-decoration: none;
-  display: flex; align-items: center; gap: 5px;
-  transition: color 0.15s;
-}
-.project-link:hover { color: var(--accent); }
-.project-link i { font-size: 12px; }
-
-/* ── CONTACT ── */
-.contact-layout {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 2rem; align-items: start;
-}
-
-.contact-info { display: flex; flex-direction: column; gap: 1rem; }
-.contact-item {
-  display: flex; align-items: center; gap: 1rem;
-  padding: 1rem 1.25rem;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  text-decoration: none;
-  transition: all 0.15s;
-}
-.contact-item:hover { border-color: var(--accent); background: rgba(97,175,239,0.04); }
-.contact-icon {
-  width: 38px; height: 38px; border-radius: 8px;
-  background: rgba(97,175,239,0.1);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 16px; color: var(--accent); flex-shrink: 0;
-}
-.contact-label { font-size: 11px; color: var(--muted); margin-bottom: 2px; }
-.contact-value { font-family: var(--mono); font-size: 13px; color: var(--text); }
-
-/* Contact form */
-.contact-form { display: flex; flex-direction: column; gap: 12px; }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.field { display: flex; flex-direction: column; gap: 5px; }
-.field label {
-  font-family: var(--mono); font-size: 11px;
-  color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px;
-}
-.field input, .field textarea {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: 9px 12px;
-  color: var(--text);
-  font-family: var(--sans); font-size: 14px;
-  outline: none; transition: border-color 0.15s;
-  resize: vertical;
-}
-.field input:focus, .field textarea:focus { border-color: var(--accent); }
-.field input::placeholder, .field textarea::placeholder { color: var(--border2); }
-.field textarea { min-height: 100px; }
-
-/* ── TERMINAL SECTION ── */
-.terminal-wrapper {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-}
-.terminal-topbar {
-  background: #1a1d25;
-  padding: 10px 16px;
-  display: flex; align-items: center; gap: 8px;
-  border-bottom: 1px solid var(--border);
-}
-.dot { width: 11px; height: 11px; border-radius: 50%; }
-.dot-red    { background: #e06c75; }
-.dot-amber  { background: #e5c07b; }
-.dot-green  { background: #98c379; }
-.terminal-bar-title {
-  font-family: var(--mono); font-size: 12px;
-  color: var(--muted); margin-left: 8px;
-}
-.terminal-hint {
-  font-family: var(--mono); font-size: 11px;
-  color: var(--muted); margin-left: auto;
-  background: var(--surface2); border: 1px solid var(--border);
-  padding: 2px 8px; border-radius: 4px;
-}
-
-.terminal-body { padding: 1.25rem 1.5rem; min-height: 200px; }
-#term-output { margin-bottom: 1rem; }
-.term-line { font-family: var(--mono); font-size: 13px; line-height: 1.8; margin-bottom: 2px; }
-.term-prompt-char { color: var(--green); font-weight: 700; }
-.term-cmd-text { color: var(--accent); }
-.term-out { color: var(--muted); white-space: pre-wrap; }
-.term-out a { color: var(--accent); text-decoration: none; }
-.term-out a:hover { text-decoration: underline; }
-.term-error { color: var(--red); }
-.term-success { color: var(--green); }
-.term-info { color: var(--cyan); }
-.term-warn { color: var(--amber); }
-
-.terminal-input-row {
-  display: flex; align-items: center; gap: 8px;
-  border-top: 1px solid var(--border); padding-top: 12px;
-}
-.terminal-prompt { font-family: var(--mono); font-size: 13px; color: var(--green); font-weight: 700; white-space: nowrap; }
-#term-input {
-  background: transparent; border: none; outline: none;
-  font-family: var(--mono); font-size: 13px;
-  color: var(--text); flex: 1; caret-color: var(--accent);
-}
-.cursor-blink {
-  display: inline-block; width: 7px; height: 14px;
-  background: var(--accent); animation: blink 1s step-end infinite;
-  vertical-align: -2px;
-}
-@keyframes blink { 0%,50%{opacity:1} 51%,100%{opacity:0} }
-
-/* ── FOOTER ── */
-footer {
-  border-top: 1px solid var(--border);
-  padding: 2rem max(1.5rem, calc((100% - 860px) / 2));
-  display: flex; align-items: center; justify-content: space-between;
-  flex-wrap: wrap; gap: 1rem;
-}
-.footer-mono { font-family: var(--mono); font-size: 12px; color: var(--muted); }
-.footer-mono span { color: var(--accent); }
-.footer-links { display: flex; gap: 16px; }
-.footer-links a { font-size: 13px; color: var(--muted); text-decoration: none; transition: color 0.15s; }
-.footer-links a:hover { color: var(--accent); }
-
-/* ── Autocomplete ── */
-.autocomplete-box {
-  position: absolute; bottom: 100%; left: 0; right: 0;
-  background: var(--surface2); border: 1px solid var(--border);
-  border-radius: var(--radius-sm); margin-bottom: 4px;
-  overflow: hidden; display: none;
-  z-index: 10;
-}
-.autocomplete-box.open { display: block; }
-.ac-item {
-  font-family: var(--mono); font-size: 12px;
-  padding: 7px 12px; color: var(--muted); cursor: pointer;
-  transition: all 0.1s;
-}
-.ac-item:hover, .ac-item.active { background: var(--surface); color: var(--accent); }
-.terminal-input-wrap { position: relative; flex: 1; display: flex; align-items: center; }
-
-/* ── Responsive ── */
-/* ── Hamburger button (hidden on desktop) ── */
-.nav-hamburger {
-  display: none;
-  background: none; border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  color: var(--muted); cursor: pointer;
-  width: 36px; height: 36px;
-  align-items: center; justify-content: center;
-  font-size: 18px; transition: all 0.15s;
-}
-.nav-hamburger:hover { color: var(--accent); border-color: var(--accent); }
-
-/* ── Mobile nav drawer ── */
-.mobile-nav {
-  display: none;
-  position: fixed; top: 56px; left: 0; right: 0;
-  background: rgba(15,17,23,0.98);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
-  padding: 1rem;
-  z-index: 99;
-  flex-direction: column; gap: 4px;
-}
-.mobile-nav.open { display: flex; }
-.mobile-nav a {
-  font-family: var(--mono); font-size: 14px;
-  color: var(--muted); text-decoration: none;
-  padding: 10px 14px; border-radius: var(--radius-sm);
-  border: 1px solid transparent;
-  transition: all 0.15s;
-}
-.mobile-nav a:hover { color: var(--accent); border-color: var(--border); background: var(--surface); }
-.mobile-nav .nav-cta {
-  color: var(--bg) !important; background: var(--accent) !important;
-  border-color: var(--accent) !important; text-align: center; margin-top: 4px;
-}
-
-/* ── Tablet (900px) ── */
-@media (max-width: 900px) {
-  main { padding: 0 1.25rem; }
-  nav { padding: 0 1.25rem; }
-}
-
-/* ── Tablet (768px) ── */
-@media (max-width: 768px) {
-  main { padding: 0 1rem; }
-  nav { padding: 0 1rem; }
-
-  #hero {
-    grid-template-columns: 1fr;
-    padding: 3rem 0;
-    gap: 1.5rem;
-  }
-  .hero-avatar-wrap {
-    flex-direction: row;
-    justify-content: flex-start;
-    order: -1;
-    gap: 1rem;
-  }
-  .hero-avatar, .hero-avatar-placeholder { width: 90px; height: 90px; }
-  .hero-avatar-placeholder i { font-size: 32px; }
-  .hero-social { flex-direction: row; }
-
-  .hero-name { font-size: clamp(1.75rem, 6vw, 2.5rem); }
-  .about-grid { grid-template-columns: 1fr; gap: 1rem; }
-  .projects-grid { grid-template-columns: 1fr 1fr; }
-  .contact-layout { grid-template-columns: 1fr; }
-  .form-row { grid-template-columns: 1fr 1fr; }
-  section { padding: 3rem 0; }
-}
-
-/* ── Mobile (600px) ── */
-@media (max-width: 600px) {
-  .nav-links { display: none; }
-  .nav-hamburger { display: flex; }
-
-  #hero {
-    grid-template-columns: 1fr;
-    padding: 2rem 0 2.5rem;
-    gap: 1rem;
-  }
-  .hero-avatar, .hero-avatar-placeholder { width: 76px; height: 76px; }
-  .hero-avatar-placeholder i { font-size: 26px; }
-  .hero-social a { width: 28px; height: 28px; font-size: 12px; }
-  .hero-name { font-size: clamp(1.5rem, 7vw, 2rem); }
-  .hero-desc { font-size: 0.88rem; }
-  .hero-actions { gap: 8px; }
-  .btn { font-size: 12px; padding: 8px 14px; }
-  .info-strips { gap: 8px; }
-  .info-strip { font-size: 11px; }
-
-  .projects-grid { grid-template-columns: 1fr; }
-  .form-row { grid-template-columns: 1fr; }
-  .contact-layout { grid-template-columns: 1fr; }
-  section { padding: 2.5rem 0; }
-  .section-label { font-size: 10px; }
-  .terminal-body { padding: 1rem; }
-  .terminal-prompt { font-size: 11px; }
-  #term-input { font-size: 12px; }
-}
-
-/* ── Small phones (400px) ── */
-@media (max-width: 400px) {
-  main { padding: 0 0.75rem; }
-  .hero-name { font-size: 1.4rem; }
-  .hero-actions { flex-direction: column; }
-  .btn { width: 100%; justify-content: center; font-size: 12px; }
-  .hero-badge { font-size: 10px; }
-  .skill-pill { font-size: 11px; padding: 4px 10px; }
-  .contact-value { font-size: 11px; }
-  footer { flex-direction: column; gap: 0.75rem; }
-  .footer-links { gap: 12px; }
-  .about-card { padding: 1rem; }
-  .project-card { padding: 1rem; }
-}
-
-/* ── Entrance animations ── */
-.fade-in {
-  opacity: 0; transform: translateY(16px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.fade-in.visible { opacity: 1; transform: none; }
-</style>
 </head>
 <body>
 
-<!-- ── PAGE ── -->
-<div class="page" id="page">
-
-<!-- NAV -->
-<nav role="navigation" aria-label="Main navigation">
-  <a href="#" class="nav-logo">
-    <span class="prompt-char">~</span>mamdous
-  </a>
-  <ul class="nav-links" role="list">
+<nav aria-label="Main navigation">
+  <a href="#" class="nav-logo"><span>~</span>mamdous</a>
+  <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#terminal">Terminal</a></li>
     <li><a href="#contact" class="nav-cta">Contact me</a></li>
   </ul>
-  <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
     <i class="fas fa-bars" aria-hidden="true"></i>
   </button>
 </nav>
 
-<div class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Mobile navigation">
-  <a href="#about"    onclick="closeMobileNav()">About</a>
-  <a href="#skills"   onclick="closeMobileNav()">Skills</a>
-  <a href="#projects" onclick="closeMobileNav()">Projects</a>
-  <a href="#terminal" onclick="closeMobileNav()">Terminal</a>
-  <a href="#contact"  onclick="closeMobileNav()" class="nav-cta">Contact me</a>
+<div class="mobile-nav" id="mobile-nav">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact" class="nav-cta">Contact me</a>
 </div>
 
 <main>
 
-<!-- ── HERO ── -->
+<!-- Hero: the terminal -->
 <section id="hero" aria-label="Introduction">
-  <div>
-    <div class="hero-badge" role="status">
-      <span class="hero-badge-dot" aria-hidden="true"></span>
-      Open to opportunities
+  <div class="terminal" role="region" aria-label="Interactive terminal">
+    <div class="terminal-bar" aria-hidden="true">
+      <span class="dot dot-red"></span>
+      <span class="dot dot-amber"></span>
+      <span class="dot dot-green"></span>
+      <span class="terminal-title">mamdous@localhost:~</span>
     </div>
-    <h1 class="hero-name">
-      <span class="hero-name-full">
-        <span class="hero-name-first">Mamdous</span>
-        <span class="hero-name-last">Laskar</span>
-      </span>
-    </h1>
-    <p class="hero-title">CS Student</p>
-    <p class="hero-desc">
-      Solving algorithmic problems, strengthening CS fundamentals, learning software development, and building practical projects.
-    </p>
-    <div class="hero-actions">
-      <a href="#contact" class="btn btn-primary">
-        <i class="fas fa-envelope" aria-hidden="true"></i> Get in touch
-      </a>
-      <a href="#projects" class="btn btn-outline">
-        <i class="fas fa-code" aria-hidden="true"></i> View projects
-      </a>
-      <a href="https://linkedin.com/in/mamdousahmedlaskar" target="_blank" rel="noopener" class="btn btn-outline">
-        <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
-      </a>
-    </div>
-    <div class="info-strips">
-      <span class="info-strip"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Assam, India</span>
-      <span class="info-strip"><i class="fas fa-graduation-cap" aria-hidden="true"></i> BCA · Expected 2028</span>
-      <span class="info-strip"><i class="fas fa-clock" aria-hidden="true"></i> Replies within 48 hrs</span>
-    </div>
-  </div>
-  <div class="hero-avatar-wrap">
-    <img src="Images/professional%20profile.jpg" alt="Mamdous Laskar" class="hero-avatar">
-    <div class="hero-social" role="list" aria-label="Social media links">
-      <a href="https://github.com/mamdous-usual" target="_blank" rel="noopener" title="GitHub" role="listitem"><i class="fab fa-github" aria-label="GitHub"></i></a>
-      <a href="https://linkedin.com/in/mamdousahmedlaskar" target="_blank" rel="noopener" title="LinkedIn" role="listitem"><i class="fab fa-linkedin-in" aria-label="LinkedIn"></i></a>
-      <a href="https://x.com/mamdouslaskar" target="_blank" rel="noopener" title="Twitter/X" role="listitem"><i class="fab fa-twitter" aria-label="Twitter"></i></a>
+
+    <div class="terminal-body" id="term-body">
+      <div class="intro">
+        <h1 class="name"><span>Mamdous</span> <span class="name-accent">Laskar</span></h1>
+        <p class="title">CS Student</p>
+        <p class="desc">Solving algorithmic problems, strengthening CS fundamentals, learning software development, and building practical projects.</p>
+
+        <div class="actions">
+          <a href="#contact" class="btn btn-primary"><i class="fas fa-envelope" aria-hidden="true"></i> Get in touch</a>
+          <a href="#projects" class="btn"><i class="fas fa-code" aria-hidden="true"></i> View projects</a>
+          <a href="https://linkedin.com/in/mamdousahmedlaskar" target="_blank" rel="noopener" class="btn"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+        </div>
+
+        <ul class="meta">
+          <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Assam, India</li>
+          <li><i class="fas fa-graduation-cap" aria-hidden="true"></i> BCA · Expected 2028</li>
+        </ul>
+
+        <div class="social">
+          <a href="https://github.com/mamdous-usual" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+          <a href="https://linkedin.com/in/mamdousahmedlaskar" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+          <a href="https://x.com/mamdouslaskar" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="term-output" aria-live="polite"></div>
+
+      <label class="prompt-row">
+        <span class="prompt" aria-hidden="true">visitor@localhost:~$</span>
+        <span class="input-wrap">
+          <span class="suggest" id="suggest" role="listbox"></span>
+          <input type="text" id="term-input" aria-label="Terminal command" placeholder="type a command..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+        </span>
+      </label>
     </div>
   </div>
 </section>
 
-<!-- ── ABOUT ── -->
+<!-- About -->
 <section id="about" class="fade-in" aria-labelledby="about-heading">
-  <p class="section-label" id="about-heading"><i class="fas fa-terminal" aria-hidden="true"></i> About</p>
-  <div class="about-grid">
-    <div class="about-card">
-      <div class="about-card-title"><i class="fas fa-user" aria-hidden="true"></i> Who I am</div>
+  <h2 class="section-label" id="about-heading"><i class="fas fa-terminal" aria-hidden="true"></i> About</h2>
+  <div class="grid grid-2">
+    <div class="card">
+      <h3 class="card-title"><i class="fas fa-user" aria-hidden="true"></i> Who I am</h3>
       <p>I'm a <strong>second-year BCA student</strong> from Assam, India who builds software by learning through real projects and documentation. I focus on web development, UI design, and solving practical problems with code.</p>
-      <br>
-      <p>I actively solve <strong>Data Structures & Algorithms problems</strong> on platforms like <strong>GeeksforGeeks</strong>, <strong>LeetCode</strong>, and other coding platforms to strengthen my problem-solving skills.</p>
+      <p>I actively solve <strong>Data Structures &amp; Algorithms problems</strong> on platforms like <strong>GeeksforGeeks</strong>, <strong>LeetCode</strong>, and other coding platforms to strengthen my problem-solving skills.</p>
     </div>
-    <div class="about-card">
-      <div class="about-card-title"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Education</div>
-      <div class="edu-item">
-        <div class="edu-degree">Bachelor of Computer Application (BCA)</div>
-        <div class="edu-school">Karimganj College, Assam University</div>
-        <span class="edu-year">2nd year · Expected 2028</span>
-      </div>
-      <br>
-      <div class="about-card-title" style="margin-top:0.5rem;"><i class="fas fa-rocket" aria-hidden="true"></i> What I'm after</div>
+    <div class="card">
+      <h3 class="card-title"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Education</h3>
+      <p class="edu-degree">Bachelor of Computer Application (BCA)</p>
+      <p class="edu-school">Karimganj College, Assam University</p>
+      <span class="tag tag-amber">2nd year · Expected 2028</span>
+
+      <h3 class="card-title card-title-spaced"><i class="fas fa-rocket" aria-hidden="true"></i> What I'm after</h3>
       <p>Internships, open-source contributions, and any chance to work with experienced developers and build meaningful things.</p>
     </div>
   </div>
 </section>
 
-<!-- ── SKILLS ── -->
+<!-- Skills -->
 <section id="skills" class="fade-in" aria-labelledby="skills-heading">
-  <p class="section-label" id="skills-heading"><i class="fas fa-tools" aria-hidden="true"></i> Skills</p>
-  <div class="skills-layout">
-    <div class="skill-group">
-      <div class="skill-group-name">Languages</div>
-      <div class="skill-pills">
-        <span class="skill-pill">JavaScript</span>
-        <span class="skill-pill">Java</span>
-        <span class="skill-pill">Python</span>
-        <span class="skill-pill">C / C++</span>
+  <h2 class="section-label" id="skills-heading"><i class="fas fa-tools" aria-hidden="true"></i> Skills</h2>
+  <div class="skills">
+    <div>
+      <h3 class="skill-group">Languages</h3>
+      <div class="pills">
+        <span class="pill">JavaScript</span>
+        <span class="pill">Java</span>
+        <span class="pill">Python</span>
+        <span class="pill">C / C++</span>
       </div>
     </div>
-    <div class="skill-group">
-      <div class="skill-group-name">Web &amp; Frameworks</div>
-      <div class="skill-pills">
-        <span class="skill-pill">HTML</span>
-        <span class="skill-pill">CSS</span>
-        <span class="skill-pill">React</span>
-        <span class="skill-pill">Node.js</span>
-        <span class="skill-pill">Express</span>
-        <span class="skill-pill">Spring Boot</span>
+    <div>
+      <h3 class="skill-group">Web &amp; Frameworks</h3>
+      <div class="pills">
+        <span class="pill">HTML</span>
+        <span class="pill">CSS</span>
+        <span class="pill">React</span>
+        <span class="pill">Node.js</span>
+        <span class="pill">Express</span>
+        <span class="pill">Spring Boot</span>
       </div>
     </div>
-    <div class="skill-group">
-      <div class="skill-group-name">Databases &amp; Tools</div>
-      <div class="skill-pills">
-        <span class="skill-pill">MySQL</span>
-        <span class="skill-pill">MongoDB</span>
-        <span class="skill-pill">PostgreSQL</span>
-        <span class="skill-pill">Git</span>
-        <span class="skill-pill">Docker</span>
-        <span class="skill-pill">Linux</span>
-        <span class="skill-pill">VS Code</span>
+    <div>
+      <h3 class="skill-group">Databases &amp; Tools</h3>
+      <div class="pills">
+        <span class="pill">MySQL</span>
+        <span class="pill">MongoDB</span>
+        <span class="pill">PostgreSQL</span>
+        <span class="pill">Git</span>
+        <span class="pill">Docker</span>
+        <span class="pill">Linux</span>
+        <span class="pill">VS Code</span>
       </div>
     </div>
-    <div class="skill-group">
-      <div class="skill-group-name">Currently learning</div>
-      <div class="skill-pills">
-        <span class="skill-pill learning">Advanced DSA</span>
-        <span class="skill-pill learning">Web development</span>
+    <div>
+      <h3 class="skill-group">Currently learning</h3>
+      <div class="pills">
+        <span class="pill pill-amber">Advanced DSA</span>
+        <span class="pill pill-amber">Web development</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── PROJECTS ── -->
+<!-- Projects -->
 <section id="projects" class="fade-in" aria-labelledby="projects-heading">
-  <p class="section-label" id="projects-heading"><i class="fas fa-folder-open" aria-hidden="true"></i> Projects</p>
-  <div class="projects-grid">
+  <h2 class="section-label" id="projects-heading"><i class="fas fa-folder-open" aria-hidden="true"></i> Projects</h2>
+  <div class="grid grid-projects">
 
-    <article class="project-card">
-      <div class="project-number">01 / Productivity</div>
+    <article class="card project">
+      <p class="project-kind">01 / Productivity</p>
       <h3 class="project-name">Paper-Notebook</h3>
       <p class="project-desc">A minimal notebook and whiteboard app. Pick a paper type and start writing or drawing right in the browser — autosaves as you go, no sign-up needed.</p>
-      <div class="project-tech">
-        <span class="tech-tag">React</span><span class="tech-tag">Canvas API</span><span class="tech-tag">localStorage</span>
-      </div>
+      <div class="tags"><span class="tag tag-amber">React</span><span class="tag tag-amber">Canvas API</span><span class="tag tag-amber">localStorage</span></div>
       <div class="project-links">
-        <a href="https://github.com/mamdous-usual/paper-notebook.git" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
-        <a href="https://papernotebook.vercel.app" target="_blank" rel="noopener" class="project-link"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live site</a>
+        <a href="https://github.com/mamdous-usual/paper-notebook" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+        <a href="https://papernotebook.vercel.app" target="_blank" rel="noopener"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live site</a>
       </div>
     </article>
 
-    <article class="project-card">
-      <div class="project-number">02 / Utility</div>
+    <article class="card project">
+      <p class="project-kind">02 / Utility</p>
       <h3 class="project-name">Speedometer PWA</h3>
       <p class="project-desc">A progressive web app that reads your device's GPS to display real-time speed — works offline, installable on Android/iOS. A practical tool for everyday use.</p>
-      <div class="project-tech">
-        <span class="tech-tag">JavaScript</span><span class="tech-tag">PWA</span><span class="tech-tag">Geolocation API</span>
-      </div>
+      <div class="tags"><span class="tag tag-amber">JavaScript</span><span class="tag tag-amber">PWA</span><span class="tag tag-amber">Geolocation API</span></div>
       <div class="project-links">
-        <a href="https://github.com/mamdous-usual/speedometer" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
-        <a href="https://speedometerweb.vercel.app" target="_blank" rel="noopener" class="project-link"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live site</a>
+        <a href="https://github.com/mamdous-usual/speedometer" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+        <a href="https://speedometerweb.vercel.app" target="_blank" rel="noopener"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live site</a>
       </div>
     </article>
 
-    <article class="project-card">
-      <div class="project-number">03 / Productivity</div>
+    <article class="card project">
+      <p class="project-kind">03 / Productivity</p>
       <h3 class="project-name">Productivity Core</h3>
       <p class="project-desc">An all-in-one productivity web app combining a task manager, Pomodoro timer, and focus tools in a single clean interface. No login required.</p>
-      <div class="project-tech">
-        <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span>
-      </div>
+      <div class="tags"><span class="tag tag-amber">HTML</span><span class="tag tag-amber">CSS</span><span class="tag tag-amber">JavaScript</span></div>
       <div class="project-links">
-        <a href="https://github.com/mamdous-usual/productivity-core" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
-        <a href="https://productivitycore.vercel.app" target="_blank" rel="noopener" class="project-link"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live site</a>
+        <a href="https://github.com/mamdous-usual/productivity-core" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+        <a href="https://productivitycore.vercel.app" target="_blank" rel="noopener"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live site</a>
       </div>
     </article>
 
-    <article class="project-card">
-      <div class="project-number">04 / CLI Tool</div>
+    <article class="card project">
+      <p class="project-kind">04 / CLI Tool</p>
       <h3 class="project-name">Terminal Audio Player</h3>
       <p class="project-desc">A terminal-based music player with a real-time spectrum visualizer, playlist support, and full playback controls — rendered entirely in the terminal.</p>
-      <div class="project-tech">
-        <span class="tech-tag">Rust</span><span class="tech-tag">Ratatui</span><span class="tech-tag">CPAL</span><span class="tech-tag">RustFFT</span>
-      </div>
+      <div class="tags"><span class="tag tag-amber">Rust</span><span class="tag tag-amber">Ratatui</span><span class="tag tag-amber">CPAL</span><span class="tag tag-amber">RustFFT</span></div>
       <div class="project-links">
-        <a href="https://github.com/mamdous-usual/terminal-audio-player" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+        <a href="https://github.com/mamdous-usual/terminal-audio-player" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
       </div>
     </article>
 
   </div>
 </section>
 
-<!-- ── TERMINAL (for devs) ── -->
-<section id="terminal" class="fade-in" aria-labelledby="terminal-heading">
-  <p class="section-label" id="terminal-heading"><i class="fas fa-terminal" aria-hidden="true"></i> Interactive terminal <span style="font-size:10px;color:var(--muted);margin-left:8px;text-transform:none;letter-spacing:0;font-weight:400;">— for the curious</span></p>
-  <div class="terminal-wrapper" role="region" aria-label="Interactive terminal emulator">
-    <div class="terminal-topbar" aria-hidden="true">
-      <div class="dot dot-red"></div>
-      <div class="dot dot-amber"></div>
-      <div class="dot dot-green"></div>
-      <span class="terminal-bar-title">mamdous@localhost:~</span>
-      <span class="terminal-hint">type 'help'</span>
-    </div>
-    <div class="terminal-body">
-      <div id="term-output" aria-live="polite" aria-label="Terminal output"></div>
-      <div class="terminal-input-row">
-        <span class="terminal-prompt" aria-hidden="true">visitor@localhost:~$</span>
-        <div class="terminal-input-wrap">
-          <div class="autocomplete-box" id="ac-box" role="listbox"></div>
-          <input type="text" id="term-input" aria-label="Terminal command input" placeholder="type a command..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-        </div>
-        <span class="cursor-blink" aria-hidden="true"></span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── CONTACT ── -->
+<!-- Contact -->
 <section id="contact" class="fade-in" aria-labelledby="contact-heading">
-  <p class="section-label" id="contact-heading"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</p>
-  <div class="contact-layout">
-    <div class="contact-info" aria-label="Contact methods">
+  <h2 class="section-label" id="contact-heading"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</h2>
+  <div class="grid grid-2 contact">
+    <div class="contact-list">
       <a href="mailto:mamdouslaskar@protonmail.com" class="contact-item">
-        <div class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
-        <div>
-          <div class="contact-label">Email</div>
-          <div class="contact-value">mamdouslaskar@protonmail.com</div>
-        </div>
+        <span class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
+        <span><span class="contact-label">Email</span><span class="contact-value">mamdouslaskar@protonmail.com</span></span>
       </a>
       <a href="https://linkedin.com/in/mamdousahmedlaskar" target="_blank" rel="noopener" class="contact-item">
-        <div class="contact-icon" style="background:rgba(10,102,194,0.1);color:#0a66c2;"><i class="fab fa-linkedin" aria-hidden="true"></i></div>
-        <div>
-          <div class="contact-label">LinkedIn</div>
-          <div class="contact-value">mamdousahmedlaskar</div>
-        </div>
+        <span class="contact-icon"><i class="fab fa-linkedin" aria-hidden="true"></i></span>
+        <span><span class="contact-label">LinkedIn</span><span class="contact-value">mamdousahmedlaskar</span></span>
       </a>
       <a href="https://github.com/mamdous-usual" target="_blank" rel="noopener" class="contact-item">
-        <div class="contact-icon" style="background:rgba(255,255,255,0.06);color:#e2e4ed;"><i class="fab fa-github" aria-hidden="true"></i></div>
-        <div>
-          <div class="contact-label">GitHub</div>
-          <div class="contact-value">mamdous-usual</div>
-        </div>
+        <span class="contact-icon"><i class="fab fa-github" aria-hidden="true"></i></span>
+        <span><span class="contact-label">GitHub</span><span class="contact-value">mamdous-usual</span></span>
       </a>
       <a href="https://x.com/mamdouslaskar" target="_blank" rel="noopener" class="contact-item">
-        <div class="contact-icon" style="background:rgba(29,161,242,0.1);color:#1da1f2;"><i class="fab fa-twitter" aria-hidden="true"></i></div>
-        <div>
-          <div class="contact-label">Twitter / X</div>
-          <div class="contact-value">@mamdouslaskar</div>
-        </div>
+        <span class="contact-icon"><i class="fab fa-x-twitter" aria-hidden="true"></i></span>
+        <span><span class="contact-label">Twitter / X</span><span class="contact-value">@mamdouslaskar</span></span>
       </a>
     </div>
 
-    <form class="contact-form" id="contact-form" aria-label="Send a message">
+    <form class="form" id="contact-form" aria-label="Send a message">
       <div class="form-row">
         <div class="field">
           <label for="cf-name">Your name</label>
-          <input type="text" id="cf-name" placeholder="Jane Smith" required>
+          <input type="text" id="cf-name" placeholder="Jane Smith" autocomplete="name" required>
         </div>
         <div class="field">
           <label for="cf-email">Your email</label>
-          <input type="email" id="cf-email" placeholder="jane@company.com" required>
+          <input type="email" id="cf-email" placeholder="jane@company.com" autocomplete="email" required>
         </div>
       </div>
       <div class="field">
@@ -928,21 +269,16 @@ footer {
         <label for="cf-msg">Message</label>
         <textarea id="cf-msg" placeholder="Hi Mamdous, I'd like to..." required></textarea>
       </div>
-      <button type="submit" class="btn btn-primary" style="align-self:flex-start;">
-        <i class="fas fa-paper-plane" aria-hidden="true"></i> Send message
-      </button>
-      <div id="form-status" role="status" aria-live="polite" style="font-family:var(--mono);font-size:12px;color:var(--green);display:none;margin-top:4px;"></div>
+      <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane" aria-hidden="true"></i> Send message</button>
+      <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
     </form>
   </div>
 </section>
 
 </main>
 
-<!-- ── FOOTER ── */
-<footer role="contentinfo">
-  <p class="footer-mono">
-    &lt;<span>Mamdous Laskar</span> /&gt; · Built with HTML, CSS &amp; JS
-  </p>
+<footer>
+  <p class="footer-mono">&lt;<span>Mamdous Laskar</span> /&gt; · Built with HTML, CSS &amp; JS</p>
   <div class="footer-links">
     <a href="https://github.com/mamdous-usual" target="_blank" rel="noopener">GitHub</a>
     <a href="https://linkedin.com/in/mamdousahmedlaskar" target="_blank" rel="noopener">LinkedIn</a>
@@ -950,438 +286,7 @@ footer {
   </div>
 </footer>
 
-</div><!-- /page -->
-
-<script>
-/* ══════════════════════════════════════════
-   MOBILE NAV
-══════════════════════════════════════════ */
-const hamburger  = document.getElementById('hamburger');
-const mobileNav  = document.getElementById('mobile-nav');
-hamburger.addEventListener('click', () => {
-  const open = mobileNav.classList.toggle('open');
-  hamburger.setAttribute('aria-expanded', open);
-  hamburger.querySelector('i').className = open ? 'fas fa-times' : 'fas fa-bars';
-});
-function closeMobileNav() {
-  mobileNav.classList.remove('open');
-  hamburger.setAttribute('aria-expanded', false);
-  hamburger.querySelector('i').className = 'fas fa-bars';
-}
-document.addEventListener('click', e => {
-  if (!mobileNav.contains(e.target) && e.target !== hamburger && !hamburger.contains(e.target)) {
-    closeMobileNav();
-  }
-});
-
-/* ══════════════════════════════════════════
-   INITIALIZATION
-══════════════════════════════════════════ */
-window.scrollTo(0, 0);
-setupIntersectionObserver();
-
-/* ══════════════════════════════════════════
-   SCROLL ANIMATIONS
-══════════════════════════════════════════ */
-function setupIntersectionObserver() {
-  const els = document.querySelectorAll('.fade-in');
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
-  }, { threshold: 0.1 });
-  els.forEach(el => obs.observe(el));
-}
-
-/* ══════════════════════════════════════════
-   TERMINAL LOGIC
-══════════════════════════════════════════ */
-const termOutput = document.getElementById('term-output');
-const termInput  = document.getElementById('term-input');
-const acBox      = document.getElementById('ac-box');
-let cmdHistory = [], histIdx = -1, acSelected = -1;
-let guessGame = { active: false, target: 0, tries: 0 };
-const pageLoadTime = Date.now();
-
-function getUptimeStr() {
-  const secs = Math.floor((Date.now() - pageLoadTime) / 1000);
-  const m = Math.floor(secs / 60);
-  const s = secs % 60;
-  return `${m}m ${s}s`;
-}
-
-function handleGuess(n) {
-  guessGame.tries++;
-  if (n === guessGame.target) {
-    const tries = guessGame.tries;
-    guessGame.active = false;
-    return `<span class="term-success">🎯 Correct! The number was ${n}. You got it in ${tries} ${tries === 1 ? 'try' : 'tries'}.</span>`;
-  } else if (n < guessGame.target) {
-    return `<span class="term-info">Higher ↑</span>  <span class="term-warn">(try ${guessGame.tries}, type 'quit' to give up)</span>`;
-  } else {
-    return `<span class="term-info">Lower ↓</span>  <span class="term-warn">(try ${guessGame.tries}, type 'quit' to give up)</span>`;
-  }
-}
-
-const COMMANDS = {
-  help: {
-    desc: 'Show available commands',
-    run: () => `<span class="term-success">Available commands:</span>
-<span class="term-info">  about</span>        — who I am
-<span class="term-info">  skills</span>       — tech stack
-<span class="term-info">  projects</span>     — what I've built
-<span class="term-info">  contact</span>      — how to reach me
-<span class="term-info">  resume</span>       — get my CV
-<span class="term-info">  social</span>       — social links
-<span class="term-info">  neofetch</span>     — system info, dev edition
-<span class="term-info">  cat &lt;file&gt;</span>    — read a file (try: ls)
-<span class="term-info">  echo &lt;text&gt;</span>   — repeat text back
-<span class="term-info">  man &lt;command&gt;</span> — manual page for a command
-<span class="term-info">  history</span>      — show command history
-<span class="term-info">  banner</span>       — ASCII banner
-<span class="term-info">  uptime</span>       — session uptime
-<span class="term-info">  joke</span>         — random programming joke
-<span class="term-info">  quote</span>        — random dev quote
-<span class="term-info">  rps &lt;choice&gt;</span>  — rock, paper, scissors
-<span class="term-info">  guess</span>        — number guessing game
-<span class="term-info">  date</span>         — current date/time
-<span class="term-info">  clear</span>        — clear terminal
-<span class="term-warn">  (There are a few more easter eggs hidden in here too)</span>`
-  },
-  about: {
-    desc: 'Who I am',
-    run: () => `<span class="term-success">Mamdous Laskar</span>
-BCA Student · Karimganj College, Assam University
-2nd year · Expected graduation: 2028
-
-I'm learning by building. Most of what I know comes from
-creating real projects, reading docs, and breaking things.
-Interested in web dev, clean UI, and practical software.
-
-<span class="term-info">Open to:</span> internships, projects, collaborations`
-  },
-  skills: {
-    desc: 'Tech skills',
-    run: () => `<span class="term-success">Tech skills</span>
-<span class="term-info">Languages:</span>  JavaScript · Java · Python · C/C++
-<span class="term-info">Frontend:</span>   HTML · CSS · React
-<span class="term-info">Backend:</span>    Node.js · Express · Spring Boot
-<span class="term-info">Databases:</span>  MySQL · MongoDB · PostgreSQL
-<span class="term-info">Tools:</span>      Git · Docker · Linux · VS Code
-<span class="term-warn">Learning:</span>   DSA · System Design`
-  },
-  projects: {
-    desc: 'My projects',
-    run: () => `<span class="term-success">Projects (4)</span>
-
-<span class="term-info">01. Paper-Notebook</span>
-    Minimal notebook + whiteboard app. 5 paper types, pen/eraser/text
-    tools, multi-page sidebar, PNG export, autosave. React + Vite.
-    <a href="https://papernotebook.vercel.app" target="_blank">↗ papernotebook.vercel.app</a>
-
-<span class="term-info">02. Speedometer PWA</span>
-    GPS-based speed app. Works offline, installable.
-    <a href="https://speedometerweb.vercel.app" target="_blank">↗ speedometerweb.vercel.app</a>
-
-<span class="term-info">03. Productivity Core</span>
-    Tasks + Pomodoro + focus tools. No login needed.
-    <a href="https://productivitycore.vercel.app" target="_blank">↗ productivitycore.vercel.app</a>
-
-<span class="term-info">04. Terminal Audio Player</span>
-    Rust music player w/ real-time spectrum visualizer.
-    <a href="https://github.com/mamdous-usual/terminal-audio-player" target="_blank">↗ github.com/mamdous-usual/terminal-audio-player</a>`
-  },
-  contact: {
-    desc: 'Contact details',
-    run: () => `<span class="term-success">Contact</span>
-<span class="term-info">Email:</span>    <a href="mailto:mamdouslaskar@protonmail.com">mamdouslaskar@protonmail.com</a>
-<span class="term-info">LinkedIn:</span> <a href="https://linkedin.com/in/mamdousahmedlaskar" target="_blank">linkedin.com/in/mamdousahmedlaskar</a>
-<span class="term-info">GitHub:</span>   <a href="https://github.com/mamdous-usual" target="_blank">github.com/mamdous-usual</a>
-<span class="term-warn">Response time:</span> within 24–48 hours`
-  },
-  resume: {
-    desc: 'Get my CV',
-    run: () => {
-      window.location.href = 'mailto:mamdouslaskar@protonmail.com?subject=Resume%20Request&body=Hi%20Mamdous%2C%0A%0AI%27d%20like%20a%20copy%20of%20your%20resume.%0A%0AThanks!';
-      return `<span class="term-success">Opening your email client...</span>
-If it didn't open, email me at:
-<a href="mailto:mamdouslaskar@protonmail.com">mamdouslaskar@protonmail.com</a>
-Subject: Resume Request`;
-    }
-  },
-  social: {
-    desc: 'Social profiles',
-    run: () => `<span class="term-success">Social</span>
-<a href="https://github.com/mamdous-usual" target="_blank">    GitHub   →  github.com/mamdous-usual</a>
-<a href="https://linkedin.com/in/mamdousahmedlaskar" target="_blank">    LinkedIn →  linkedin.com/in/mamdousahmedlaskar</a>
-<a href="https://x.com/mamdouslaskar" target="_blank">    Twitter  →  x.com/mamdouslaskar</a>`
-  },
-  date: {
-    desc: 'Current date/time',
-    run: () => new Date().toLocaleString('en-IN', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' })
-  },
-  clear: {
-    desc: 'Clear terminal',
-    run: () => { termOutput.innerHTML = ''; return ''; }
-  },
-  neofetch: {
-    desc: 'System info, dev edition',
-    run: () => `<span class="term-success">visitor@mamdous.me</span>
--------------------
-<span class="term-info">OS:</span>      PortfolioOS (Terminal Edition)
-<span class="term-info">Host:</span>    mamdous.me
-<span class="term-info">Shell:</span>   visitor-sh 1.0
-<span class="term-info">Uptime:</span>  ${getUptimeStr()}
-<span class="term-info">Stack:</span>   JS · Java · Python · C/C++
-<span class="term-info">Status:</span>  <span class="term-success">Open to opportunities</span>`
-  },
-  cat: {
-    desc: 'Read a file — try: cat about.txt',
-    run: (args) => {
-      const f = (args[0] || '').toLowerCase();
-      if (!f) return '<span class="term-warn">Usage: cat &lt;file&gt;  (try: ls)</span>';
-      if (f === 'projects/' || f === 'projects') return '<span class="term-error">cat: projects/: Is a directory</span>';
-      const map = {
-        'about.txt': COMMANDS.about.run,
-        'skills.txt': COMMANDS.skills.run,
-        'contact.txt': COMMANDS.contact.run,
-        'resume.pdf': COMMANDS.resume.run
-      };
-      if (map[f]) return map[f]();
-      return `<span class="term-error">cat: ${escHtml(f)}: No such file or directory</span>`;
-    }
-  },
-  echo: {
-    desc: 'Echo text back — try: echo hello',
-    run: (args) => args.length ? escHtml(args.join(' ')) : '<span class="term-warn">Usage: echo &lt;text&gt;</span>'
-  },
-  man: {
-    desc: 'Manual page for a command — try: man ls',
-    run: (args) => {
-      const c = (args[0] || '').toLowerCase();
-      if (!c) return '<span class="term-warn">Usage: man &lt;command&gt;</span>';
-      if (COMMANDS[c]) {
-        const d = COMMANDS[c].desc || 'No description available. Try running it and see what happens.';
-        return `<span class="term-success">${escHtml(c.toUpperCase())}(1)</span>\n${escHtml(d)}`;
-      }
-      return `<span class="term-error">No manual entry for ${escHtml(c)}</span>`;
-    }
-  },
-  history: {
-    desc: 'Show command history',
-    run: () => cmdHistory.length
-      ? cmdHistory.map((c, i) => `<span class="term-info">${i + 1}</span>  ${escHtml(c)}`).join('\n')
-      : '<span class="term-warn">No history yet.</span>'
-  },
-  banner: {
-    desc: 'ASCII banner',
-    run: () => `<span class="term-success">+-------------------------------+
-|        MAMDOUS LASKAR          |
-|   &lt; building stuff daily &gt;     |
-+-------------------------------+</span>`
-  },
-  uptime: {
-    desc: 'Show session uptime',
-    run: () => `<span class="term-info">Session uptime:</span> ${getUptimeStr()}`
-  },
-  joke: {
-    desc: 'A random programming joke',
-    run: () => {
-      const jokes = [
-        'Why do programmers prefer dark mode? Because light attracts bugs.',
-        'A SQL query walks into a bar, walks up to two tables and asks: "Can I join you?"',
-        "There are 10 types of people: those who understand binary and those who don't.",
-        'I would tell you a UDP joke, but you might not get it.',
-        "Why do Java developers wear glasses? Because they don't C#.",
-        '99 little bugs in the code. Take one down, patch it around — 127 little bugs in the code.'
-      ];
-      return `<span class="term-success">${jokes[Math.floor(Math.random() * jokes.length)]}</span>`;
-    }
-  },
-  quote: {
-    desc: 'A random dev quote',
-    run: () => {
-      const quotes = [
-        '"Talk is cheap. Show me the code." — Linus Torvalds',
-        '"Simplicity is the soul of efficiency." — Austin Freeman',
-        '"First, solve the problem. Then, write the code." — John Johnson',
-        '"Make it work, make it right, make it fast." — Kent Beck',
-        '"The best error message is the one that never shows up." — Thomas Fuchs'
-      ];
-      return `<span class="term-info">${quotes[Math.floor(Math.random() * quotes.length)]}</span>`;
-    }
-  },
-  rps: {
-    desc: 'Rock, paper, scissors — try: rps rock',
-    run: (args) => {
-      const choices = ['rock', 'paper', 'scissors'];
-      const user = (args[0] || '').toLowerCase();
-      if (!choices.includes(user)) return '<span class="term-warn">Usage: rps &lt;rock|paper|scissors&gt;</span>';
-      const bot = choices[Math.floor(Math.random() * 3)];
-      let result;
-      if (user === bot) {
-        result = "<span class=\"term-warn\">Tie!</span>";
-      } else if (
-        (user === 'rock' && bot === 'scissors') ||
-        (user === 'paper' && bot === 'rock') ||
-        (user === 'scissors' && bot === 'paper')
-      ) {
-        result = '<span class="term-success">You win!</span>';
-      } else {
-        result = '<span class="term-error">You lose!</span>';
-      }
-      return `You chose <span class="term-info">${user}</span>, I chose <span class="term-info">${bot}</span>. ${result}`;
-    }
-  },
-  guess: {
-    desc: 'Guess a number 1-100 — a mini game',
-    run: () => {
-      guessGame = { active: true, target: Math.floor(Math.random() * 100) + 1, tries: 0 };
-      return `<span class="term-success">I'm thinking of a number between 1 and 100.</span>
-Type a number to guess it. Type <span class="term-info">quit</span> to give up.`;
-    }
-  },
-  /* Easter eggs */
-  'sudo rm -rf /': { desc: '', run: () => '<span class="term-error">Nice try. No root access here.</span>' },
-  exit:   { desc: '', run: () => '<span class="term-warn">No escape from the matrix.</span>' },
-  matrix: { desc: '', run: () => '<span class="term-success">Wake up, Neo…</span>' },
-  coffee: { desc: '', run: () => '<span class="term-info">☕  Brewing… please wait.</span>' },
-  vim:    { desc: '', run: () => '<span class="term-error">vim: not found. This is a web terminal.</span>' },
-  sudo:   { desc: '', run: () => '<span class="term-error">You are not in the sudoers file. This incident will be reported.</span>' },
-  hello:  { desc: '', run: () => '<span class="term-success">Hello there! Type \'help\' to get started.</span>' },
-  whoami: { desc: '', run: () => 'visitor' },
-  pwd:    { desc: '', run: () => '/home/mamdous/portfolio' },
-  ls:     { desc: '', run: () => '<span style="color:#61afef;">about.txt</span>  <span style="color:#98c379;">projects/</span>  <span style="color:#e5c07b;">resume.pdf</span>  <span style="color:#56b6c2;">skills.txt</span>  <span style="color:#c678dd;">contact.txt</span>' }
-};
-
-const PUBLIC_CMDS = Object.keys(COMMANDS).filter(k => COMMANDS[k].desc);
-
-function termPrint(html, isCmd = false, cmd = '') {
-  const div = document.createElement('div');
-  div.className = 'term-line';
-  if (isCmd) {
-    div.innerHTML = `<span class="term-prompt-char">visitor@localhost:~$</span> <span class="term-cmd-text">${escHtml(cmd)}</span>`;
-  } else if (html) {
-    const out = document.createElement('pre');
-    out.className = 'term-out term-line';
-    out.innerHTML = html;
-    termOutput.appendChild(out);
-    return;
-  }
-  if (html !== '') termOutput.appendChild(div);
-}
-
-function escHtml(s) {
-  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-}
-
-function runCmd(raw) {
-  const cmd = raw.trim();
-  if (!cmd) return;
-  cmdHistory.push(cmd);
-  histIdx = cmdHistory.length;
-  termPrint('', true, cmd);
-
-  // Active number-guessing game intercepts plain numbers and 'quit'
-  if (guessGame.active) {
-    if (/^-?\d+$/.test(cmd)) {
-      termPrint(handleGuess(parseInt(cmd, 10)));
-      termOutput.parentElement.parentElement.scrollTop = 99999;
-      return;
-    }
-    if (cmd.toLowerCase() === 'quit') {
-      termPrint(`<span class="term-warn">Gave up. The number was ${guessGame.target}.</span>`);
-      guessGame.active = false;
-      termOutput.parentElement.parentElement.scrollTop = 99999;
-      return;
-    }
-  }
-
-  const parts = cmd.split(/\s+/);
-  const key = parts[0].toLowerCase();
-  const args = parts.slice(1);
-  const entry = COMMANDS[key];
-  if (entry) {
-    const result = entry.run(args);
-    if (result) termPrint(result);
-  } else {
-    termPrint(`<span class="term-error">command not found: ${escHtml(cmd)}</span>\n<span class="term-info">type 'help' to see available commands.</span>`);
-  }
-  // scroll
-  termOutput.parentElement.parentElement.scrollTop = 99999;
-}
-
-function showAC(matches) {
-  acSelected = -1;
-  if (!matches.length) { acBox.classList.remove('open'); return; }
-  acBox.innerHTML = matches.map(m => `<div class="ac-item" role="option">${m}</div>`).join('');
-  acBox.classList.add('open');
-  acBox.querySelectorAll('.ac-item').forEach(el => {
-    el.onclick = () => { termInput.value = el.textContent; acBox.classList.remove('open'); termInput.focus(); };
-  });
-}
-
-termInput.addEventListener('keydown', e => {
-  const items = acBox.querySelectorAll('.ac-item');
-  if (e.key === 'Enter') {
-    acBox.classList.remove('open');
-    runCmd(termInput.value);
-    termInput.value = '';
-  } else if (e.key === 'ArrowUp') {
-    e.preventDefault();
-    if (acBox.classList.contains('open') && items.length) {
-      acSelected = Math.max(0, acSelected - 1);
-      items.forEach((el,i) => el.classList.toggle('active', i === acSelected));
-      termInput.value = items[acSelected].textContent;
-    } else if (histIdx > 0) { histIdx--; termInput.value = cmdHistory[histIdx]; }
-  } else if (e.key === 'ArrowDown') {
-    e.preventDefault();
-    if (acBox.classList.contains('open') && items.length) {
-      acSelected = Math.min(items.length - 1, acSelected + 1);
-      items.forEach((el,i) => el.classList.toggle('active', i === acSelected));
-      termInput.value = items[acSelected].textContent;
-    } else {
-      histIdx = Math.min(cmdHistory.length, histIdx + 1);
-      termInput.value = histIdx < cmdHistory.length ? cmdHistory[histIdx] : '';
-    }
-  } else if (e.key === 'Tab') {
-    e.preventDefault();
-    const v = termInput.value.trim().toLowerCase();
-    const m = PUBLIC_CMDS.filter(c => c.startsWith(v));
-    if (m.length === 1) { termInput.value = m[0]; acBox.classList.remove('open'); }
-    else showAC(m);
-  } else if (e.key === 'Escape') { acBox.classList.remove('open'); }
-});
-
-termInput.addEventListener('input', () => {
-  const v = termInput.value.trim().toLowerCase();
-  if (v) showAC(PUBLIC_CMDS.filter(c => c.startsWith(v)));
-  else acBox.classList.remove('open');
-});
-
-document.addEventListener('click', e => {
-  if (!acBox.contains(e.target) && e.target !== termInput) acBox.classList.remove('open');
-});
-
-// welcome message
-setTimeout(() => termPrint('<span class="term-info">Welcome! Type \'help\' to explore, or just scroll the page above.</span>'), 800);
-
-/* ══════════════════════════════════════════
-   CONTACT FORM
-══════════════════════════════════════════ */
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const name    = document.getElementById('cf-name').value;
-  const email   = document.getElementById('cf-email').value;
-  const subject = document.getElementById('cf-subject').value;
-  const msg     = document.getElementById('cf-msg').value;
-  const link = `mailto:mamdouslaskar@protonmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('From: ' + name + ' (' + email + ')\n\n' + msg)}`;
-  const a = document.createElement('a'); a.href = link; a.style.display = 'none';
-  document.body.appendChild(a); a.click(); document.body.removeChild(a);
-  const status = document.getElementById('form-status');
-  status.style.display = 'block';
-  status.textContent = '✓ Opening your email client…';
-  this.reset();
-  setTimeout(() => status.style.display = 'none', 4000);
-});
-</script>
+<script src="js/terminal.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
