@@ -24,10 +24,29 @@ const tag  = (cls, text) => `<span class="${cls}">${text}</span>`;
 const link = (url, text) => `<a href="${url}" target="_blank" rel="noopener">${text}</a>`;
 const pick = list => list[Math.floor(Math.random() * list.length)];
 
+// "label   value" lines become two-column rows so wrapped text keeps its
+// alignment on narrow screens instead of running back under the label.
+const ROW = /^(\s*)(<span class="info">([^<]{1,40})<\/span>)(\s+)(?!$)(.+)$/;
+function rowify(html) {
+  const lines = html.split('\n');
+  let out = '';
+  lines.forEach((line, i) => {
+    const m = ROW.exec(line);
+    if (m && /^[^<]*[:>]?$/.test(m[3]) && (m[3].trim().endsWith(':') || m[5].startsWith('—'))) {
+      const width = m[1].length + m[3].length + m[4].length;
+      out += `<span class="row" style="--kw:${width}ch">` +
+             `<span class="k">${m[1]}${m[2]}${m[4]}</span><span class="v">${m[5]}</span></span>`;
+    } else {
+      out += line + (i < lines.length - 1 ? '\n' : '');
+    }
+  });
+  return out;
+}
+
 function print(html, cls = '') {
   const el = document.createElement('pre');
   el.className = cls;
-  el.innerHTML = html;
+  el.innerHTML = rowify(html);
   output.appendChild(el);
 }
 
