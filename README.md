@@ -9,7 +9,7 @@ works. So instead of making the terminal a decoration, I made it the starting
 point. The homepage opens with an interactive shell and the rest of the site
 keeps the same straightforward, developer-focused feel.
 
-**Live site:** [mamdous.vercel.app](https://mamdous.vercel.app)
+**Live site:** [mamdous.dev](https://mamdous.dev)
 
 ## What is inside
 
